@@ -50,7 +50,7 @@ class ParseXML(object):
             for part in parts:
                 part_model = models.Part()
                 part_model.scene = scene_model
-                part_model.title = self.dict_value(part.attrib['keyword'])
+                part_model.name = self.dict_value(part.attrib['keyword'])
                 part_model.description = part.attrib['summary']
                 part_model.save()
                 contents = part.findall('cut')
@@ -73,68 +73,86 @@ class ParseXML(object):
             self.process_default(content, cut)
         elif(type == 'alternative'):
             pass
-        # print(cut.attrib['type'])
-        # rc ={
-        #     'pause': self.process_pause(content, cut),
-        #     'default': self.process_default(content, cut),
-        #     'alternative': models.Alternative()
-        # }.get(cut.attrib['type'])
-        #return rc
-
 
 
     def process_pause(self, content, cut):
         pause = models.Group()
-        pause.type_set.create(name='SEQUENCE')
-        #line = models.Line(line='Pause')
-        #line.line = 'Pause'
-        #line.save()
-        #pause.group = models.Group()
-        #pause.group.save()
-        pause.line.create(line='Pause')
-        pause.content = content.id
+        pause.save()
+        type = models.Type()
+        type.name = 'SEQUENCE'
+        type.group_id = pause.id
+        pause.type_set.add(type)
+        angles = cut.findall("./shots/angle")
+
+        scene_name = self.get_scene_name(content.part_id)
+        scene_code = self.dict_key(scene_name)
+        part_name = models.Part.objects.get(pk=content.part_id).name
+        part_code = self.dict_key(part_name)
+        for angle in angles:
+            source = models.Source()
+            source.file = scene_code + '_' + part_code + '_' + angle.attrib['type']
+            pass
+
+
+        pause_txt = models.Line()
+        pause_txt.line = 'pause'
+        content.line_set.add(pause_txt)
+        pause_txt.save()
+
+        pause.line.add(pause_txt)
 
         seq_group1 = models.Group()
         seq_group1.name = 'surprise'
-        seq_group1.item.create(line='what')
-        seq_group1.item.create(line='the')
-        seq_group1.item.create(line='fuck')
+        seq_group1.save()
+        seq_group1.line.create(line='what')
+        seq_group1.line.create(line='the')
+        seq_group1.line.create(line='fuck')
 
         seq_group2 = models.Group()
         seq_group2.name = 'love'
-        seq_group2.item.create(line='Reyhan')
-        seq_group2.item.create(line='is')
-        seq_group2.item.create(line='fab')
+        seq_group2.save()
+        seq_group2.line.create(line='Reyhan')
+        seq_group2.line.create(line='is')
+        seq_group2.line.create(line='fab')
 
         seq_group3 = models.Group()
         seq_group3.name = 'bedtime'
-        #seq_group3.item.add(models.LineItem(line='Ian'))
-        seq_group3.item.create(line='Ian')
-        seq_group3.item.create(line='is')
-        seq_group3.item.create(line='tired')
+        seq_group3.save()
+        seq_group3.line.create(line='Ian')
+        seq_group3.line.create(line='is')
+        seq_group3.line.create(line='tired')
 
         seq_options = models.Item()
         seq_options.name = 'sequeunces'
+        seq_options.save()
         seq_options.group_set.add(seq_group1, seq_group2, seq_group3)
         pause.item.add(seq_options)
+
         pause.save()
+        content.group_set.add(pause)
 
         return 0
 
 
     def process_default(self, content, cut):
         default = models.Line()
-        test = cut.find('line')
         default.line = cut.find('line').text
         default.speaker = cut.attrib['speaker']
-        content.lineitem_set.add(default)
-        #content.lineitem_set.
+        content.line_set.add(default)
+        default.save()
 
     def process_alternative(self,content,cut):
         pass
 
     def dict_value(self, code):
         return self.dict.find('item/.[@code="{0}"]'.format(code)).attrib['content']
+
+
+    def dict_key(self, code):
+        return self.dict.find('item/.[@content="{0}"]'.format(code)).attrib['code']
+
+    def get_scene_name(self, part_id):
+        return models.Part.objects.get(pk=part_id).scene.title
 
 
     def truncate(self):
@@ -147,6 +165,7 @@ class ParseXML(object):
         models.Line.objects.all().delete()
         models.Group.objects.all().delete()
         models.Source.objects.all().delete()
+        models.Type.objects.all().delete()
 
 
 print(os.path.dirname(__file__))

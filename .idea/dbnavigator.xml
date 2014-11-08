@@ -26,21 +26,21 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_script" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_alternative" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_lineitem" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_alternative" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_item" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_act" active-filter-id="">
       <filter id="496b1c0e-f9b3-46cf-9a7c-b074ee0a6194" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-list>
-    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_item" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.auth_permission" active-filter-id="" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_compound" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.auth_permission" active-filter-id="" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_scene" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_part" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_content" active-filter-id="EMPTY_FILTER" />
-    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_itemgroup" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_source" active-filter-id="" />
+    <filter-list connection-id="49008bba-7114-4c3f-ac9f-bcd8301757b5" dataset="combinatoria.script_itemgroup" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
