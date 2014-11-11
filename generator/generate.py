@@ -6,6 +6,7 @@ import re
 from xml.etree.ElementTree import Element
 from mysql.connector import connect
 from mysql.connector.connection import MySQLConnection, MySQLCursor
+import json
 import os
 #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "combinatoria.settings")
 #os.environ['DJANGO_SETTINGS_MODULE'] = 'combinatoria.settings'
@@ -76,8 +77,6 @@ class ParseXML(object):
                     self.content_factory(content_model, cut)
                     pass
 
-        pass
-
     def content_factory(self, content, cut):
         type = cut.attrib['type']
 
@@ -86,7 +85,7 @@ class ParseXML(object):
         elif(type == 'default'):
             self.process_default(content, cut)
         elif(type == 'alternative'):
-            pass
+            self.process_alternative(content, cut)
 
 
     def process_pause(self, content, cut):
@@ -266,11 +265,70 @@ class ParseXML(object):
         default = models.Line()
         default.line = cut.find('line').text
         default.speaker = cut.attrib['speaker']
-        content.line_set.add(default)
         default.save()
+        content.line_set.add(default)
+        shots = cut.findall('./shots/angle')
+        for shot in shots:
+            source = models.Source()
+            source.file = cut.find('name').text + '_' + shot.attrib['type'] + '.mp4'
+            source.duration = float(shot.attrib['length']) * 1000
+            source.mime = 'video/mp4'
+            source.size = shot.attrib['bytes']
+            source.save()
+            source.line_set.add(default)
 
-    def process_alternative(self,content,cut):
+
+    def process_alternative(self, content, cut):
+        alternative = models.Group()
+        alternative.save()
+        type = self.write_alt_type(cut)
+        content.type_set.add(type)
+        alternative.type_set.add(type)
+        options = cut.findall('./option')
+        for option in options:
+            dialogue = models.Line()
+            dialogue.line = option.find('./line').text
+            dialogue.speaker = cut.attrib['speaker']
+            dialogue.content_id = content.id
+            dialogue.save()
+            name = option.find('./name').text
+
+
+            shots = option.findall('./shots/angle')
+
+            for angle in shots:
+                source = models.Source()
+                source.file = name + '_' + angle.attrib['type'] + '.mp4'
+                source.duration = float(angle.attrib['length']) * 1000
+                source.mime = 'video/mp4'
+                source.size = angle.attrib['bytes']
+                source.save()
+                alternative.source.add(source)
+                pass
+
+
+    def write_alt_type(self, cut):
+        type = models.Type()
+        if cut.attrib['alt']:
+            subtype = cut.attrib['alt']
+            type.name = 'ALTERNATIVE' + '_' + subtype.upper()
+        else:
+            type.name = 'ALTERNATIVE'
+
+        if subtype == 'paired':
+            position = cut.attrib['position'][0:1]
+            total = cut.attrib['position'][2:]
+            next = cut.attrib['next'] if 'next' in cut.attrib else None
+            previous = cut.attrib['previous'] if 'previous' in cut.attrib else None
+            data = [{'pos': position, 'total': total , 'next':next, 'prev': previous}]
+            data_string = json.dumps(data)
+            type.arguments = data_string
+
+        type.save()
+        return type
         pass
+
+
 
     def dict_value(self, code):
         return self.dict.find('item/.[@code="{0}"]'.format(code)).attrib['content']

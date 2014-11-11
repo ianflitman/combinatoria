@@ -83,7 +83,7 @@ class Type(models.Model):
     line = models.ForeignKey(Line, null=True)
     item = models.ForeignKey(Item, null=True)
     name = models.CharField(max_length=32)
-    arguments = models.CharField(max_length=32)
+    arguments = models.CharField(max_length=256)
 
 
 class Source(models.Model):
