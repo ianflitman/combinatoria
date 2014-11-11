@@ -1,7 +1,12 @@
 from django.db import models
 
 
+class Project(models.Model):
+    pass
+
+
 class Script(models.Model):
+    project = models.ForeignKey(Project,null=True)
     title = models.CharField(max_length=120)
     author = models.CharField(max_length=60)
     description = models.CharField(max_length=512)
@@ -46,6 +51,7 @@ class Content(models.Model):
 
 class Item(models.Model):
     content = models.ForeignKey(Content, null=True)
+    source = models.ManyToManyField('Source', null=True)
     name = models.CharField(max_length=32, null=True)
     MEDIA_TYPES = (('video', 'VIDEO'), ('audio', 'AUDIO'))
     media = models.CharField(max_length=30, choices=MEDIA_TYPES, default='video')
@@ -53,6 +59,7 @@ class Item(models.Model):
 
 class Line(models.Model):
     content = models.ForeignKey(Content, null=True)
+    source = models.ManyToManyField('Source', null=True)
     line = models.CharField(max_length=256)
     speaker = models.CharField(max_length=60, default='Narration')
 
@@ -61,7 +68,13 @@ class Group(models.Model):
     content = models.ForeignKey(Content, null=True)
     name = models.CharField(max_length=32, null=True)
     item = models.ManyToManyField('Item', null=True)
+
     line = models.ManyToManyField('Line', null=True)
+    source = models.ManyToManyField('Source', null=True)
+    #source = models.ForeignKey('Source', null=True)
+
+    #class Meta():
+    #    order_with_respect_to = 'source'
 
 
 class Type(models.Model):
@@ -74,9 +87,6 @@ class Type(models.Model):
 
 
 class Source(models.Model):
-    item = models.ForeignKey(Item, null=True)
-    line_item = models.ForeignKey(Line, null=True)
-    type = models.CharField(max_length=20)
     mime = models.CharField(max_length=32)
     file = models.CharField(max_length=80)
     size = models.IntegerField()
