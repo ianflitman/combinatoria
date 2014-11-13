@@ -71,10 +71,6 @@ class Group(models.Model):
 
     line = models.ManyToManyField('Line', null=True)
     source = models.ManyToManyField('Source', null=True)
-    #source = models.ForeignKey('Source', null=True)
-
-    #class Meta():
-    #    order_with_respect_to = 'source'
 
 
 class Type(models.Model):

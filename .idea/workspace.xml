@@ -13,7 +13,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/script$reset.coverage" NAME="reset Coverage Results" MODIFIED="1415402457253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/combinatoria" />
-    <SUITE FILE_PATH="coverage/script$generate.coverage" NAME="generate Coverage Results" MODIFIED="1415737562285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$generate.coverage" NAME="generate Coverage Results" MODIFIED="1415863740057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -30,29 +30,39 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="1862">
-              <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="1786">
+              <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="generate.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator/generate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="13.0070095" vertical-offset="0" max-vertical-offset="6954">
-              <caret line="293" column="45" selection-start-line="293" selection-start-column="45" selection-end-line="293" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5408" max-vertical-offset="7486">
+              <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
               <folding>
                 <element signature="e#19#56#0" expanded="true" />
-                <marker date="1415737766667" expanded="true" signature="7421:7492" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="7421:7481" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="7697:7728" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="7697:7817" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="7697:7879" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="8139:8145" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="8139:8167" placeholder="INSERT into ..." />
-                <marker date="1415737766667" expanded="true" signature="8139:8165" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="7341:7412" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="7341:7401" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="7617:7648" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="7617:7737" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="7617:7799" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="8059:8065" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="8059:8087" placeholder="INSERT into ..." />
+                <marker date="1415862157319" expanded="true" signature="8059:8085" placeholder="INSERT into ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connections.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6422">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,7 +70,7 @@
       <file leaf-file-name="cursors.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2043" max-vertical-offset="10222">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2204" max-vertical-offset="10241">
               <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
@@ -70,7 +80,7 @@
       <file leaf-file-name="cursor.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/share/pyshared/mysql/connector/cursor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9063" max-vertical-offset="20710">
+            <state vertical-scroll-proportion="0.0" vertical-offset="9158" max-vertical-offset="20805">
               <caret line="482" column="0" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
               <folding />
             </state>
@@ -80,7 +90,7 @@
       <file leaf-file-name="pydevd.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="21902" max-vertical-offset="31806">
+            <state vertical-scroll-proportion="0.0" vertical-offset="23275" max-vertical-offset="33041">
               <caret line="1225" column="0" selection-start-line="1225" selection-start-column="0" selection-end-line="1225" selection-end-column="0" />
               <folding />
             </state>
@@ -90,18 +100,18 @@
       <file leaf-file-name="connection.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/share/pyshared/mysql/connector/connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11077" max-vertical-offset="30343">
+            <state vertical-scroll-proportion="0.0" vertical-offset="11400" max-vertical-offset="30666">
               <caret line="600" column="0" selection-start-line="600" selection-start-column="0" selection-end-line="600" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jane.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Jane.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1435.9778" vertical-offset="3078" max-vertical-offset="132544">
-              <caret line="6964" column="57" selection-start-line="6964" selection-start-column="57" selection-end-line="6964" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.5276074" vertical-offset="27026" max-vertical-offset="135299">
+              <caret line="1436" column="59" selection-start-line="1436" selection-start-column="59" selection-end-line="1436" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -110,7 +120,7 @@
       <file leaf-file-name="related.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/fields/related.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11850" max-vertical-offset="29127">
+            <state vertical-scroll-proportion="0.0" vertical-offset="12274" max-vertical-offset="29431">
               <caret line="646" column="0" selection-start-line="646" selection-start-column="0" selection-end-line="646" selection-end-column="0" />
               <folding />
             </state>
@@ -131,18 +141,18 @@
         <option value="[Connection] CONSOLE - Connection" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/combinatoria/reset.py" />
-        <option value="$PROJECT_DIR$/xml/Jane.xml" />
         <option value="$PROJECT_DIR$/script/models.py" />
         <option value="$PROJECT_DIR$/generator/generate.py" />
+        <option value="$PROJECT_DIR$/xml/Jane.xml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +180,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -219,7 +230,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,15 +678,17 @@
       <workItem from="1415614048626" duration="640000" />
       <workItem from="1415637509620" duration="8752000" />
       <workItem from="1415690298452" duration="5679000" />
-      <workItem from="1415722620849" duration="9055000" />
+      <workItem from="1415722620849" duration="12548000" />
+      <workItem from="1415779307722" duration="968000" />
+      <workItem from="1415809030195" duration="8560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185619000" />
+    <option name="totallyTimeSpent" value="198640000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -684,7 +696,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28705636" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5208768" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34968686" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -696,7 +708,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.099612616" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15163255" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30824572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -706,34 +718,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16325401" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30824572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2881002" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36638832" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -761,34 +745,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/generate.py</url>
-          <line>218</line>
-          <option name="timeStamp" value="63" />
+          <line>253</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/generate.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/generate.py</url>
-          <line>256</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/generate.py</url>
-          <line>306</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/generate.py</url>
-          <line>327</line>
-          <option name="timeStamp" value="104" />
+          <line>295</line>
+          <option name="timeStamp" value="114" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="105" />
+      <option name="time" value="116" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -825,14 +794,14 @@
           <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
           <folding>
             <element signature="e#19#56#0" expanded="true" />
-            <marker date="1415737766667" expanded="true" signature="7421:7492" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7421:7481" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7728" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7817" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7879" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8145" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8167" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8165" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7412" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7401" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7648" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7737" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7799" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8065" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8087" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8085" placeholder="INSERT into ..." />
           </folding>
         </state>
       </provider>
@@ -910,14 +879,14 @@
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#19#56#0" expanded="true" />
-            <marker date="1415737766667" expanded="true" signature="7421:7492" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7421:7481" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7728" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7817" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7879" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8145" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8167" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8165" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7412" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7401" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7648" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7737" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7799" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8065" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8087" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8085" placeholder="INSERT into ..." />
           </folding>
         </state>
       </provider>
@@ -987,14 +956,14 @@
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#19#56#0" expanded="true" />
-            <marker date="1415737766667" expanded="true" signature="7421:7492" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7421:7481" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7728" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7817" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7879" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8145" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8167" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8165" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7412" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7401" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7648" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7737" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7799" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8065" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8087" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8085" placeholder="INSERT into ..." />
           </folding>
         </state>
       </provider>
@@ -1119,13 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9600694" vertical-offset="378" max-vertical-offset="6422">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5299" max-vertical-offset="32699">
@@ -1137,22 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23090278" vertical-offset="0" max-vertical-offset="576">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/fields/related.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11850" max-vertical-offset="29127">
-          <caret line="646" column="0" selection-start-line="646" selection-start-column="0" selection-end-line="646" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1435.9778" vertical-offset="3078" max-vertical-offset="132544">
-          <caret line="6964" column="57" selection-start-line="6964" selection-start-column="57" selection-end-line="6964" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1181,14 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1341" max-vertical-offset="1862">
-          <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21830" max-vertical-offset="31806">
@@ -1197,21 +1135,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="1786">
+          <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/fields/related.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11850" max-vertical-offset="29127">
+          <caret line="646" column="0" selection-start-line="646" selection-start-column="0" selection-end-line="646" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6422">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generator/generate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.0070095" vertical-offset="0" max-vertical-offset="6954">
-          <caret line="293" column="45" selection-start-line="293" selection-start-column="45" selection-end-line="293" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5408" max-vertical-offset="7486">
+          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
           <folding>
             <element signature="e#19#56#0" expanded="true" />
-            <marker date="1415737766667" expanded="true" signature="7421:7492" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7421:7481" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7728" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7817" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="7697:7879" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8145" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8167" placeholder="INSERT into ..." />
-            <marker date="1415737766667" expanded="true" signature="8139:8165" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7412" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7341:7401" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7648" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7737" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="7617:7799" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8065" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8087" placeholder="INSERT into ..." />
+            <marker date="1415862157319" expanded="true" signature="8059:8085" placeholder="INSERT into ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5276074" vertical-offset="27026" max-vertical-offset="135299">
+          <caret line="1436" column="59" selection-start-line="1436" selection-start-column="59" selection-end-line="1436" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

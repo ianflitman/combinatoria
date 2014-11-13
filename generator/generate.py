@@ -30,7 +30,6 @@ class ParseXML(object):
         self.generate_model()
 
 
-
     def connect_to_db(self):
         self.cnx = connect(user='root', password ='ian', host='127.0.0.1',  database='combinatoria') #database='test')
         self.local_cursor = self.cnx.cursor()
@@ -111,7 +110,6 @@ class ParseXML(object):
         content.line_set.add(pause_txt)
 
         pause.line.add(pause_txt)
-        #pause.line.add(pause_txt)
 
         library = models.Item()
         library.name = 'library'
@@ -137,7 +135,6 @@ class ParseXML(object):
             source.save()
             item.source.add(source)
             choices.item.add(item)
-            #choices.source_set.add(source)
 
         sets = models.Group()
         sets.name = 'sets'
@@ -283,19 +280,41 @@ class ParseXML(object):
         alternative.save()
         type = self.write_alt_type(cut)
         content.type_set.add(type)
+        self.process_options(content, alternative, cut)
         alternative.type_set.add(type)
+        alternative.name = type.name.lower()
+        alternative.content_id = content.id
+        alternative.save()
+
+        if 'PAIRED' or 'PARENT' in alternative.type_set.get().name:
+            alts = cut.findall('./alternative')
+            for alt in alts:
+                alt.attrib['speaker'] = cut.attrib['speaker']
+                self.process_alternative(content, alt)
+
+        if 'COMPOUND' in alternative.type_set.get().name:
+            default = self.write_line(content.id, cut.attrib['speaker'], cut.find('./default/line').text)
+            alternative.line.add(default)
+
+            #self.process_options(content, alternative, cut)
+
+        self.process_options(content, alternative, cut)
+
+
+    def process_options(self, content, alternative, cut):
+
         options = cut.findall('./option')
         for option in options:
-            dialogue = models.Line()
-            dialogue.line = option.find('./line').text
-            dialogue.speaker = cut.attrib['speaker']
-            dialogue.content_id = content.id
-            dialogue.save()
+            # dialogue = models.Line()
+            # dialogue.line = option.find('./line').text
+            # dialogue.speaker = cut.attrib['speaker']
+            # dialogue.content_id = content.id
+            # dialogue.save()
+            dialogue = self.write_line(content.id, cut.attrib['speaker'], option.find('./line').text)
+            alternative.line.add(dialogue)
             name = option.find('./name').text
 
-
             shots = option.findall('./shots/angle')
-
             for angle in shots:
                 source = models.Source()
                 source.file = name + '_' + angle.attrib['type'] + '.mp4'
@@ -304,8 +323,6 @@ class ParseXML(object):
                 source.size = angle.attrib['bytes']
                 source.save()
                 alternative.source.add(source)
-                pass
-
 
     def write_alt_type(self, cut):
         type = models.Type()
@@ -315,7 +332,7 @@ class ParseXML(object):
         else:
             type.name = 'ALTERNATIVE'
 
-        if subtype == 'paired':
+        if 'paired' in subtype:
             position = cut.attrib['position'][0:1]
             total = cut.attrib['position'][2:]
             next = cut.attrib['next'] if 'next' in cut.attrib else None
@@ -324,11 +341,22 @@ class ParseXML(object):
             data_string = json.dumps(data)
             type.arguments = data_string
 
+        if 'compound' in subtype:
+            data = [{'default':1}]
+            data_string = json.dumps(data)
+            type.arguments = data_string
+
         type.save()
         return type
         pass
 
-
+    def write_line(self, content_id, speaker, text):
+        dialogue = models.Line()
+        dialogue.line = text            #option.find('./line').text
+        dialogue.speaker = speaker      #cut.attrib['speaker']
+        dialogue.content_id = content_id
+        dialogue.save()
+        return dialogue
 
     def dict_value(self, code):
         return self.dict.find('item/.[@code="{0}"]'.format(code)).attrib['content']
