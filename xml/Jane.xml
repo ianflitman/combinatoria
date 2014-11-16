@@ -1448,6 +1448,7 @@
           </option>
           <option id="2">
             <line>And she won't touch me all night for it.</line>
+            <name>touch_me</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1455,6 +1456,7 @@
           </option>
           <option id="3">
             <line>Its particular aroma reminded her of her father.</line>
+            <name>aroma</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1464,6 +1466,7 @@
         <alternative type="alternative" alt="compound" id="4">
           <default position="1">
             <line>Last night she threw up half way through.</line>
+            <name>threw_up</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1471,6 +1474,7 @@
           </default>
           <option id="1">
             <line>And guess who cleaned it up.</line>
+            <name>cleaned_up</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1478,6 +1482,7 @@
           </option>
           <option id="2">
             <line>She made up for it in the morning though.</line>
+            <name>made_up</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1485,6 +1490,7 @@
           </option>
           <option id="3">
             <line>Maybe the alcohol or just an ending she wanted to avoid.</line>
+            <name>alcohol_ending</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1494,6 +1500,7 @@
         <alternative type="alternative" alt="compound" id="5">
           <default position="1">
             <line>Last night she managed she sent herself to sleep.</line>
+            <name>send_herself</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1501,6 +1508,7 @@
           </default>
           <option id="1">
             <line>I felt she had abandoned me.</line>
+            <name>abandoned</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1508,6 +1516,7 @@
           </option>
           <option id="2">
             <line>I like to hear her sleep. It is my lullaby.</line>
+            <name>lullaby</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1515,6 +1524,7 @@
           </option>
           <option id="3">
             <line>When I tried to wake her up, she bit me.</line>
+            <name>bit_me</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1524,6 +1534,7 @@
         <alternative type="alternative" alt="compound" id="6">
           <default position="1">
             <line>Last night she had a sexual aftershock.</line>
+            <name>aftershock</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1531,6 +1542,7 @@
           </default>
           <option id="1">
             <line>God, aren't women weird.</line>
+            <name>women_weird</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1538,6 +1550,7 @@
           </option>
           <option id="2">
             <line>Aren't women incredibly lucky?</line>
+            <name>incredibly_lucky</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1545,6 +1558,7 @@
           </option>
           <option id="3">
             <line>So she had to start again from scratch.</line>
+            <name>scratch_start</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1554,6 +1568,7 @@
         <alternative type="alternative" alt="compound" id="7">
           <default position="1">
             <line>Last night she suddenly remembered what he was really like.</line>
+            <name>suddenly_remembered</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1561,6 +1576,7 @@
           </default>
           <option id="1">
             <line>Words and disappointment do not mix.</line>
+            <name>words_disappointment</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1568,6 +1584,7 @@
           </option>
           <option id="2">
             <line>His smile still haunts her.</line>
+            <name>smile_haunt</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1575,6 +1592,7 @@
           </option>
           <option id="3">
             <line>Then she looked at me, sighed and went straight to sleep.</line>
+            <name>sighed_slept</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1585,10 +1603,20 @@
     </section>
     <section keyword="t" position="2" summary="Jake describes the kind of bedtime stories his wife tells him.">
       <cut id="1" type="pause" speaker="none">
-        <line>Pause</line>
+          <line>Pause</line>
+          <name>bs_t</name>
+          <shots>
+              <angle type="ce" length="3.85" bytes="1952064"/>
+              <angle type="co" length="4.27" bytes="2042645"/>
+              <angle type="2s" length="6.41" bytes="2428314"/>
+          </shots>
+          <sequence type="short">co,2s</sequence>
+          <sequence type="medium">ce+co,ce+2s,2s+co</sequence>
+          <sequence type="long">2s+ce+co,ce+2s+co</sequence>
       </cut>
       <cut id="2" type="default" speaker="John">
         <line>Try again tonight.</line>
+        <name>try_again</name>
         <shots>
           <angle type="cu" length="2.13" bytes="6969"/>
           <angle type="2s" length="2.13" bytes="6969"/>
@@ -1596,6 +1624,7 @@
       </cut>
       <cut id="3" type="default" speaker="John">
         <line>Pause</line>
+        <name>pause</name>
         <shots>
           <angle type="cu" length="2.13" bytes="6969"/>
           <angle type="2s" length="2.13" bytes="6969"/>
@@ -1603,6 +1632,7 @@
       </cut>
       <cut id="4" type="default" speaker="John">
         <line>What kind of stories will your wife tell you?</line>
+        <name>story_kind</name>
         <shots>
           <angle type="cu" length="2.13" bytes="6969"/>
           <angle type="2s" length="2.13" bytes="6969"/>
@@ -1612,6 +1642,7 @@
         <alternative type="alternative" alt="compound" id="1">
           <default position="1">
             <line>She likes to castrate the prince.</line>
+            <name>castrate</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1619,6 +1650,7 @@
           </default>
           <option id="1">
             <line>The princess does it. With her teeth.</line>
+            <name>princess_teeth</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1626,6 +1658,7 @@
           </option>
           <option id="2">
             <line>His mother usually ends up doing it while he's asleep.</line>
+            <name>mother_asleep</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1633,6 +1666,7 @@
           </option>
           <option id="3">
             <line>His father does it out of jealousy. He wants the princess for himself.</line>
+            <name>father_jealousy</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1640,6 +1674,7 @@
           </option>
           <option id="4">
             <line>He does it to himself when he hears the princess is with another.</line>
+            <name>does_himself</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1647,6 +1682,7 @@
           </option>
           <option id="5">
             <line>Before she says he changes into the beast.</line>
+            <name>beast</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1656,6 +1692,7 @@
         <alternative type="alternative" alt="compound" id="2">
           <default position="1">
             <line>Fairytales that get rather rude.</line>
+            <name>rude_fairytales</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1663,6 +1700,7 @@
           </default>
           <option id="1">
             <line>The princess doesn't just prick her finger.</line>
+            <name>prick_finger</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1670,6 +1708,7 @@
           </option>
           <option id="2">
             <line>For my wife the world of magic is opened with sex.</line>
+            <name>magic_sex</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1677,6 +1716,7 @@
           </option>
           <option id="3">
             <line>In narrative her sexuality has no limits.</line>
+            <name>no_limits</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1686,6 +1726,7 @@
         <alternative type="alternative" alt="compound" id="3">
           <default position="1">
             <line>About betrayal and forgiveness mostly.</line>
+            <name>betrayal</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1693,6 +1734,7 @@
           </default>
           <option id="1">
             <line>The woman betrays and the man forgives.</line>
+            <name>man_forgives</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1700,6 +1742,7 @@
           </option>
           <option id="2">
             <line>The man betrays and the woman forgives.</line>
+            <name>woman_forgives</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1707,6 +1750,7 @@
           </option>
           <option id="3">
             <line>Her stories are always about redemption through pain.</line>
+            <name>redemption_pain</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1716,6 +1760,7 @@
         <alternative type="alternative" alt="compound" id="4">
           <default position="1">
             <line>They always end happily ever after.</line>
+            <name>ever_after</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1723,6 +1768,7 @@
           </default>
           <option id="1">
             <line>We both like to believe in happy endings. For ourselves most of all.</line>
+            <name>believe_endings</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1730,6 +1776,7 @@
           </option>
           <option id="2">
             <line>The lovers, that is. They deny their own fears in the presence of the other.</line>
+            <name>deny_fears</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1737,6 +1784,7 @@
           </option>
           <option id="3">
             <line>The lovers, that is. They affirm their own existence in the presence of the other.</line>
+            <name>affirm_existence</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1744,6 +1792,7 @@
           </option>
           <option id="4">
             <line>Happy endings are fiction's greatest invention.</line>
+            <name>greatest_fiction</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1753,6 +1802,7 @@
         <alternative type="alternative" alt="compound" id="5">
           <default position="1">
             <line>They send me sweetly to sleep. Why should I care?</line>
+            <name>sweetly_asleep</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1760,6 +1810,7 @@
           </default>
           <option id="1">
             <line>They lubricate my dreams with innocence.</line>
+            <name>lubricate_dreams</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1767,6 +1818,7 @@
           </option>
           <option id="2">
             <line>Such stories are for children. What is she trying to tell me?</line>
+            <name>children_stories</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1774,6 +1826,7 @@
           </option>
           <option id="3">
             <line>I just close my eyes and think of mother.</line>
+            <name>mother_think</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1783,6 +1836,7 @@
         <alternative type="alternative" alt="compound" id="6">
           <default position="1">
             <line>It's the prince who gets rescued for her.</line>
+            <name>prince_resuced</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1790,6 +1844,7 @@
           </default>
           <option id="1">
             <line>From a life in which he does not need to acheive.</line>
+            <name>no_need_acheive</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1797,6 +1852,7 @@
           </option>
           <option id="2">
             <line>From the spell his mother put him in.</line>
+            <name>spell</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1804,6 +1860,7 @@
           </option>
           <option id="3">
             <line>By an Amazon queen so she can take his seed.</line>
+            <name>amazon_queen</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1814,6 +1871,7 @@
       <cut id="6" type="alternative" alt="paired" next="bs_t_8" position="1_2" speaker="John">
         <option id="1">
           <line>When we briefly became the person we could be for the person we could never have.</line>
+          <name>briefly_became</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1821,6 +1879,7 @@
         </option>
         <option id="2">
           <line>When love was sweet and Jane most absent.</line>
+          <name>jane_absent</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1828,6 +1887,7 @@
         </option>
         <option id="3">
           <line>When your wife was a world of new possibilities.</line>
+          <name>new_world</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1835,6 +1895,7 @@
         </option>
         <option id="4">
           <line>I should've done her once or twice and left it at that.</line>
+          <name>once_twice</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1842,6 +1903,7 @@
         </option>
         <option id="5">
           <line>Before you end up hating the fact that you love her so much.</line>
+          <name>hating_love</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1849,6 +1911,7 @@
         </option>
         <option id="6">
           <line>When we saw ourselves as angels and believed it was really us.</line>
+          <name>angels_us</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1856,6 +1919,7 @@
         </option>
         <option id="7">
           <line>When what was sweet is now just grotesque.</line>
+          <name>grotesque</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1863,6 +1927,7 @@
         </option>
         <option id="8">
           <line>When she had a perfect arse.</line>
+          <name>perfect_arse</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1872,6 +1937,7 @@
       <cut id="7" type="alternative" alt="free" speaker="John">
         <option id="1">
           <line>Tragic, I tell you. Tragic.</line>
+          <name>tragic</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1879,6 +1945,7 @@
         </option>
         <option id="2">
           <line>Sad or what?</line>
+          <name>sad_or</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1886,15 +1953,18 @@
         </option>
         <option id="3">
           <line>How completely idiotic.</line>
+          <name>idiotic</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
           </shots>
         </option>
       </cut>
-      <cut id="8" type="alternative" alt="paired mixed" previous="bs_t_6" position="2_2" speaker="Jake">
+      <cut id="8" type="alternative" alt="paired_mixed" previous="bs_t_6" position="2_2" speaker="Jake">
         <option id="1">
           <line>We found a solution to that. We became mutual parasites. That way if one of you leaves, you both die.</line>
+          <name>mutual_parasites</name>
+          <name></name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1902,6 +1972,7 @@
         </option>
         <option id="2">
           <line>I remember first thinking about Jane when I was three.</line>
+          <name>when_three</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1909,6 +1980,7 @@
         </option>
         <option id="3">
           <line>Not a prison of old ones.</line>
+          <name>old_prison</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1916,6 +1988,7 @@
         </option>
         <option id="4">
           <line>Sexual convenience comes at a price.</line>
+          <name>convenience</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1923,6 +1996,7 @@
         </option>
         <option id="5">
           <line>Or loving the fact that you hate her so much.</line>
+          <name>love_hate</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1930,6 +2004,7 @@
         </option>
         <option id="6">
           <line>Marriage is an act of faith, the hardest of spirtual disciplines.</line>
+          <name>spritual_discipline</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1937,6 +2012,7 @@
         </option>
         <option id="7">
           <line>We can forgive a pretty face almost anything.</line>
+          <name>pretty_face</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1945,6 +2021,7 @@
         <nested type="alternative" alt="free" id="8">
           <option id="1">
             <line>A decent pair of buttocks are not hard to find, John.</line>
+            <name>buttocks</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1952,6 +2029,7 @@
           </option>
           <option id="2">
             <line>Meet the mother. If you can imagine doing it with her, you're made for life.</line>
+            <name>meet_mother</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -1962,10 +2040,20 @@
     </section>
     <section keyword="f" position="3" summary="They talk about the kind of stories that Jane tells.">
       <cut id="1" type="pause" speaker="none">
-        <line>Pause</line>
+          <line>Pause</line>
+          <name>bs_t</name>
+          <shots>
+              <angle type="ce" length="3.85" bytes="1952064"/>
+              <angle type="co" length="4.27" bytes="2042645"/>
+              <angle type="2s" length="6.41" bytes="2428314"/>
+          </shots>
+          <sequence type="short">co,2s</sequence>
+          <sequence type="medium">ce+co,ce+2s,2s+co</sequence>
+          <sequence type="long">2s+ce+co,ce+2s+co</sequence>
       </cut>
       <cut id="2" type="default" speaker="John">
         <line>Jane tells me stories.</line>
+        <name>tells_stories</name>
         <shots>
           <angle type="cu" length="2.13" bytes="6969"/>
           <angle type="2s" length="2.13" bytes="6969"/>
@@ -1974,6 +2062,7 @@
       <cut id="3" type="alternative" alt="free" speaker="Jake">
         <option id="1">
           <line>Jane. Her fantasy is quite extraordinary.</line>
+          <name>extraordinary</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1981,6 +2070,7 @@
         </option>
         <option id="2">
           <line>Jane. Her fantasy is hard to duplicate.</line>
+          <name>duplicate</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1988,6 +2078,7 @@
         </option>
         <option id="3">
           <line>Jane. Her fantasy begins on the edge of terror.</line>
+          <name>terror_edge</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -1997,6 +2088,7 @@
       <cut id="4" type="alternative" alt="free" speaker="John">
         <option id="1">
           <line>There's no one like Jane.</line>
+          <name>none_like</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2004,6 +2096,7 @@
         </option>
         <option id="2">
           <line>There's a bit of Jane in all of us.</line>
+          <name>in_all</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2013,6 +2106,7 @@
       <cut id="5" type="alternative" alt="free" speaker="Jake">
         <option id="1">
           <line>Her stories never really end. You know, in a tidy little knot at the end.</line>
+          <name>tidy_knot</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2020,6 +2114,7 @@
         </option>
         <option id="2">
           <line>They contradict themselves like dreams.</line>
+          <name>contradict</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2027,6 +2122,7 @@
         </option>
         <option id="3">
           <line>The most innocent and the most cruel.</line>
+          <name>most_cruel</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2034,6 +2130,7 @@
         </option>
         <option id="4">
           <line>They round and round in circles. Like we all do.</line>
+          <name>in_circles</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2041,6 +2138,7 @@
         </option>
         <option id="5">
           <line>They splinter like remote controlled TV.</line>
+          <name>splinter</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2048,6 +2146,7 @@
         </option>
         <option id="6">
           <line>She has no need of stories herself. She creates them wherever she goes.</line>
+          <name>no_story_need</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2055,6 +2154,7 @@
         </option>
         <option id="7">
           <line>Greek myths meet science fiction. Men as the heroic and redundant species.</line>
+          <name>redundant</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2062,6 +2162,7 @@
         </option>
         <option id="8">
           <line>Her storybook is her own version of history.</line>
+          <name>storybook</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2071,6 +2172,7 @@
       <cut id="6" type="alternative" alt="free" speaker="John">
         <option id="1">
           <line>Her eyes get glazed over. Their focus not even within but totally elsewhere.</line>
+          <name>elsewhere</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2078,6 +2180,7 @@
         </option>
         <option id="2">
           <line>Her eyes get glazed over. Fixed like a totem. Commanding and indifferent.</line>
+          <name>commanding</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2085,6 +2188,7 @@
         </option>
         <option id="3">
           <line>Her eyes get glazed over as she sees all the stories at once.</line>
+          <name>all_stories</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2092,6 +2196,7 @@
         </option>
         <option id="4">
           <line>Her eyes get glazed over. A self-inflicted wound she cures with language.</line>
+          <name>wound</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2099,6 +2204,7 @@
         </option>
         <option id="5">
           <line>Her eyes get glazed over and her pupils shrink to a full stop.</line>
+          <name>full_stop</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2106,6 +2212,7 @@
         </option>
         <option id="6">
           <line>Her eyes get glazed over and you vanish in the impersonal stare.</line>
+          <name>impersonal_stare</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2113,6 +2220,7 @@
         </option>
         <option id="7">
           <line>Her eyes get glazed over when the narrative narcotic kicks in.</line>
+          <name>kicks_in</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2122,6 +2230,7 @@
       <cut id="7" type="alternative" alt="free" speaker="John">
         <option id="1">
           <line>I get mesmerised by the movement of her lips.</line>
+          <name>lip_movement</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2129,6 +2238,7 @@
         </option>
         <option id="2">
           <line>I get mesmerised by the cadence falling from her lips.</line>
+          <name>cadence</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2138,6 +2248,7 @@
       <cut id="8" type="alternative" alt="paired" position="1_2" next="bs_f_9" speaker="John">
         <option id="1">
           <line>Her voice is the sound of a litany.</line>
+          <name>litany</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2145,6 +2256,7 @@
         </option>
         <option id="2">
           <line>Her voice is how a woman should really sound.</line>
+          <name>should_sound</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2152,6 +2264,7 @@
         </option>
         <option id="3">
           <line>But her kiss is cold like Judas.</line>
+          <name>judas</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2159,6 +2272,7 @@
         </option>
         <option id="4">
           <line>And her kiss haunts you. Like ecstasy.</line>
+          <name>ecstasy</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2166,6 +2280,7 @@
         </option>
         <option id="5">
           <line>Red waves undulating over vowels. Teeth biting on consonants.</line>
+          <name>undulating</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2173,6 +2288,7 @@
         </option>
         <option id="6">
           <line>I forget what she is saying and yet I understand.</line>
+          <name>forget_understand</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2180,6 +2296,7 @@
         </option>
         <option id="7">
           <line>The only thing language can do is surrender.</line>
+          <name>surrender</name>
           <shots>
             <angle type="cu" length="2.13" bytes="6969"/>
             <angle type="2s" length="2.13" bytes="6969"/>
@@ -2190,6 +2307,7 @@
         <alternative alt="free" id="1">
           <option id="1">
             <line>And she can scream like a Banshee.</line>
+            <name>banshee</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2197,6 +2315,7 @@
           </option>
           <option id="2">
             <line>Amen. And when you respond you respond on behalf of all men.</line>
+            <name>amen</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2206,6 +2325,7 @@
         <alternative alt="free" id="2">
           <option id="1">
             <line>A voice you and close to eyes to and listen.</line>
+            <name>listen_closed</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2213,6 +2333,7 @@
           </option>
           <option id="2">
             <line>A mother talking beautifully to her child.</line>
+            <name>mother_talking</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2222,6 +2343,7 @@
         <alternative alt="free" id="3">
           <option id="1">
             <line>And she sleeps with her eyes wide open.</line>
+            <name>wide_open</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2229,6 +2351,7 @@
           </option>
           <option id="2">
             <line>A delicious kiss that bends you into submission.</line>
+            <name>delicious_kiss</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2238,6 +2361,7 @@
         <alternative alt="free" id="4">
           <option id="1">
             <line>And you whole life beomes a kind of purgatory towards another moment like that.</line>
+            <name>purgatory</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2245,6 +2369,7 @@
           </option>
           <option id="2">
             <line>But her affections are quite the carnivore. They feed on your worship.</line>
+            <name>carnivore</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2254,6 +2379,7 @@
         <alternative alt="free" id="5">
           <option id="1">
             <line>No, it's her hands. When she touches me I get so happy inside.</line>
+            <name>happy_hands</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2261,6 +2387,7 @@
           </option>
           <option id="2">
             <line>No, it's her hands. Those graceful ambassadors to her state.</line>
+            <name>ambassadors</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2270,6 +2397,7 @@
         <alternative alt="free" id="6">
           <option id="1">
             <line>I remember all that she said and yet I never understand.</line>
+            <name>remember_misunderstand</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2277,6 +2405,7 @@
           </option>
           <option id="2">
             <line>Sometimes I wish I could forget some of the things she has said.</line>
+            <name>wish_forget</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2286,6 +2415,7 @@
         <alternative alt="free" id="7">
           <option id="1">
             <line>Sometimes it falls like sweet rain, sometimes like a plague of curses.</line>
+            <name>sweet_rain</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -2293,6 +2423,7 @@
           </option>
           <option id="2">
             <line>And then take no prisoners.</line>
+            <name>no_prisoners</name>
             <shots>
               <angle type="cu" length="2.13" bytes="6969"/>
               <angle type="2s" length="2.13" bytes="6969"/>
@@ -4871,7 +5002,7 @@
           <angle type="2s" length="2.13" bytes="6969"/>
         </shots>
       </cut>
-      <cut id="7" type="alternative" alt="paired mixed" next="eieo_f_8" position="1_2" speaker="John">
+      <cut id="7" type="alternative" alt="paired_mixed" next="eieo_f_8" position="1_2" speaker="John">
         <option id="1">
           <line>All the best cooks are men, after all.</line>
           <shots>

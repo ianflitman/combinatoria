@@ -45,7 +45,7 @@ class ParseXML(object):
         script.author = info_node[0].text
         script.title = info_node[1].text
         script.description = info_node[2].text
-        script.date = date(year=2007,month=7, day=1)
+        script.date = date(year=2007, month=7, day=1)
         script.save()
         project.script_set.add(script)
 
@@ -58,6 +58,7 @@ class ParseXML(object):
         for scene in scenes:
             scene_model = models.Scene()
             scene_model.title = self.dict_value(scene.attrib['title'])
+            scene_model.description
             scene_model.act = act
             scene_model.save()
             parts = scene.findall('section')
@@ -100,6 +101,9 @@ class ParseXML(object):
 
         type = models.Type()
         type.name = 'SEQUENCE_SET'
+        params = [{'sets':['short', 'medium', 'long']}]
+        type.arguments = json.dumps(params)
+
         type.group_id = pause.id
         type.content_id = content.id
         pause.type_set.add(type)
@@ -163,7 +167,6 @@ class ParseXML(object):
                 for item in items:
                     group.source.add(models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4'))
                 short.group_set.add(group)
-
 
         medium = models.Item()
         medium.name = 'medium'
@@ -264,6 +267,12 @@ class ParseXML(object):
         default.speaker = cut.attrib['speaker']
         default.save()
         content.line_set.add(default)
+        default_type = models.Type()
+        default_type.name = 'DEFAULT'
+        default_type.content_id = content.id
+        default_type.save()
+        default.type_set.add(default_type)
+
         shots = cut.findall('./shots/angle')
         for shot in shots:
             source = models.Source()
@@ -276,40 +285,56 @@ class ParseXML(object):
 
 
     def process_alternative(self, content, cut):
-        alternative = models.Group()
-        alternative.save()
-        type = self.write_alt_type(cut)
-        content.type_set.add(type)
-        self.process_options(content, alternative, cut)
-        alternative.type_set.add(type)
-        alternative.name = type.name.lower()
-        alternative.content_id = content.id
-        alternative.save()
+        alternative = self.init_alternative(content, cut)
+        alt_type = alternative.type_set.get().name
 
-        if 'PAIRED' or 'PARENT' in alternative.type_set.get().name:
+        print(alt_type)
+
+        if alt_type == 'ALTERNATIVE_FREE':
+            self.process_options(content, alternative, cut)
+
+        if alt_type == 'ALTERNATIVE_PAIRED':
+            self.process_options(content, alternative, cut)
+
+        if alt_type == 'ALTERNATIVE_PARENT':
             alts = cut.findall('./alternative')
             for alt in alts:
                 alt.attrib['speaker'] = cut.attrib['speaker']
                 self.process_alternative(content, alt)
 
-        if 'COMPOUND' in alternative.type_set.get().name:
+        if alt_type == 'ALTERNATIVE_PAIRED_PARENT':
+            alts = cut.findall('./alternative')
+            for alt in alts:
+                alt.attrib['speaker'] = cut.attrib['speaker']
+                self.process_alternative(content, alt)
+
+        if alt_type == 'ALTERNATIVE_COMPOUND':
             default = self.write_line(content.id, cut.attrib['speaker'], cut.find('./default/line').text)
             alternative.line.add(default)
+            self.process_options(content, alternative, cut)
 
-            #self.process_options(content, alternative, cut)
+        if alt_type == 'ALTERNATIVE_PAIRED_MIXED':
+            nested = cut.findall('./nested')
+            nested[0].attrib['speaker'] = cut.attrib['speaker']
+            self.init_alternative(content, nested[0])
+            return
 
-        self.process_options(content, alternative, cut)
+    def init_alternative(self, content, cut):
+        alternative = models.Group()
+        alternative.save()
+        type = self.write_alt_type(cut)
+        content.type_set.add(type)
+        #self.process_options(content, alternative, cut)
+        alternative.type_set.add(type)
+        alternative.name = type.name.lower()
+        alternative.content_id = content.id
+        alternative.save()
+        return alternative
 
 
     def process_options(self, content, alternative, cut):
-
         options = cut.findall('./option')
         for option in options:
-            # dialogue = models.Line()
-            # dialogue.line = option.find('./line').text
-            # dialogue.speaker = cut.attrib['speaker']
-            # dialogue.content_id = content.id
-            # dialogue.save()
             dialogue = self.write_line(content.id, cut.attrib['speaker'], option.find('./line').text)
             alternative.line.add(dialogue)
             name = option.find('./name').text
@@ -322,7 +347,7 @@ class ParseXML(object):
                 source.mime = 'video/mp4'
                 source.size = angle.attrib['bytes']
                 source.save()
-                alternative.source.add(source)
+                dialogue.source.add(source)
 
     def write_alt_type(self, cut):
         type = models.Type()
@@ -333,12 +358,20 @@ class ParseXML(object):
             type.name = 'ALTERNATIVE'
 
         if 'paired' in subtype:
-            position = cut.attrib['position'][0:1]
-            total = cut.attrib['position'][2:]
+            position = int(cut.attrib['position'][0:1])
+            total = int(cut.attrib['position'][2:])
             next = cut.attrib['next'] if 'next' in cut.attrib else None
             previous = cut.attrib['previous'] if 'previous' in cut.attrib else None
             data = [{'pos': position, 'total': total , 'next':next, 'prev': previous}]
             data_string = json.dumps(data)
+
+            if 'mixed' in subtype:
+                nested_positions = []
+                nested = cut.findall('./nested')
+                nested_positions.append(int(nested[0].attrib['id']))
+                data[0]['nested'] = nested_positions
+                data_string = json.dumps(data)
+
             type.arguments = data_string
 
         if 'compound' in subtype:
@@ -384,5 +417,7 @@ class ParseXML(object):
 
 
 print(os.path.dirname(__file__))
+
 gen = ParseXML('/opt/combinatoria/xml/Jane.xml')
 
+#gen = ParseXML('/opt/combinatoria/xml/JanePairedMixed.xml')
