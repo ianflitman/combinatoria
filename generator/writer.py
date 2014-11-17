@@ -1,97 +1,166 @@
 __author__ = 'ian'
+
 from script import models
-from random import choice, random, randrange
+from random import randrange
+from datetime import datetime
+from enum import Enum
 
-class Scenario(object):
 
-    def __init__(self, script, acts):
-        self.script = script
+class Cursor(Enum):
+    ACT = 0
+    SCENE = 1
+    PART = 2
+    CONTENT = 3
+
+
+class ScriptBox(object):
+
+    def __init__(self):
+        self.date = datetime.now()
         self.acts = []
-        self.current_act = -1
-        self.current_scene = -1
-        self.current_part = -1
 
     def __iter__(self):
+        iter(self.acts)
+
+    def add_act(self, act_id):
+        #check not added already
         for act in self.acts:
-            for scene in act:
-                for part in scene:
-                    return part.__iter__()
+            if act.id == act_id:
+                return act
+
+        act = ActBox(act_id)
+        self.acts.append(act)
+        return act
+
+    def get_act(self, act_id):
+        for act in self.acts:
+            if act.id == act_id:
+                return act
 
 
-    def acts(self):
-        return iter(self.acts)
+class ActBox(object):
 
-    def scenes(self, act=None):
-        if act is None:
-            return self.acts[self.current_act].__iter__()
-        else:
-            return self.acts[act].__iter__()
-
-    def parts(self, scene=None, act=None):
-        if act is None:
-            if scene is None:
-                return self.acts[self.current_act][self.current_scene].__iter__()
-            else:
-                return self.acts[self.current_act][scene].__iter__()
-        else:
-            return self.acts[act][scene].__iter__()
-
-    def contents(self, part=None, scene=None, act=None):
-        if act is None:
-            if scene is None:
-                if part is None:
-                    return self.acts[self.current_act][self.current_scene][self.current_part].__iter__()
-                else:
-                    return self.acts[self.current_act][self.current_scene][part].__iter__()
-            else:
-                 return self.acts[self.current_act][scene][part].__iter__()
-        else:
-            return self.acts[act][scene][part].__iter__()
-
-
-class Act(object):
-
-    def __init__(self, act, scenes):
-        self.act_id = act
-        self.scenes = scenes
-        pass
+    def __init__(self, id):
+        self.id = id
+        self.scenes = []
 
     def __iter__(self):
         iter(self.scenes)
 
-class Scene(object):
+    def add_scene(self, scene_id):
+        #check not added already
+        for scene in self.scenes:
+            if scene.id == scene_id:
+                return scene
 
-    def __init__(self, scene, parts):
-        self.scene_id = scene
-        self.parts = parts
+        scene = SceneBox(scene_id)#, self.id)
+        self.scenes.append(scene)
+        return scene
 
+    def get_scene(self,scene_id):
+        for scene in self.scenes:
+            if scene.id == scene_id:
+                return scene
+
+class SceneBox(object):
+
+    def __init__(self, scene_id): #, act_id):
+        self.id = scene_id
+        #self.act_id = act_id
+        self.parts = []
 
     def __iter__(self):
         iter(self.parts)
 
-class Part(object):
+    def add_part(self, part_id):
+        part = PartBox(part_id)#, self.id)
+        self.parts.append(part)
+        return part
 
-    def __init__(self, part, contents):
-        self.part_id = part
-        self.contents = contents
+    def get_part(self, part_id):
+        for part in self.parts:
+            if part.id == part_id:
+                return part
+
+class PartBox(object):
+
+    def __init__(self, part_id):#, scene_id):
+        self.id = part_id
+        #self.scene_id = scene_id
+        self.contents = []
 
     def __iter__(self):
         iter(self.contents)
 
+    def add_content(self, content_id):
+        content = ContentBox(content_id)#, self.id)
+        self.contents.append(content)
 
-# class Unit(object):
-#
-#     def __init__(self, address):
-#         self.address = address
-#         self.files = []
+    def get_content(self, content_id):
+        for content in self.contents:
+            if content.id == content_id:
+                return content
 
-class Address(object):
 
-    def __init__(self, dict_val):
-        self.act = dict_val['act']
-        self.scene = dict_val['scene']
-        self.part = dict_val['part']
-        self.content = dict_val['content']
+class ContentBox(object):
+
+    def __init__(self, content_id):#, part_id):
+        self.id = content_id
+        #self.part_id = part_id
+        self.sources = []
+
+    def __iter__(self):
+        iter(self.sources)
+
+    def add_source(self, source_id, file):
+        source = SourceBox(self.id, source_id, file)
+        self.sources.append(source)
+
+    def count(self):
+        return len(self.sources)
+
+class SourceBox(object):
+
+    def __init__(self, source_id, file):
+        #self.content_id = content_id
+        self.id = source_id
+        self.file = file
+
+    def __iter__(self):
+        iter(self)
+
+
+class Scenario(object):
+
+    def __init__(self, title):
+        self.title = title
+        self.id = models.Script.objects.get(title=self.title)
+        self.script = ScriptBox()
+        self.position = [None, None, None, None]
+        self.active_content = None
+
+
+    def add_act(self, act_id):
+        self.script.add_act(act_id)
+
+    def add_scene(self, act_id, scene_id):
+        self.script.get_act(act_id).add_scene(scene_id)
+
+    def add_part(self, act_id, scene_id, part_id):
+        self.script.get_act(act_id).get_scene(scene_id).add_part(part_id)
+
+    def add_content(self, act_id, scene_id, part_id, content_id):
+        self.script.get_act(act_id).get_scene(scene_id).get_part(part_id).add_content(content_id)
+
+    def set_active_content(self, act_id, scene_id, part_id, content_id):
+        self.active_content = self.script.get_act(act_id).get_scene(scene_id).get_part(part_id).get_content(content_id)
+
+    def add_source(self):
+        pass
+
+
+    def __iter__(self):
+        return iter(self)
 
 
 class Writer(object):
@@ -100,14 +169,30 @@ class Writer(object):
         self.script = script
         self.act = act
         self.scene = scene
-        self.part = part
+        self.scenario = Scenario(script)
+        self.add_scenario_structure()
         self.content_ids = []
         self.init_content_ids()
         self.process()
 
 
-    def select_act(self):
+    def add_scenario_structure(self):
+        act_id = models.Scene.objects.get(title=self.scene).act_id
+        self.scenario.add_act(act_id)
+        scenes = models.Scene.objects.filter(title=self.scene)
+        for scene in scenes:
+            self.scenario.add_scene(act_id, scene.id)
+            for part in models.Part.objects.filter(scene_id=scene.id):
+                self.scenario.add_part(act_id, scene.id, part.id)
+
         pass
+
+
+    def get_path_to_content(self, content_id):
+        act_id = models.Content.objects.get(id=content_id).part.scene.act.id
+        scene_id = models.Content.objects.get(id=content_id).part.scene.id
+        part_id = models.Content.objects.get(id=content_id).part.id
+        return [act_id, scene_id, part_id, content_id]
 
 
     def init_content_ids(self):
@@ -129,6 +214,8 @@ class Writer(object):
     def branch(self, type_name, content_id):
         if type_name == 'SEQUENCE_SET':
             self.process_sequence_set(content_id)
+            #sets = models.Group.objects.get()
+
         elif type_name == 'DEFAULT':
             pass
         elif type_name == 'ALTERNATIVE_FREE':
@@ -149,11 +236,28 @@ class Writer(object):
 
 
     def process_sequence_set(self, content_id):
+        sets = models.Group.objects.get(content_id=content_id, name='sets')
+        set_groups = models.Item.objects.filter(group=sets.id)
+        selected_set = set_groups[self.random(len(set_groups))]#short medium or long
+        seqs = models.Group.objects.filter(item=selected_set)
+        selected_seq = seqs[self.random(len(seqs))]
+        #sources = models.Source.objects.filter(group=selected_seq.id)
+        sources = models.Group.objects.get(id=selected_seq.id).source.all()
+
+        #self.scenario.set_active_content()
+        for source in sources:
+            print(source.file)
+            self.get_path_to_content(content_id)
+
+            pass
+
 
         pass
 
-    def process_alternative_free(self):
 
+
+
+    def process_alternative_free(self):
         pass
 
     def process_parent(self, content_id):
@@ -183,4 +287,4 @@ class Writer(object):
 
 #write_script = Writer('jane',scene="Married too long")
 #write_script = Writer('jane',scene="Old films, new endings")
-write_script = Writer('jane',scene="Bedtime stories")
+write_script = Writer('jane',scene="Bedtime stories",act="conversations")

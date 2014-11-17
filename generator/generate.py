@@ -130,6 +130,7 @@ class ParseXML(object):
         for angle in angles:
             item = models.Item()
             item.content_id = content.id
+            item.name = 'camera_angle'
             item.save()
             source = models.Source()
             source.file = scene_code + '_' + part_code + '_' + angle.attrib['type'] + '.mp4'
@@ -172,6 +173,7 @@ class ParseXML(object):
         medium.name = 'medium'
         medium.content_id = content.id
         medium.save()
+        sets.item.add(medium)
 
         med_seq_str = cut.find('./sequence[@type="medium"]').text
         med_seq = med_seq_str.split(',')
@@ -194,6 +196,7 @@ class ParseXML(object):
         long.name = 'long'
         long.content_id = content.id
         long.save()
+        sets.item.add(long)
 
         long_seq_str = cut.find('./sequence[@type="long"]').text
         long_seq = long_seq_str.split(',')
