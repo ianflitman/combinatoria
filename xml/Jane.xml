@@ -1167,6 +1167,10 @@
       <cut id="2" type="default" speaker="John">
         <line>What did you do last night?</line>
         <name>last_night</name>
+        <shots>
+          <angle type="cu" length="2.13" bytes="6969"/>
+          <angle type="2s" length="2.13" bytes="6969"/>
+        </shots>
       </cut>
       <cut id="3" type="default" speaker="Jake">
         <line>My wife told me a story.</line>

@@ -21,8 +21,6 @@ class ParseXML(object):
         self.cnx = MySQLConnection()
         self.local_cursor = MySQLCursor()
         self.external_db_cnx = MySQLConnection()
-
-        #self.connect_to_db()
         self.file = file
         self.xml = etree.parse(file).getroot()
         self.dict = self.xml[1]
@@ -40,8 +38,6 @@ class ParseXML(object):
         project.save()
         script = models.Script()
         info_node = self.xml[0]
-        #headerPath = root.find('File/.[@id="{0}"]'.format(headerRef)).attrib['name']
-        #node = info_node['author']
         script.author = info_node[0].text
         script.title = info_node[1].text
         script.description = info_node[2].text
@@ -222,16 +218,7 @@ class ParseXML(object):
         return 0
 
     def insert_source(self, group_id, source_id):
-        # insert_source_query = ("INSERT into script_group_source group_id, source_id VALUES()".format())
-        # cmd = self.cnx.cmd_query(insert_source_query)
-        #
-        # for row in self.cnx.get_rows()[0]:
-        #     print(row)
-
-        #self.insert_source_id(source_id)
-
-
-        add_source = ("INSERT into script_group_source "#"INSERT IGNORE into script_group_source "
+        add_source = ("INSERT into script_group_source "
                       "(group_id, source_id) "
                       "VALUES (%(group_id)s, %(source_id)s)")
 
@@ -254,10 +241,7 @@ class ParseXML(object):
 
         self.local_cursor.execute(add_source, source_data)
         self.cnx.commit()
-            #source.group_set.add(group)
-            #group.save()
 
-        pass
 
     def reorder(self, pks):
         re_order = ("UPDATE group_id from script_group_source"
@@ -284,7 +268,7 @@ class ParseXML(object):
             source.mime = 'video/mp4'
             source.size = shot.attrib['bytes']
             source.save()
-            source.line_set.add(default)
+            default.source.add(source)
 
 
     def process_alternative(self, content, cut):
@@ -322,12 +306,12 @@ class ParseXML(object):
             self.init_alternative(content, nested[0])
             return
 
+
     def init_alternative(self, content, cut):
         alternative = models.Group()
         alternative.save()
         type = self.write_alt_type(cut)
         content.type_set.add(type)
-        #self.process_options(content, alternative, cut)
         alternative.type_set.add(type)
         alternative.name = type.name.lower()
         alternative.content_id = content.id
@@ -352,6 +336,7 @@ class ParseXML(object):
                 source.save()
                 dialogue.source.add(source)
 
+
     def write_alt_type(self, cut):
         type = models.Type()
         if cut.attrib['alt']:
@@ -365,14 +350,14 @@ class ParseXML(object):
             total = int(cut.attrib['position'][2:])
             next = cut.attrib['next'] if 'next' in cut.attrib else None
             previous = cut.attrib['previous'] if 'previous' in cut.attrib else None
-            data = [{'pos': position, 'total': total , 'next':next, 'prev': previous}]
+            data = {'pos': position, 'total': total, 'next':next, 'prev': previous}
             data_string = json.dumps(data)
 
             if 'mixed' in subtype:
                 nested_positions = []
                 nested = cut.findall('./nested')
                 nested_positions.append(int(nested[0].attrib['id']))
-                data[0]['nested'] = nested_positions
+                data['nested'] = nested_positions
                 data_string = json.dumps(data)
 
             type.arguments = data_string
@@ -384,15 +369,16 @@ class ParseXML(object):
 
         type.save()
         return type
-        pass
+
 
     def write_line(self, content_id, speaker, text):
         dialogue = models.Line()
-        dialogue.line = text            #option.find('./line').text
-        dialogue.speaker = speaker      #cut.attrib['speaker']
+        dialogue.line = text
+        dialogue.speaker = speaker
         dialogue.content_id = content_id
         dialogue.save()
         return dialogue
+
 
     def dict_value(self, code):
         return self.dict.find('item/.[@code="{0}"]'.format(code)).attrib['content']
@@ -400,6 +386,7 @@ class ParseXML(object):
 
     def dict_key(self, code):
         return self.dict.find('item/.[@content="{0}"]'.format(code)).attrib['code']
+
 
     def get_scene_name(self, part_id):
         return models.Part.objects.get(pk=part_id).scene.title
@@ -417,6 +404,10 @@ class ParseXML(object):
         models.Group.objects.all().delete()
         models.Source.objects.all().delete()
         models.Type.objects.all().delete()
+
+
+    def post_process(self):
+        pass
 
 
 print(os.path.dirname(__file__))

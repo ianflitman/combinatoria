@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="7b1f8bb9-84fd-4975-ae6b-b59c647474de">
+      <user-name>jane</user-name>
+      <user-password>dfc0dfcbdfc4dfcf</user-password>
+    </data-source>
+    <data-source name="MySQL - combinatoria@localhost" uuid="7726807e-5eca-45b3-86f4-80e972cdaf2f">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>combinatoria.*</schema-pattern>
+      <default-schemas>combinatoria.*</default-schemas>
+    </data-source>
+  </component>
+</project>
