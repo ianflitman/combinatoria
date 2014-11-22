@@ -345,13 +345,13 @@ class Writer(object):
             print(chosen_line)
             index = prev_lines_set.index(chosen_line)
             alt_chosen = list(models.Type.objects.filter(content_id=content_id)[1:][index:index+1])[0]
-            #alt_chosen = models.Type.objects.get(content_id=content_id)[index+1]
+
             print(alt_chosen.name)
             print(alt_chosen.id)
             self.branch(alt_chosen.name, content_id, alt_chosen.group_id)
             print('what')
 
-            #self.add_content()
+
             pass
         pass
 
