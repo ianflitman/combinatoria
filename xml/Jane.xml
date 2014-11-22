@@ -472,7 +472,7 @@
           </shots>
         </option>
       </cut>
-      <cut id="4" type="alternative" alt="paired" next="ofne_f_3" previous="ofne_f_3" position="3_4" speaker="Jake">
+      <cut id="4" type="alternative" alt="paired" next="ofne_f_5" previous="ofne_f_3" position="3_4" speaker="Jake">
         <option id="1">
           <line>Did they eat Meryl Streep?</line>
           <name>eat_streep</name>
@@ -3314,7 +3314,7 @@
         <option id="5">
           <line>I will touch her soul and make it beautiful again.</line>
           <name>beautiful again</name>
-          <shots>
+         r <shots>
             <angle type="cn" length="6.83" bytes="2170402"/>
             <angle type="2s" length="6.78" bytes="2162349"/>
           </shots>

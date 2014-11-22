@@ -157,6 +157,11 @@ class Scenario(object):
         self.active_content = self.script.get_act(act_id).get_scene(scene_id).get_part(part_id).add_content(content_id)
 
 
+    def get_content(self, act_id, scene_id, part_id, content_id):
+        self.active_content = self.script.get_act(act_id).get_scene(scene_id).get_part(part_id).get_content(content_id)
+        return self.active_content
+
+
     def add_source(self, source_id, file):
         self.active_content.add_source(source_id, file)
         pass
@@ -164,6 +169,7 @@ class Scenario(object):
 
     def __iter__(self):
         return iter(self)
+
 
 
 class Writer(object):
@@ -190,11 +196,20 @@ class Writer(object):
 
 
     def add_content(self, content_id):
+        boxes = self.get_act_scene_part(content_id)
+        self.scenario.add_content(boxes[0], boxes[1], boxes[2], content_id)
+
+
+    def get_content(self, content_id):
+        boxes = self.get_act_scene_part(content_id)
+        return self.scenario.get_content(boxes[0], boxes[1], boxes[2], content_id)
+
+
+    def get_act_scene_part(self, content_id):
         act_id = models.Content.objects.get(id=content_id).part.scene.act.id
         scene_id = models.Content.objects.get(id=content_id).part.scene.id
         part_id = models.Content.objects.get(id=content_id).part.id
-        self.scenario.add_content(act_id, scene_id, part_id, content_id)
-
+        return [act_id, scene_id, part_id]
 
     def init_content_ids(self):
         scene = models.Scene.objects.get(title=self.scene).id
@@ -209,14 +224,15 @@ class Writer(object):
             print(type.name)
             self.branch(type.name, content_id)
 
-
-    def branch(self, type_name, content_id):
+    # when id is None the scenario is written chronologically, when not None
+    # a known selection is passed in for paired selection processing
+    def branch(self, type_name, content_id, id=None):
         if type_name == 'SEQUENCE_SET':
             self.process_sequence_set(content_id)
         elif type_name == 'DEFAULT':
             self.process_default(content_id)
         elif type_name == 'ALTERNATIVE_FREE':
-            self.process_alternative_free(content_id)
+            self.process_alternative_free(content_id, id)
         elif type_name == 'ALTERNATIVE_COMPOUND':
             self.process_compound()
             pass
@@ -229,6 +245,25 @@ class Writer(object):
             self.process_paired_parent(content_id)
         elif type_name == 'ALTERNATIVE_PAIRED_MIXED':
             pass
+
+
+    # def branch_by_id(self, type_name, id):
+    #     if type_name == 'SEQUENCE_SET':
+    #         pass
+    #     elif type_name == 'DEFAULT':
+    #         pass
+    #     elif type_name == 'ALTERNATIVE_FREE':
+    #         self.process_alternative_free_by_id(id)
+    #     elif type_name == 'ALTERNATIVE_COMPOUND':
+    #         pass
+    #     elif type_name == 'ALTERNATIVE_PARENT':
+    #         pass
+    #     elif type_name == 'ALTERNATIVE_PAIRED':
+    #         pass
+    #     elif type_name == 'ALTERNATIVE_PAIRED_PARENT':
+    #         pass
+    #     elif type_name == 'ALTERNATIVE_PAIRED_MIXED':
+    #         pass
 
 
     def process_sequence_set(self, content_id):
@@ -255,8 +290,12 @@ class Writer(object):
         pass
 
 
-    def process_alternative_free(self, content_id):
-        options = models.Group.objects.get(content=content_id).line.all()
+    def process_alternative_free(self, content_id, alt_id):
+        if alt_id is None:
+            options = models.Group.objects.get(content=content_id).line.all()
+        else:
+            options = models.Group.objects.get(id=alt_id).line.all()
+
         option = options[self.random(len(options))]
         sources = models.Line.objects.get(id=option.id).source.all()
         source = sources[self.random(len(sources))]
@@ -264,18 +303,29 @@ class Writer(object):
         self.scenario.add_source(source.id, source.file)
         print(source.file)
 
+    # def process_alternative_free_by_id(self, content_id, alt_id):
+    #     options = models.Group.objects.get(id=alt_id).line.all()
+    #     option = options[self.random(len(options))]
+    #     sources = models.Line.objects.get(id=option.id).source.all()
+    #     source = sources[self.random(len(sources))]
+    #     self.add_content(content_id)
+    #     self.scenario.add_source(source.id, source.file)
+    #     print(source.file)
 
     def process_paired(self, content_id):
         type_arguments = json.loads(models.Content.objects.get(id=content_id).type_set.get().arguments)
         print(type_arguments[u'pos'])
         if type_arguments[u'pos'] == 1:
-            self.process_alternative_free(content_id)
+            self.process_alternative_free(content_id, None)
         else:
+            print(type_arguments['prev'])
+            prev_content = self.get_content(type_arguments['prev'])
+
             pass
 
 
     def process_parent(self, content_id):
-        children =  models.Type.objects.filter(content_id=content_id)[1:]
+        children = models.Type.objects.filter(content_id=content_id)[1:]
         chosen = children[self.random(len(children))]
         print(chosen.name)
         self.branch(chosen.name, chosen.content_id)
@@ -287,7 +337,21 @@ class Writer(object):
         if type_arguments[u'pos'] == 1:
             self.process_alternative_free(content_id)
         else:
-            previous = type_arguments['prev']
+            previous = int(type_arguments['prev'])
+            print(previous)
+            prev_lines_set = [line.line for line in models.Content.objects.get(id=previous).line_set.all()]
+            prev_src_id = self.get_content(previous).sources[0].id
+            chosen_line = models.Line.objects.get(source=prev_src_id).line
+            print(chosen_line)
+            index = prev_lines_set.index(chosen_line)
+            alt_chosen = list(models.Type.objects.filter(content_id=content_id)[1:][index:index+1])[0]
+            #alt_chosen = models.Type.objects.get(content_id=content_id)[index+1]
+            print(alt_chosen.name)
+            print(alt_chosen.id)
+            self.branch(alt_chosen.name, content_id, alt_chosen.group_id)
+            print('what')
+
+            #self.add_content()
             pass
         pass
 
@@ -306,8 +370,7 @@ class Writer(object):
         pass
 
 
-    def get_content(self):
-        pass
+
 
 
 

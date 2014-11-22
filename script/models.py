@@ -66,6 +66,7 @@ class Content(models.Model):
     class Meta:
         db_table = 'content'
 
+
 class Item(models.Model):
     content = models.ForeignKey(Content, null=True)
     source = models.ManyToManyField('Source', null=True)

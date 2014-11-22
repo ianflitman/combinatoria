@@ -24,8 +24,8 @@ class ParseXML(object):
         self.file = file
         self.xml = etree.parse(file).getroot()
         self.dict = self.xml[1]
-        self.truncate()
-        self.generate_model()
+        #self.truncate()
+        #self.generate_model()
 
 
     def connect_to_db(self):
@@ -406,12 +406,55 @@ class ParseXML(object):
         models.Type.objects.all().delete()
 
 
-    def post_process(self):
-        pass
+
 
 
 print(os.path.dirname(__file__))
 
+def post_process(script):
+    paired_args = models.Type.objects.filter(name__contains='PAIRED')
+    for type in paired_args:
+        print("===================")
+        print(type.arguments)
+        arg = json.loads(type.arguments)
+        #print(arg)
+        act_id = models.Act.objects.get(title='conversations').id
+
+        if arg['prev'] is not None:
+            prev_list = arg['prev'].split('_')
+            scene_id = models.Scene.objects.get(title=script.dict_value(prev_list[0])).id
+            part_id = models.Part.objects.get(scene_id=scene_id, name=script.dict_value(prev_list[1])).id
+            contents = models.Content.objects.filter(part_id=part_id)
+            content_id = contents[int(prev_list[2])-1].id
+            arg['prev'] = str(content_id) # str(act_id) + ':' + str(scene_id) + ':' + str(part_id) + ':' + str(content_id)
+            print('prev: ' + arg['prev'])
+            #new_args = json.dumps(arg)
+
+            type.arguments = json.dumps(arg)
+            type.save()
+            pass
+
+
+        if arg['next'] is not None:
+            next_list = arg['next'].split('_')
+            scene_id = models.Scene.objects.get(title=script.dict_value(next_list[0])).id
+            part_id = models.Part.objects.get(scene_id=scene_id, name=script.dict_value(next_list[1])).id
+            contents = models.Content.objects.filter(part_id=part_id)
+            content_id = contents[int(next_list[2])-1].id
+            arg['next'] = str(content_id) #str(act_id) + ':' + str(scene_id) + ':' + str(part_id) + ':' + str(content_id)
+            print('next: ' + arg['next'])
+            type.arguments = json.dumps(arg)
+            type.save()
+            pass
+
+
+
+
+    pass
+
 gen = ParseXML('/opt/combinatoria/xml/Jane.xml')
+post_process(gen)
+
+
 
 #gen = ParseXML('/opt/combinatoria/xml/JanePairedMixed.xml')

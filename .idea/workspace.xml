@@ -4,12 +4,9 @@
     <list default="true" id="762f1a58-adb5-43e8-a61d-628fbf96950f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/Jane.xml" afterPath="$PROJECT_DIR$/xml/Jane.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/combinatoria.iml" afterPath="$PROJECT_DIR$/combinatoria.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/generate.py" afterPath="$PROJECT_DIR$/generator/generate.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/models.py" afterPath="$PROJECT_DIR$/script/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/writer.py" afterPath="$PROJECT_DIR$/generator/writer.py" />
     </list>
@@ -26,8 +23,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/script$writer.coverage" NAME="writer Coverage Results" MODIFIED="1416419931399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
-    <SUITE FILE_PATH="coverage/script$generate.coverage" NAME="generate Coverage Results" MODIFIED="1416420118984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$writer.coverage" NAME="writer Coverage Results" MODIFIED="1416656512876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$generate.coverage" NAME="generate Coverage Results" MODIFIED="1416648275481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -71,31 +68,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32901832" vertical-offset="569" max-vertical-offset="1843">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="generate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator/generate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3994" max-vertical-offset="8018">
-              <caret line="408" column="27" selection-start-line="408" selection-start-column="27" selection-end-line="408" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8079" max-vertical-offset="8835">
+              <caret line="437" column="35" selection-start-line="437" selection-start-column="35" selection-end-line="437" selection-end-column="35" />
               <folding>
                 <element signature="e#19#56#0" expanded="true" />
-                <marker date="1416421568977" expanded="true" signature="7411:7551" placeholder="INSERT into ..." />
+                <marker date="1416553835101" expanded="true" signature="7413:7553" placeholder="INSERT into ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="combinatoria.script_item_source" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_item_source">
+      <file leaf-file-name="Jane.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="14.881356" vertical-offset="57897" max-vertical-offset="137864">
+              <caret line="3001" column="23" selection-start-line="3001" selection-start-column="16" selection-end-line="3001" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/generator/writer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9284294" vertical-offset="6270" max-vertical-offset="7296">
+              <caret line="226" column="76" selection-start-line="226" selection-start-column="76" selection-end-line="226" selection-end-column="76" />
+              <folding>
+                <element signature="e#20#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combinatoria.type" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..type">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
@@ -107,8 +116,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="combinatoria.script_line_source" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_line_source">
+      <file leaf-file-name="combinatoria.line_source" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..line_source">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
@@ -120,8 +129,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="combinatoria.script_line" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_line">
+      <file leaf-file-name="combinatoria.group" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..group">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
@@ -133,8 +142,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="combinatoria.script_part" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_part">
+      <file leaf-file-name="combinatoria.group_line" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..group_line">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
@@ -146,47 +155,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="combinatoria.script_project" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_project">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="combinatoria.script_scene" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_scene">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="combinatoria.script_script" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_script">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="combinatoria.script_act" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_act">
+      <file leaf-file-name="combinatoria.line" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..line">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state />
           </provider>
@@ -212,10 +182,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="[localhost] CONSOLE - Connection" />
-        <option value="$PROJECT_DIR$/generator/writer.py" />
         <option value="db-console:/60b4e45f/7b1f8bb9-84fd-4975-ae6b-b59c647474de/" />
+        <option value="$PROJECT_DIR$/xml/Jane.xml" />
         <option value="$PROJECT_DIR$/generator/generate.py" />
         <option value="$PROJECT_DIR$/script/models.py" />
+        <option value="$PROJECT_DIR$/generator/writer.py" />
       </list>
     </option>
   </component>
@@ -255,6 +226,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,6 +243,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="combinatoria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="combinatoria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,8 +290,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,7 +301,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/generator/writer.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/venvs/lti/bin/python" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -341,7 +326,7 @@
       <recent name="$PROJECT_DIR$/generator" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.generate">
+  <component name="RunManager" selected="Python.writer">
     <configuration default="false" name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -428,7 +413,9 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -583,15 +570,15 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -787,8 +774,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.generate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.writer" />
+        <item index="0" class="java.lang.String" itemvalue="Python.writer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generate" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
@@ -848,73 +835,78 @@
       <workItem from="1416411297067" duration="71000" />
       <workItem from="1416411389413" duration="1122000" />
       <workItem from="1416413890203" duration="2634000" />
-      <workItem from="1416418524070" duration="4325000" />
+      <workItem from="1416418524070" duration="8567000" />
+      <workItem from="1416470537965" duration="4183000" />
+      <workItem from="1416494234205" duration="658000" />
+      <workItem from="1416497001149" duration="14000" />
+      <workItem from="1416500407393" duration="9464000" />
+      <workItem from="1416648084728" duration="9250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305044000" />
+    <option name="totallyTimeSpent" value="332855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30688936" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28601253" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20752628" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20041753" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17266187" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110680684" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4290188" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19811843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19811843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14941892" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815966" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30996105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949002" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.081350304" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30897704" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30996105" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30688936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29436326" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20752628" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110680684" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17266187" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1495935" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10403985" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30996105" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32815966" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30897704" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30688936" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30688936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28601253" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949002" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20041753" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28601253" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29436326" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48225468" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19811843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -942,29 +934,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/writer.py</url>
-          <line>284</line>
-          <option name="timeStamp" value="273" />
+          <line>318</line>
+          <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/writer.py</url>
-          <line>286</line>
-          <option name="timeStamp" value="275" />
+          <line>340</line>
+          <option name="timeStamp" value="310" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/writer.py</url>
-          <line>289</line>
-          <option name="timeStamp" value="276" />
+          <line>351</line>
+          <option name="timeStamp" value="314" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/generate.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="278" />
+          <url>file://$PROJECT_DIR$/generator/writer.py</url>
+          <line>350</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/writer.py</url>
+          <line>296</line>
+          <option name="timeStamp" value="320" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/writer.py</url>
+          <line>303</line>
+          <option name="timeStamp" value="324" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="279" />
+      <option name="time" value="325" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -973,60 +975,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="131651">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combinatoria/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1767">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2033">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/django/core/management/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5947" max-vertical-offset="8132">
-          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/generate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="475" max-vertical-offset="1349">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#19#56#0" expanded="true" />
-            <marker date="1416421568977" expanded="true" signature="7411:7551" placeholder="INSERT into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="6517">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/xml/etree/ElementTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5035" max-vertical-offset="31787">
-          <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/django/conf/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="874" max-vertical-offset="3876">
@@ -1118,13 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6422">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xml/JanePairedMixed.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1525424" vertical-offset="1847" max-vertical-offset="65284">
@@ -1160,16 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/fields/__init__.py">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10977" max-vertical-offset="26961">
-          <caret line="612" column="0" selection-start-line="612" selection-start-column="0" selection-end-line="612" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/sql/query.py">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -1184,15 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5234" max-vertical-offset="6764">
           <caret line="285" column="0" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="52055" max-vertical-offset="137864">
-          <caret line="2747" column="32" selection-start-line="2747" selection-start-column="22" selection-end-line="2747" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,45 +1122,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3790" max-vertical-offset="17176">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5393" max-vertical-offset="32699">
-          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30553" max-vertical-offset="41610">
-          <caret line="1621" column="0" selection-start-line="1621" selection-start-column="0" selection-end-line="1621" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5299" max-vertical-offset="6099">
-          <caret line="289" column="0" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="uml://DATABASE/7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>DATABASE</ID>
+          <ID />
           <OriginalElement>7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act</OriginalElement>
           <nodes>
             <node x="30.0" y="367.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act</node>
-            <node x="40.5" y="0.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_project</node>
             <node x="0.0" y="108.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_script</node>
+            <node x="40.5" y="0.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_project</node>
           </nodes>
           <notes />
           <edges>
@@ -1251,42 +1146,38 @@
               <point x="0.0" y="104.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-191.5" y="136.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-191.0" y="137.0" />
           <SelectedNodes>
             <node>7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act</node>
           </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+          <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="uml://DATABASE/7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_source">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>DATABASE</ID>
+          <ID />
           <OriginalElement>7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_source</OriginalElement>
           <nodes>
             <node x="0.0" y="0.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_source</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-211.5" y="-34.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-211.0" y="-34.0" />
           <SelectedNodes>
             <node>7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_source</node>
           </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+          <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="uml://DATABASE/7726807e-5eca-45b3-86f4-80e972cdaf2f.schema:combinatoria">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <ID>DATABASE</ID>
+          <ID />
           <OriginalElement>7726807e-5eca-45b3-86f4-80e972cdaf2f.schema:combinatoria</OriginalElement>
           <nodes>
             <node x="601.2994278448824" y="1591.666242848061">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group_line</node>
@@ -1305,12 +1196,12 @@
             <node x="802.3431372549019" y="1078.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_source</node>
             <node x="130.20955882352945" y="1090.5">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_item</node>
             <node x="234.8125" y="551.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_scene</node>
-            <node x="245.3125" y="0.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_project</node>
             <node x="243.3125" y="919.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_content</node>
+            <node x="245.3125" y="0.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_project</node>
             <node x="788.9645979020977" y="1601.564526382708">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group_source</node>
-            <node x="1376.6458333333333" y="184.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user</node>
-            <node x="417.74264705882354" y="1103.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group</node>
             <node x="178.90019071837253" y="1553.764144945963">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_type</node>
+            <node x="417.74264705882354" y="1103.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group</node>
+            <node x="1376.6458333333333" y="184.0">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user</node>
             <node x="1888.3125" y="605.5">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_group_permissions</node>
             <node x="626.593137254902" y="1090.5">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_line</node>
             <node x="1202.112881436745" y="634.2841703750794">7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.django_admin_log</node>
@@ -1323,17 +1214,17 @@
               <point x="1522.1458333333333" y="523.0" />
               <point x="0.0" y="154.5" />
             </edge>
-            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group_item" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_item">
-              <point x="-40.0" y="-54.5" />
-              <point x="-9.491417673235873" y="1287.0" />
-              <point x="155.37622549019608" y="1287.0" />
-              <point x="-50.33333333333334" y="67.0" />
-            </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group_source" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_source">
               <point x="44.0" y="-54.5" />
               <point x="893.4693658614112" y="1366.5931341385888" />
               <point x="887.8431372549019" y="1328.0998092816274" />
               <point x="0.0" y="79.5" />
+            </edge>
+            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group_item" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_item">
+              <point x="-40.0" y="-54.5" />
+              <point x="-9.491417673235873" y="1287.0" />
+              <point x="155.37622549019608" y="1287.0" />
+              <point x="-50.33333333333334" y="67.0" />
             </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_content">
               <point x="5.6843418860808015E-14" y="-54.5" />
@@ -1375,17 +1266,17 @@
               <point x="0.0" y="-104.5" />
               <point x="0.0" y="29.0" />
             </edge>
-            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user_groups" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user">
-              <point x="-39.75" y="-54.5" />
-              <point x="1749.0624999999998" y="513.0" />
-              <point x="1619.1458333333333" y="513.0" />
-              <point x="97.0" y="154.5" />
-            </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_item_source" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_item">
               <point x="-41.75" y="-54.5" />
               <point x="452.75" y="1257.0" />
               <point x="256.04289215686276" y="1257.0" />
               <point x="50.333333333333314" y="67.0" />
+            </edge>
+            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user_groups" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user">
+              <point x="-39.75" y="-54.5" />
+              <point x="1749.0624999999998" y="513.0" />
+              <point x="1619.1458333333333" y="513.0" />
+              <point x="97.0" y="154.5" />
             </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_part" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_scene">
               <point x="0.0" y="-67.0" />
@@ -1457,17 +1348,11 @@
               <point x="260.0625" y="1048.0" />
               <point x="-50.25" y="54.5" />
             </edge>
-            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.django_admin_log" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user">
-              <point x="57.75" y="-117.0" />
-              <point x="1377.5625" y="523.0" />
-              <point x="1425.1458333333333" y="523.0" />
-              <point x="-97.0" y="154.5" />
-            </edge>
-            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_type" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group">
-              <point x="26.375" y="-104.5" />
-              <point x="327.2723299427845" y="1335.595041322314" />
-              <point x="466.86764705882354" y="1307.0" />
-              <point x="-16.375" y="54.5" />
+            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_group_permissions" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_group">
+              <point x="51.5" y="-54.5" />
+              <point x="2042.8125" y="523.0" />
+              <point x="2019.9930555555554" y="523.0" />
+              <point x="28.5" y="42.0" />
             </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user_user_permissions" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_permission">
               <point x="58.5" y="-54.5" />
@@ -1475,19 +1360,25 @@
               <point x="1761.575435297026" y="552.6948506039415" />
               <point x="-37.75" y="67.0" />
             </edge>
-            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_group_permissions" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_group">
-              <point x="51.5" y="-54.5" />
-              <point x="2042.8125" y="523.0" />
-              <point x="2019.9930555555554" y="523.0" />
-              <point x="28.5" y="42.0" />
+            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_type" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group">
+              <point x="26.375" y="-104.5" />
+              <point x="327.2723299427845" y="1335.595041322314" />
+              <point x="466.86764705882354" y="1307.0" />
+              <point x="-16.375" y="54.5" />
             </edge>
-            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_scene" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act">
-              <point x="0.0" y="-67.0" />
-              <point x="0.0" y="67.0" />
+            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.django_admin_log" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.auth_user">
+              <point x="57.75" y="-117.0" />
+              <point x="1377.5625" y="523.0" />
+              <point x="1425.1458333333333" y="523.0" />
+              <point x="-97.0" y="154.5" />
             </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_script">
               <point x="0.0" y="-67.0" />
               <point x="0.0" y="104.5" />
+            </edge>
+            <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_scene" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_act">
+              <point x="0.0" y="-67.0" />
+              <point x="0.0" y="67.0" />
             </edge>
             <edge source="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_group_line" target="7726807e-5eca-45b3-86f4-80e972cdaf2f.table:combinatoria.script_line">
               <point x="38.5" y="-54.5" />
@@ -1496,12 +1387,10 @@
               <point x="0.0" y="67.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9092485549132947" x="35.954227590591245" y="39.954227590591245" />
+          <settings layout="Hierarchic Group" zoom="0.9092485549132947" x="36.0" y="40.0" />
           <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+          <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1509,7 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
           <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1520,7 +1408,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1531,18 +1418,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_part">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1553,40 +1428,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_scene">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_script">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_act">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1597,11 +1438,93 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6876061" vertical-offset="374" max-vertical-offset="6422">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327674" vertical-offset="6663" max-vertical-offset="7353">
+          <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..project">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..act">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..scene">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..part">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/fields/__init__.py">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12081" max-vertical-offset="26961">
+          <caret line="622" column="19" selection-start-line="622" selection-start-column="19" selection-end-line="622" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_item_source">
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/python/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41356674" vertical-offset="30250" max-vertical-offset="41515">
+          <caret line="1616" column="0" selection-start-line="1616" selection-start-column="0" selection-end-line="1616" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..content">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
@@ -1612,7 +1535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_line_source">
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..group_item">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
@@ -1623,13 +1546,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_line">
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..source">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..line_source">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5355" max-vertical-offset="32699">
+          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..group_line">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..line">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.99418604" vertical-offset="1767" max-vertical-offset="2432">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1639,20 +1633,30 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4393" max-vertical-offset="8018">
-          <caret line="408" column="27" selection-start-line="408" selection-start-column="27" selection-end-line="408" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="8129" max-vertical-offset="8835">
+          <caret line="437" column="35" selection-start-line="437" selection-start-column="35" selection-end-line="437" selection-end-column="35" />
           <folding>
             <element signature="e#19#56#0" expanded="true" />
-            <marker date="1416421568977" expanded="true" signature="7411:7551" placeholder="INSERT into ..." />
+            <marker date="1416553835101" expanded="true" signature="7413:7553" placeholder="INSERT into ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/models.py">
+    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32901832" vertical-offset="569" max-vertical-offset="1843">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        <state vertical-scroll-proportion="14.881356" vertical-offset="57897" max-vertical-offset="137864">
+          <caret line="3001" column="23" selection-start-line="3001" selection-start-column="16" selection-end-line="3001" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9284294" vertical-offset="6270" max-vertical-offset="7296">
+          <caret line="226" column="76" selection-start-line="226" selection-start-column="76" selection-end-line="226" selection-end-column="76" />
+          <folding>
+            <element signature="e#20#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
