@@ -5,7 +5,7 @@ class Project(models.Model):
     pass
 
     class Meta:
-        db_table = 'project'
+        db_table = 'ctoria_project'
 
 
 class Script(models.Model):
@@ -20,7 +20,7 @@ class Script(models.Model):
         return self.title
 
     class Meta:
-        db_table = 'script'
+        db_table = 'ctoria_script'
 
 
 class Act(models.Model):
@@ -32,7 +32,7 @@ class Act(models.Model):
         return self.title
 
     class Meta:
-        db_table = 'act'
+        db_table = 'ctoria_act'
 
 
 class Scene(models.Model):
@@ -44,7 +44,7 @@ class Scene(models.Model):
         return self.title
 
     class Meta:
-        db_table = 'scene'
+        db_table = 'ctoria_scene'
 
 
 class Part(models.Model):
@@ -56,7 +56,7 @@ class Part(models.Model):
         return self.title
 
     class Meta:
-        db_table = 'part'
+        db_table = 'ctoria_part'
 
 
 class Content(models.Model):
@@ -64,41 +64,85 @@ class Content(models.Model):
     name = models.CharField(max_length=32)
 
     class Meta:
-        db_table = 'content'
+        db_table = 'ctoria_content'
 
 
 class Item(models.Model):
     content = models.ForeignKey(Content, null=True)
-    source = models.ManyToManyField('Source', null=True)
+    source = models.ManyToManyField('Source', through='ItemSource', null=True)
     name = models.CharField(max_length=32, null=True)
     MEDIA_TYPES = (('video', 'VIDEO'), ('audio', 'AUDIO'))
     media = models.CharField(max_length=30, choices=MEDIA_TYPES, default='video')
 
     class Meta:
-        db_table = 'item'
+        db_table = 'ctoria_item'
+
+
+class ItemSource(models.Model):
+    item = models.ForeignKey(Item)
+    source = models.ForeignKey('Source')
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        db_table = 'ctoria_item_source'
 
 
 class Line(models.Model):
     content = models.ForeignKey(Content, null=True)
-    source = models.ManyToManyField('Source', null=True)
+    source = models.ManyToManyField('Source', through='LineSource', null=True)
     line = models.CharField(max_length=256)
     speaker = models.CharField(max_length=60, default='Narration')
 
     class Meta:
-        db_table = 'line'
+        db_table = 'ctoria_line'
+
+
+class LineSource(models.Model):
+    line = models.ForeignKey(Line)
+    source = models.ForeignKey('Source')
+    order = models.IntegerField(default=0)
+
+
+    class Meta:
+        db_table = 'ctoria_line_source'
 
 
 class Group(models.Model):
     content = models.ForeignKey(Content, null=True)
     name = models.CharField(max_length=32, null=True)
     item = models.ManyToManyField('Item', null=True)
-
     line = models.ManyToManyField('Line', null=True)
-    source = models.ManyToManyField('Source', null=True)
+    source = models.ManyToManyField('Source', through='GroupSource', null=True)
 
     class Meta:
-        db_table = 'group'
+        db_table = 'ctoria_group'
 
+
+class GroupSource(models.Model):
+    group = models.ForeignKey(Group)
+    source = models.ForeignKey('Source')
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        db_table = 'ctoria_group_source'
+
+
+class GroupLine(models.Model):
+    group = models.ForeignKey(Group)
+    line = models.ForeignKey(Line)
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        db_table = 'ctoria_group_line'
+
+
+class GroupItem(models.Model):
+    group = models.ForeignKey(Group)
+    item = models.ForeignKey(Item)
+    order = models.IntegerField(default=0)
+
+    class Meta:
+        db_table = 'ctoria_group_item'
 
 
 class Type(models.Model):
@@ -110,7 +154,7 @@ class Type(models.Model):
     arguments = models.CharField(max_length=256)
 
     class Meta:
-        db_table = 'type'
+        db_table = 'ctoria_type'
 
 
 class Source(models.Model):
@@ -120,4 +164,4 @@ class Source(models.Model):
     duration = models.IntegerField()
 
     class Meta:
-        db_table = 'source'
+        db_table = 'ctoria_source'

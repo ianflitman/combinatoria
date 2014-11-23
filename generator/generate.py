@@ -24,8 +24,8 @@ class ParseXML(object):
         self.file = file
         self.xml = etree.parse(file).getroot()
         self.dict = self.xml[1]
-        #self.truncate()
-        #self.generate_model()
+        self.truncate()
+        self.generate_model()
 
 
     def connect_to_db(self):
@@ -134,7 +134,9 @@ class ParseXML(object):
             source.duration = float(angle.attrib['length']) * 1000
             source.size = int(angle.attrib['bytes'])
             source.save()
-            item.source.add(source)
+            item_source = models.ItemSource(item=item, source=source, order=0)
+            item_source.save()
+            #item.source.add(source)
             choices.item.add(item)
 
         sets = models.Group()
@@ -161,8 +163,13 @@ class ParseXML(object):
                 group.name = 'short_' + str(i)
                 group.content_id = content.id
                 group.save()
+                counter = 0
                 for item in items:
-                    group.source.add(models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4'))
+                    counter += 1
+                    source = models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4')
+                    group_source = models.GroupSource(group=group, source=source, order=counter)
+                    group_source.save()
+                    #group.source.add(models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4'))
                 short.group_set.add(group)
 
         medium = models.Item()
@@ -181,10 +188,13 @@ class ParseXML(object):
             group.name = 'medium_' + str(i)
             group.content_id = content.id
             group.save()
-
+            counter = 0
             for item in seq:
+                counter += 1
                 source = models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4')
-                source.group_set.add(group)
+                group_source = models.GroupSource(group=group, source=source, order=counter)
+                group_source.save()
+                #source.group_set.add(group)
             medium.group_set.add(group)
 
 
@@ -206,10 +216,13 @@ class ParseXML(object):
             group._deferred = False
             group.save()
             long.group_set.add(group)
-
+            counter = 0
             for item in seq:
+                counter += 1
                 source = models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4')
-                source.group_set.add(group)
+                group_source = models.GroupSource(group=group, source=source, order=counter)
+                group_source.save()
+                #source.group_set.add(group)
 
             group.save()
         pause.save()
@@ -217,36 +230,6 @@ class ParseXML(object):
 
         return 0
 
-    def insert_source(self, group_id, source_id):
-        add_source = ("INSERT into script_group_source "
-                      "(group_id, source_id) "
-                      "VALUES (%(group_id)s, %(source_id)s)")
-
-        source_data = {
-            'group_id': group_id,
-            'source_id': source_id
-        }
-        self.local_cursor.execute(add_source, source_data)
-        self.cnx.commit()
-
-
-    def insert_source_id(self, source_id):
-        add_source = ("INSERT IGNORE into Source "
-                          "(id) "
-                          "VALUES(%(source_id)s)")
-
-        source_data = {
-                'source_id': source_id
-        }
-
-        self.local_cursor.execute(add_source, source_data)
-        self.cnx.commit()
-
-
-    def reorder(self, pks):
-        re_order = ("UPDATE group_id from script_group_source"
-                     "where group_id={0}"
-                     "ORDER BY(pks)")
 
     def process_default(self, content, cut):
         default = models.Line()
@@ -268,7 +251,9 @@ class ParseXML(object):
             source.mime = 'video/mp4'
             source.size = shot.attrib['bytes']
             source.save()
-            default.source.add(source)
+            line_source = models.LineSource(source=source, line=default)
+            line_source.save()
+            #default.source.add(source)
 
 
     def process_alternative(self, content, cut):
@@ -321,9 +306,13 @@ class ParseXML(object):
 
     def process_options(self, content, alternative, cut):
         options = cut.findall('./option')
+        order_pos = 0
         for option in options:
+            order_pos += 1
             dialogue = self.write_line(content.id, cut.attrib['speaker'], option.find('./line').text)
-            alternative.line.add(dialogue)
+            alt_line = models.GroupLine(group=alternative, line=dialogue, order=order_pos)
+            alt_line.save()
+            #alternative.line.add(dialogue)
             name = option.find('./name').text
 
             shots = option.findall('./shots/angle')
@@ -334,7 +323,9 @@ class ParseXML(object):
                 source.mime = 'video/mp4'
                 source.size = angle.attrib['bytes']
                 source.save()
-                dialogue.source.add(source)
+                line_source = models.LineSource(source=source, line=dialogue)
+                line_source.save()
+                #dialogue.source.add(source)
 
 
     def write_alt_type(self, cut):
@@ -404,6 +395,11 @@ class ParseXML(object):
         models.Group.objects.all().delete()
         models.Source.objects.all().delete()
         models.Type.objects.all().delete()
+        models.ItemSource.objects.all().delete()
+        models.LineSource.objects.all().delete()
+        models.GroupSource.objects.all().delete()
+        models.GroupItem.objects.all().delete()
+        models.GroupLine.objects.all().delete()
 
 
 
