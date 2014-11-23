@@ -81,175 +81,6 @@
       <index name="auth_user_user_permissions_6340c63c" unique="false" columns="user_id"/>
       <index name="auth_user_user_permissions_83d7f98b" unique="false" columns="permission_id"/>
     </table>
-    <table name="ctoria_act" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="script_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="title" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
-      <column name="description" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="script_id_refs_id_2285434b" columns="script_id" ref-table="ctoria_script" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="act_id_refs_id_1f270448" table="ctoria_scene" schema="" catalog="combinatoria" columns="act_id"/>
-      <index name="script_id_refs_id_2285434b" unique="false" columns="script_id"/>
-    </table>
-    <table name="ctoria_content" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="part_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="part_id_refs_id_893d9021" columns="part_id" ref-table="ctoria_part" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="content_id_refs_id_002215d7" table="ctoria_group" schema="" catalog="combinatoria" columns="content_id"/>
-      <exported-key name="content_id_refs_id_088b24d5" table="ctoria_item" schema="" catalog="combinatoria" columns="content_id"/>
-      <exported-key name="content_id_refs_id_83015537" table="ctoria_line" schema="" catalog="combinatoria" columns="content_id"/>
-      <exported-key name="content_id_refs_id_234461e8" table="ctoria_type" schema="" catalog="combinatoria" columns="content_id"/>
-      <index name="part_id_refs_id_893d9021" unique="false" columns="part_id"/>
-    </table>
-    <table name="ctoria_group" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="content_id_refs_id_002215d7" columns="content_id" ref-table="ctoria_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="group_id_refs_id_a544848a" table="ctoria_group_item" schema="" catalog="combinatoria" columns="group_id"/>
-      <exported-key name="group_id_refs_id_0dcfcd6b" table="ctoria_group_line" schema="" catalog="combinatoria" columns="group_id"/>
-      <exported-key name="group_id_refs_id_40f93885" table="ctoria_group_source" schema="" catalog="combinatoria" columns="group_id"/>
-      <exported-key name="group_id_refs_id_f9927df7" table="ctoria_type" schema="" catalog="combinatoria" columns="group_id"/>
-      <index name="content_id_refs_id_002215d7" unique="false" columns="content_id"/>
-    </table>
-    <table name="ctoria_group_item" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="group_id_refs_id_a544848a" columns="group_id" ref-table="ctoria_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="item_id_refs_id_7abfd9b2" columns="item_id" ref-table="ctoria_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="group_id" unique="true" columns="item_id"/>
-      <index name="item_id_refs_id_7abfd9b2" unique="false" columns="item_id"/>
-    </table>
-    <table name="ctoria_group_line" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="group_id_refs_id_0dcfcd6b" columns="group_id" ref-table="ctoria_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="line_id_refs_id_9f4c2743" columns="line_id" ref-table="ctoria_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="group_id" unique="true" columns="line_id"/>
-      <index name="line_id_refs_id_9f4c2743" unique="false" columns="line_id"/>
-    </table>
-    <table name="ctoria_group_source" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="group_id_refs_id_40f93885" columns="group_id" ref-table="ctoria_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="group_id_refs_id_40f93885" unique="false" columns="group_id"/>
-    </table>
-    <table name="ctoria_item" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
-      <column name="media" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="content_id_refs_id_088b24d5" columns="content_id" ref-table="ctoria_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="item_id_refs_id_7abfd9b2" table="ctoria_group_item" schema="" catalog="combinatoria" columns="item_id"/>
-      <exported-key name="item_id_refs_id_a34ae668" table="ctoria_item_source" schema="" catalog="combinatoria" columns="item_id"/>
-      <exported-key name="item_id_refs_id_96557cf0" table="ctoria_type" schema="" catalog="combinatoria" columns="item_id"/>
-      <index name="content_id_refs_id_088b24d5" unique="false" columns="content_id"/>
-    </table>
-    <table name="ctoria_item_source" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="item_id_refs_id_a34ae668" columns="item_id" ref-table="ctoria_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="item_id_refs_id_a34ae668" unique="false" columns="item_id"/>
-    </table>
-    <table name="ctoria_line" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="line" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
-      <column name="speaker" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="content_id_refs_id_83015537" columns="content_id" ref-table="ctoria_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="line_id_refs_id_9f4c2743" table="ctoria_group_line" schema="" catalog="combinatoria" columns="line_id"/>
-      <exported-key name="line_id_refs_id_fe1f05e7" table="ctoria_line_source" schema="" catalog="combinatoria" columns="line_id"/>
-      <exported-key name="line_id_refs_id_798bdfc1" table="ctoria_type" schema="" catalog="combinatoria" columns="line_id"/>
-      <index name="content_id_refs_id_83015537" unique="false" columns="content_id"/>
-    </table>
-    <table name="ctoria_line_source" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="line_id_refs_id_fe1f05e7" columns="line_id" ref-table="ctoria_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="line_id_refs_id_fe1f05e7" unique="false" columns="line_id"/>
-    </table>
-    <table name="ctoria_part" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="scene_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
-      <column name="description" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="scene_id_refs_id_65722299" columns="scene_id" ref-table="ctoria_scene" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="part_id_refs_id_893d9021" table="ctoria_content" schema="" catalog="combinatoria" columns="part_id"/>
-      <index name="scene_id_refs_id_65722299" unique="false" columns="scene_id"/>
-    </table>
-    <table name="ctoria_project" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="project_id_refs_id_5e310dc6" table="ctoria_script" schema="" catalog="combinatoria" columns="project_id"/>
-    </table>
-    <table name="ctoria_scene" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="act_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="title" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
-      <column name="description" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="act_id_refs_id_1f270448" columns="act_id" ref-table="ctoria_act" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="scene_id_refs_id_65722299" table="ctoria_part" schema="" catalog="combinatoria" columns="scene_id"/>
-      <index name="act_id_refs_id_1f270448" unique="false" columns="act_id"/>
-    </table>
-    <table name="ctoria_script" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="project_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="title" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
-      <column name="author" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
-      <column name="description" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12"/>
-      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
-      <column name="version" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="project_id_refs_id_5e310dc6" columns="project_id" ref-table="ctoria_project" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="script_id_refs_id_2285434b" table="ctoria_act" schema="" catalog="combinatoria" columns="script_id"/>
-      <index name="project_id_refs_id_5e310dc6" unique="false" columns="project_id"/>
-    </table>
-    <table name="ctoria_source" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="mime" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <column name="file" sqlType="VARCHAR" precision="80" scale="0" nullable="false" jdbcType="12"/>
-      <column name="size" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="duration" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
-    <table name="ctoria_type" schema="" catalog="combinatoria" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
-      <column name="arguments" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="group_id_refs_id_f9927df7" columns="group_id" ref-table="ctoria_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="content_id_refs_id_234461e8" columns="content_id" ref-table="ctoria_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="item_id_refs_id_96557cf0" columns="item_id" ref-table="ctoria_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="line_id_refs_id_798bdfc1" columns="line_id" ref-table="ctoria_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="ctoria_type_0a47aae8" unique="false" columns="item_id"/>
-      <index name="ctoria_type_49185ad7" unique="false" columns="content_id"/>
-      <index name="ctoria_type_5f412f9a" unique="false" columns="group_id"/>
-      <index name="ctoria_type_dc784296" unique="false" columns="line_id"/>
-    </table>
     <table name="django_admin_log" schema="" catalog="combinatoria" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="action_time" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
@@ -281,6 +112,190 @@
       <column name="expire_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="session_key"/>
       <index name="django_session_b7b81f0c" unique="false" columns="expire_date"/>
+    </table>
+    <table name="script_act" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="script_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="script_id_refs_id_2019f228" columns="script_id" ref-table="script_script" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="act_id_refs_id_23b11855" table="script_scene" schema="" catalog="combinatoria" columns="act_id"/>
+      <index name="script_id_refs_id_2019f228" unique="false" columns="script_id"/>
+    </table>
+    <table name="script_content" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="part_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="part_id_refs_id_44add00d" columns="part_id" ref-table="script_part" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="content_id_refs_id_c0068113" table="script_group" schema="" catalog="combinatoria" columns="content_id"/>
+      <exported-key name="content_id_refs_id_1d1cf917" table="script_item" schema="" catalog="combinatoria" columns="content_id"/>
+      <exported-key name="content_id_refs_id_9b0313f8" table="script_line" schema="" catalog="combinatoria" columns="content_id"/>
+      <exported-key name="content_id_refs_id_244695f7" table="script_type" schema="" catalog="combinatoria" columns="content_id"/>
+      <index name="part_id_refs_id_44add00d" unique="false" columns="part_id"/>
+    </table>
+    <table name="script_group" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="content_id_refs_id_c0068113" columns="content_id" ref-table="script_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="group_id_refs_id_53f4f018" table="script_group_container" schema="" catalog="combinatoria" columns="group_id"/>
+      <exported-key name="container_id_refs_id_53f4f018" table="script_group_container" schema="" catalog="combinatoria" columns="container_id"/>
+      <exported-key name="group_id_refs_id_f6222663" table="script_group_item" schema="" catalog="combinatoria" columns="group_id"/>
+      <exported-key name="group_id_refs_id_2e56db49" table="script_group_line" schema="" catalog="combinatoria" columns="group_id"/>
+      <exported-key name="group_id_refs_id_1236931f" table="script_group_source" schema="" catalog="combinatoria" columns="group_id"/>
+      <exported-key name="group_id_refs_id_5c75b6b8" table="script_type" schema="" catalog="combinatoria" columns="group_id"/>
+      <index name="content_id_refs_id_c0068113" unique="false" columns="content_id"/>
+    </table>
+    <table name="script_group_container" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="container_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="has_group" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="group_id_refs_id_53f4f018" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="container_id_refs_id_53f4f018" columns="container_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="container_id_refs_id_53f4f018" unique="false" columns="container_id"/>
+      <index name="group_id_refs_id_53f4f018" unique="false" columns="group_id"/>
+    </table>
+    <table name="script_group_item" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="group_id_refs_id_f6222663" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="item_id_refs_id_c063fb91" columns="item_id" ref-table="script_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="group_id" unique="true" columns="item_id"/>
+      <index name="item_id_refs_id_c063fb91" unique="false" columns="item_id"/>
+    </table>
+    <table name="script_group_line" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="group_id_refs_id_2e56db49" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="line_id_refs_id_f64b5a2a" columns="line_id" ref-table="script_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="group_id" unique="true" columns="line_id"/>
+      <index name="line_id_refs_id_f64b5a2a" unique="false" columns="line_id"/>
+    </table>
+    <table name="script_group_source" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="group_id_refs_id_1236931f" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="group_id_refs_id_1236931f" unique="false" columns="group_id"/>
+    </table>
+    <table name="script_item" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12"/>
+      <column name="media" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="content_id_refs_id_1d1cf917" columns="content_id" ref-table="script_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="item_id_refs_id_c063fb91" table="script_group_item" schema="" catalog="combinatoria" columns="item_id"/>
+      <exported-key name="item_id_refs_id_5a8cf608" table="script_item_source" schema="" catalog="combinatoria" columns="item_id"/>
+      <exported-key name="item_id_refs_id_34dece81" table="script_type" schema="" catalog="combinatoria" columns="item_id"/>
+      <index name="content_id_refs_id_1d1cf917" unique="false" columns="content_id"/>
+    </table>
+    <table name="script_item_source" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="item_id_refs_id_5a8cf608" columns="item_id" ref-table="script_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="item_id_refs_id_5a8cf608" unique="false" columns="item_id"/>
+    </table>
+    <table name="script_line" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="line" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <column name="speaker" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="content_id_refs_id_9b0313f8" columns="content_id" ref-table="script_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="line_id_refs_id_f64b5a2a" table="script_group_line" schema="" catalog="combinatoria" columns="line_id"/>
+      <exported-key name="line_id_refs_id_250e3296" table="script_line_source" schema="" catalog="combinatoria" columns="line_id"/>
+      <exported-key name="line_id_refs_id_c78a50a6" table="script_type" schema="" catalog="combinatoria" columns="line_id"/>
+      <index name="content_id_refs_id_9b0313f8" unique="false" columns="content_id"/>
+    </table>
+    <table name="script_line_source" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="line_id_refs_id_250e3296" columns="line_id" ref-table="script_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="line_id_refs_id_250e3296" unique="false" columns="line_id"/>
+    </table>
+    <table name="script_part" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="scene_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="scene_id_refs_id_356dd86b" columns="scene_id" ref-table="script_scene" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="part_id_refs_id_44add00d" table="script_content" schema="" catalog="combinatoria" columns="part_id"/>
+      <index name="scene_id_refs_id_356dd86b" unique="false" columns="scene_id"/>
+    </table>
+    <table name="script_project" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="project_id_refs_id_7033052d" table="script_script" schema="" catalog="combinatoria" columns="project_id"/>
+    </table>
+    <table name="script_scene" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="act_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="act_id_refs_id_23b11855" columns="act_id" ref-table="script_act" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="scene_id_refs_id_356dd86b" table="script_part" schema="" catalog="combinatoria" columns="scene_id"/>
+      <index name="act_id_refs_id_23b11855" unique="false" columns="act_id"/>
+    </table>
+    <table name="script_script" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="project_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="title" sqlType="VARCHAR" precision="120" scale="0" nullable="false" jdbcType="12"/>
+      <column name="author" sqlType="VARCHAR" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="description" sqlType="VARCHAR" precision="512" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="version" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="project_id_refs_id_7033052d" columns="project_id" ref-table="script_project" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="script_id_refs_id_2019f228" table="script_act" schema="" catalog="combinatoria" columns="script_id"/>
+      <index name="project_id_refs_id_7033052d" unique="false" columns="project_id"/>
+    </table>
+    <table name="script_source" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="mime" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
+      <column name="file" sqlType="VARCHAR" precision="80" scale="0" nullable="false" jdbcType="12"/>
+      <column name="size" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="duration" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="script_type" schema="" catalog="combinatoria" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12"/>
+      <column name="arguments" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="line_id_refs_id_c78a50a6" columns="line_id" ref-table="script_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="content_id_refs_id_244695f7" columns="content_id" ref-table="script_content" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="group_id_refs_id_5c75b6b8" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="item_id_refs_id_34dece81" columns="item_id" ref-table="script_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="script_type_0a47aae8" unique="false" columns="item_id"/>
+      <index name="script_type_49185ad7" unique="false" columns="content_id"/>
+      <index name="script_type_5f412f9a" unique="false" columns="group_id"/>
+      <index name="script_type_dc784296" unique="false" columns="line_id"/>
     </table>
   </data-source>
 </component>

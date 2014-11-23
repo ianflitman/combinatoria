@@ -95,10 +95,13 @@ class PartBox(object):
         iter(self.contents)
 
     def add_content(self, content_id):
-        self.get_content(content_id)
-        content = ContentBox(content_id)
-        self.contents.append(content)
-        return content
+        content = self.get_content(content_id)
+        if content is None:
+            content = ContentBox(content_id)
+            self.contents.append(content)
+            return content
+        else:
+            return
 
     def get_content(self, content_id):
         for content in self.contents:
@@ -268,17 +271,22 @@ class Writer(object):
 
     def process_sequence_set(self, content_id):
         sets = models.Group.objects.get(content_id=content_id, name='sets')
-        set_groups = models.Item.objects.filter(group=sets.id).exclude(name='library')
-        selected_set = set_groups[self.random(len(set_groups))]
-        seqs = models.Group.objects.filter(item=selected_set)
+        set_groups = models.GroupContainer.objects.filter(container=sets)# short, med, long
+        #set_groups = models.Item.objects.filter(group=sets.id).exclude(name='library')
+        selected_set = set_groups[self.random(len(set_groups))] #shor or med or long
+        seqs = models.GroupContainer.objects.filter(container_id=selected_set.group_id)
+        #seqs = models.Group.objects.filter(item=selected_set)
         selected_seq = seqs[self.random(len(seqs))]
-        sources = models.Group.objects.get(id=selected_seq.id).source.all()
-        self.add_content(content_id)
+        sources = models.Group.objects.get(id=selected_seq.group_id).source.all()
+        #self.add_content(content_id)
         if len(sources) == 0:
             print('empty seq')
         for source in sources:
             print(source.file)
+            self.add_content(content_id)
             self.scenario.add_source(source.id, source.file)
+
+        pass
 
 
     def process_default(self, content_id):

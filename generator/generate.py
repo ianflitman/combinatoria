@@ -111,44 +111,37 @@ class ParseXML(object):
 
         pause.line.add(pause_txt)
 
-        library = models.Item()
+        library = models.Group()
         library.name = 'library'
         library.content_id = content.id
         library.save()
-        pause.item.add(library)
-        choices = models.Group()
-        choices.content_id = content.id
-        choices.name = 'choices'
-        choices.save()
-        library.group_set.add(choices)
+        pause_library = models.GroupContainer(container=pause, group=library)
+        pause_library.save()
 
         angles = cut.findall("./shots/angle")
         for angle in angles:
-            item = models.Item()
-            item.content_id = content.id
-            item.name = 'camera_angle'
-            item.save()
             source = models.Source()
             source.file = scene_code + '_' + part_code + '_' + angle.attrib['type'] + '.mp4'
             source.mime = 'video/mp4'
             source.duration = float(angle.attrib['length']) * 1000
             source.size = int(angle.attrib['bytes'])
             source.save()
-            item_source = models.ItemSource(item=item, source=source, order=0)
-            item_source.save()
-            #item.source.add(source)
-            choices.item.add(item)
+            library_source = models.GroupSource(group=library, source=source, order=0)
+            library_source.save()
+
 
         sets = models.Group()
         sets.name = 'sets'
         sets.content_id = content.id
         sets.save()
 
-        short = models.Item()
+        short = models.Group()
         short.name = 'short'
         short.content_id = content.id
         short.save()
-        sets.item.add(short)
+
+        set_short = models.GroupContainer(container=sets, group=short, has_group=True)
+        set_short.save()
 
         short_seq_str = cut.find('./sequence[@type="short"]').text
         short_seq = short_seq_str.split(',')
@@ -169,14 +162,17 @@ class ParseXML(object):
                     source = models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4')
                     group_source = models.GroupSource(group=group, source=source, order=counter)
                     group_source.save()
-                    #group.source.add(models.Source.objects.get(file=scene_code + '_' + part_code + '_' + item + '.mp4'))
-                short.group_set.add(group)
 
-        medium = models.Item()
+                short_group = models.GroupContainer(container=short, group=group)
+                short_group.save()
+
+        medium = models.Group()
         medium.name = 'medium'
         medium.content_id = content.id
         medium.save()
-        sets.item.add(medium)
+
+        sets_medium = models.GroupContainer(container=sets, group=medium, has_group=True)
+        sets_medium.save()
 
         med_seq_str = cut.find('./sequence[@type="medium"]').text
         med_seq = med_seq_str.split(',')
@@ -195,14 +191,19 @@ class ParseXML(object):
                 group_source = models.GroupSource(group=group, source=source, order=counter)
                 group_source.save()
                 #source.group_set.add(group)
-            medium.group_set.add(group)
+            medium_group = models.GroupContainer(container=medium, group=group)
+            medium_group.save()
+            #medium.group_set.add(group)
 
 
-        long = models.Item()
+        #long = models.Item()
+        long = models.Group()
         long.name = 'long'
         long.content_id = content.id
         long.save()
-        sets.item.add(long)
+        #sets.item.add(long)
+        sets_long = models.GroupContainer(container=sets, group=long, has_group=True)
+        sets_long.save()
 
         long_seq_str = cut.find('./sequence[@type="long"]').text
         long_seq = long_seq_str.split(',')
@@ -215,7 +216,9 @@ class ParseXML(object):
             group.content_id = content.id
             group._deferred = False
             group.save()
-            long.group_set.add(group)
+            long_group = models.GroupContainer(container=long, group=group)
+            long_group.save()
+            #long.group_set.add(group)
             counter = 0
             for item in seq:
                 counter += 1
@@ -312,7 +315,6 @@ class ParseXML(object):
             dialogue = self.write_line(content.id, cut.attrib['speaker'], option.find('./line').text)
             alt_line = models.GroupLine(group=alternative, line=dialogue, order=order_pos)
             alt_line.save()
-            #alternative.line.add(dialogue)
             name = option.find('./name').text
 
             shots = option.findall('./shots/angle')
@@ -325,7 +327,6 @@ class ParseXML(object):
                 source.save()
                 line_source = models.LineSource(source=source, line=dialogue)
                 line_source.save()
-                #dialogue.source.add(source)
 
 
     def write_alt_type(self, cut):
