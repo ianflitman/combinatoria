@@ -154,6 +154,7 @@
       <column name="container_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="has_group" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="group_id_refs_id_53f4f018" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="container_id_refs_id_53f4f018" columns="container_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
@@ -164,7 +165,6 @@
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="item_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="order" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="group_id_refs_id_f6222663" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="item_id_refs_id_c063fb91" columns="item_id" ref-table="script_item" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
@@ -175,7 +175,6 @@
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="line_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="order" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="group_id_refs_id_2e56db49" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="line_id_refs_id_f64b5a2a" columns="line_id" ref-table="script_line" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
@@ -188,8 +187,10 @@
       <column name="source_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="source_id_refs_id_9eea8fe4" columns="source_id" ref-table="script_source" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="group_id_refs_id_1236931f" columns="group_id" ref-table="script_group" ref-schema="" ref-catalog="combinatoria" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="group_id_refs_id_1236931f" unique="false" columns="group_id"/>
+      <index name="script_group_source_5f412f9a" unique="false" columns="group_id"/>
+      <index name="script_group_source_a34b03a6" unique="false" columns="source_id"/>
     </table>
     <table name="script_item" schema="" catalog="combinatoria" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
@@ -278,6 +279,7 @@
       <column name="size" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="duration" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="source_id_refs_id_9eea8fe4" table="script_group_source" schema="" catalog="combinatoria" columns="source_id"/>
     </table>
     <table name="script_type" schema="" catalog="combinatoria" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>

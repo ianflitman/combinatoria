@@ -278,12 +278,12 @@ class Writer(object):
         #seqs = models.Group.objects.filter(item=selected_set)
         selected_seq = seqs[self.random(len(seqs))]
         sources = models.Group.objects.get(id=selected_seq.group_id).source.all()
-        #self.add_content(content_id)
+        self.add_content(content_id)
         if len(sources) == 0:
             print('empty seq')
         for source in sources:
             print(source.file)
-            self.add_content(content_id)
+            #self.add_content(content_id)
             self.scenario.add_source(source.id, source.file)
 
         pass
@@ -347,17 +347,29 @@ class Writer(object):
         else:
             previous = int(type_arguments['prev'])
             print(previous)
-            prev_lines_set = [line.line for line in models.Content.objects.get(id=previous).line_set.all()]
+            prev_alt_id = models.Type.objects.get(content_id=previous).group_id
+
             prev_src_id = self.get_content(previous).sources[0].id
-            chosen_line = models.Line.objects.get(source=prev_src_id).line
-            print(chosen_line)
-            index = prev_lines_set.index(chosen_line)
-            alt_chosen = list(models.Type.objects.filter(content_id=content_id)[1:][index:index+1])[0]
+
+            prev_src = models.Source.objects.get(id=prev_src_id)
+            prev_alt = models.Group.objects.get(id=prev_alt_id)
+            #prev_src =  self.get_content(previous).sources[0]
+            line = models.LineSource.objects.get(source = prev_src).line
+            #line = models.LineSource(source=prev_src)
+            index = models.GroupLine.objects.get(group=prev_alt, line=line).order #line.get(source_id=prev_src_id).order
+
+            #prev_lines_set = [line.line for line in models.Content.objects.get(id=previous).line_set.all()]
+            #prev_src_id = self.get_content(previous).sources[0].id
+            #chosen_line = models.Line.objects.get(source=prev_src_id).line
+            #print(chosen_line)
+            #index = prev_lines_set.index(chosen_line)
+            #alt_chosen = list(models.Type.objects.filter(content_id=content_id)[1:][index:index+1])[0]
+
+            alt_chosen = models.GroupContainer.objects.get(container=models.Group.objects.get(content_id=content_id, name__exact='alternative_paired_parent'), order=index).group
 
             print(alt_chosen.name)
             print(alt_chosen.id)
             self.branch(alt_chosen.name, content_id, alt_chosen.group_id)
-            print('what')
 
 
             pass

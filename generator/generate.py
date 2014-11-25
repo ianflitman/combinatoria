@@ -24,8 +24,8 @@ class ParseXML(object):
         self.file = file
         self.xml = etree.parse(file).getroot()
         self.dict = self.xml[1]
-        self.truncate()
-        self.generate_model()
+        #self.truncate()
+        #self.generate_model()
 
 
     def connect_to_db(self):
@@ -273,15 +273,31 @@ class ParseXML(object):
 
         if alt_type == 'ALTERNATIVE_PARENT':
             alts = cut.findall('./alternative')
+            parent = models.Group(content_id=content.id)
+            parent.name = 'alternative_parent'
+            parent.save()
+            counter = 0
             for alt in alts:
+                counter += 1
                 alt.attrib['speaker'] = cut.attrib['speaker']
                 self.process_alternative(content, alt)
+                child = models.Group.objects.last()
+                parent_child = models.GroupContainer(container=parent, group=child, order=counter)
+                parent_child.save()
 
         if alt_type == 'ALTERNATIVE_PAIRED_PARENT':
             alts = cut.findall('./alternative')
+            parent = models.Group(content_id=content.id)
+            parent.name = 'alternative_paired_parent'
+            parent.save()
+            counter = 0
             for alt in alts:
+                counter += 1
                 alt.attrib['speaker'] = cut.attrib['speaker']
                 self.process_alternative(content, alt)
+                child = models.Group.objects.last()
+                parent_child = models.GroupContainer(container=parent, group=child, order=counter)
+                parent_child.save()
 
         if alt_type == 'ALTERNATIVE_COMPOUND':
             default = self.write_line(content.id, cut.attrib['speaker'], cut.find('./default/line').text)
@@ -401,9 +417,6 @@ class ParseXML(object):
         models.GroupSource.objects.all().delete()
         models.GroupItem.objects.all().delete()
         models.GroupLine.objects.all().delete()
-
-
-
 
 
 print(os.path.dirname(__file__))

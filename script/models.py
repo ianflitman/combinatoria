@@ -9,7 +9,7 @@ class Project(models.Model):
 
 
 class Script(models.Model):
-    project = models.ForeignKey(Project,null=True)
+    project = models.ForeignKey(Project, null=True)
     title = models.CharField(max_length=120)
     author = models.CharField(max_length=60)
     description = models.CharField(max_length=512)
@@ -102,7 +102,6 @@ class LineSource(models.Model):
     source = models.ForeignKey('Source')
     order = models.IntegerField(default=0)
 
-
     class Meta:
         db_table = 'script_line_source'
 
@@ -123,6 +122,7 @@ class GroupContainer(models.Model):
     container = models.ForeignKey(Group, related_name='container')
     group = models.ForeignKey(Group)
     has_group = models.BooleanField(default=False)
+    order = models.IntegerField(default=0)
 
     class Meta:
         db_table = 'script_group_container'
