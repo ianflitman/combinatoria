@@ -63,6 +63,7 @@ class ActBox(object):
             if scene.id == scene_id:
                 return scene
 
+
 class SceneBox(object):
 
     def __init__(self, scene_id): #, act_id):
@@ -101,7 +102,7 @@ class PartBox(object):
             self.contents.append(content)
             return content
         else:
-            return
+            return content
 
     def get_content(self, content_id):
         for content in self.contents:
@@ -114,6 +115,7 @@ class ContentBox(object):
     def __init__(self, content_id):
         self.id = content_id
         self.sources = []
+        self.lines = []
 
     def __iter__(self):
         iter(self.sources)
@@ -124,6 +126,7 @@ class ContentBox(object):
 
     def count(self):
         return len(self.sources)
+
 
 class SourceBox(object):
 
@@ -160,6 +163,10 @@ class Scenario(object):
         self.active_content = self.script.get_act(act_id).get_scene(scene_id).get_part(part_id).add_content(content_id)
 
 
+    def add_line(self, line_id):
+        self.active_content.lines.append(line_id)
+
+
     def get_content(self, act_id, scene_id, part_id, content_id):
         self.active_content = self.script.get_act(act_id).get_scene(scene_id).get_part(part_id).get_content(content_id)
         return self.active_content
@@ -167,12 +174,17 @@ class Scenario(object):
 
     def add_source(self, source_id, file):
         self.active_content.add_source(source_id, file)
-        pass
 
 
     def __iter__(self):
         return iter(self)
 
+    def line_iter(self):
+        for act in self.script.acts:
+            for scene in act.scenes:
+                for part in scene.parts:
+                    for content in part.contents:
+                        yield (content.id, content.lines, [source.id for source in content.sources])
 
 
 class Writer(object):
@@ -181,11 +193,13 @@ class Writer(object):
         self.script = script
         self.act = act
         self.scene = scene
+        self.html = ''
         self.scenario = Scenario(script)
         self.add_scenario_structure()
-        self.content_ids = []
-        self.init_content_ids()
+        #self.content_ids = []
+        #self.init_content_ids()
         self.process()
+        self.write_scenario()
 
 
     def add_scenario_structure(self):
@@ -202,6 +216,9 @@ class Writer(object):
         boxes = self.get_act_scene_part(content_id)
         self.scenario.add_content(boxes[0], boxes[1], boxes[2], content_id)
 
+    def add_line(self, line_id):
+        self.scenario.add_line(line_id=line_id)
+
 
     def get_content(self, content_id):
         boxes = self.get_act_scene_part(content_id)
@@ -214,15 +231,16 @@ class Writer(object):
         part_id = models.Content.objects.get(id=content_id).part.id
         return [act_id, scene_id, part_id]
 
-    def init_content_ids(self):
+    def scenario_content_ids(self):
         scene = models.Scene.objects.get(title=self.scene).id
         for part in models.Part.objects.filter(scene_id=scene):
             for content in models.Content.objects.filter(part_id=part.id):
-                self.content_ids.append(content.id)
+                #self.content_ids.append(content.id)
+                yield content.id
 
 
     def process(self):
-        for content_id in self.content_ids:
+        for content_id in self.scenario_content_ids(): #self.content_ids:
             type =  models.Type.objects.filter(content_id=content_id).first()
             print(type.name)
             self.branch(type.name, content_id)
@@ -237,11 +255,9 @@ class Writer(object):
         elif type_name == 'ALTERNATIVE_FREE':
             self.process_alternative_free(content_id, id)
         elif type_name == 'ALTERNATIVE_COMPOUND':
-            self.process_compound()
-            pass
+            self.process_compound(content_id, id)
         elif type_name == 'ALTERNATIVE_PARENT':
             self.process_parent(content_id)
-            pass
         elif type_name == 'ALTERNATIVE_PAIRED':
             self.process_paired(content_id)
         elif type_name == 'ALTERNATIVE_PAIRED_PARENT':
@@ -250,27 +266,9 @@ class Writer(object):
             pass
 
 
-    # def branch_by_id(self, type_name, id):
-    #     if type_name == 'SEQUENCE_SET':
-    #         pass
-    #     elif type_name == 'DEFAULT':
-    #         pass
-    #     elif type_name == 'ALTERNATIVE_FREE':
-    #         self.process_alternative_free_by_id(id)
-    #     elif type_name == 'ALTERNATIVE_COMPOUND':
-    #         pass
-    #     elif type_name == 'ALTERNATIVE_PARENT':
-    #         pass
-    #     elif type_name == 'ALTERNATIVE_PAIRED':
-    #         pass
-    #     elif type_name == 'ALTERNATIVE_PAIRED_PARENT':
-    #         pass
-    #     elif type_name == 'ALTERNATIVE_PAIRED_MIXED':
-    #         pass
-
-
     def process_sequence_set(self, content_id):
         sets = models.Group.objects.get(content_id=content_id, name='sets')
+        #print(models.Line.objects.get(content_id=content_id).id)
         set_groups = models.GroupContainer.objects.filter(container=sets)# short, med, long
         #set_groups = models.Item.objects.filter(group=sets.id).exclude(name='library')
         selected_set = set_groups[self.random(len(set_groups))] #shor or med or long
@@ -279,6 +277,8 @@ class Writer(object):
         selected_seq = seqs[self.random(len(seqs))]
         sources = models.Group.objects.get(id=selected_seq.group_id).source.all()
         self.add_content(content_id)
+        self.add_line(models.Line.objects.get(content_id=content_id).id)
+
         if len(sources) == 0:
             print('empty seq')
         for source in sources:
@@ -293,6 +293,7 @@ class Writer(object):
         sources = models.Line.objects.get(content=content_id).source.all()
         source = sources[self.random(len(sources))]
         self.add_content(content_id)
+        self.add_line(models.Line.objects.get(content_id=content_id).id)
         self.scenario.add_source(source.id, source.file)
         print(source.file)
         pass
@@ -308,17 +309,10 @@ class Writer(object):
         sources = models.Line.objects.get(id=option.id).source.all()
         source = sources[self.random(len(sources))]
         self.add_content(content_id)
+        self.add_line(option.id)
         self.scenario.add_source(source.id, source.file)
         print(source.file)
 
-    # def process_alternative_free_by_id(self, content_id, alt_id):
-    #     options = models.Group.objects.get(id=alt_id).line.all()
-    #     option = options[self.random(len(options))]
-    #     sources = models.Line.objects.get(id=option.id).source.all()
-    #     source = sources[self.random(len(sources))]
-    #     self.add_content(content_id)
-    #     self.scenario.add_source(source.id, source.file)
-    #     print(source.file)
 
     def process_paired(self, content_id):
         type_arguments = json.loads(models.Content.objects.get(id=content_id).type_set.get().arguments)
@@ -335,8 +329,8 @@ class Writer(object):
     def process_parent(self, content_id):
         children = models.Type.objects.filter(content_id=content_id)[1:]
         chosen = children[self.random(len(children))]
-        print(chosen.name)
-        self.branch(chosen.name, chosen.content_id)
+        print(chosen.name, chosen.content_id, chosen.id)
+        self.branch(chosen.name, chosen.content_id, chosen.id)
         pass
 
     def process_paired_parent(self, content_id):
@@ -347,33 +341,23 @@ class Writer(object):
         else:
             previous = int(type_arguments['prev'])
             print(previous)
-            prev_alt_id = models.Type.objects.get(content_id=previous).group_id
-
+            prev_type = models.Type.objects.get(content_id=previous)
+            print(prev_type.name)
+            # this code assumes that the previous choice has one source attached to it
+            # and has a line of description or dialogue
+            # what happens when the prev one is also a parent?
             prev_src_id = self.get_content(previous).sources[0].id
-
             prev_src = models.Source.objects.get(id=prev_src_id)
-            prev_alt = models.Group.objects.get(id=prev_alt_id)
-            #prev_src =  self.get_content(previous).sources[0]
+
+            prev_alt = models.Group.objects.get(id=prev_type.group_id)
             line = models.LineSource.objects.get(source = prev_src).line
-            #line = models.LineSource(source=prev_src)
-            index = models.GroupLine.objects.get(group=prev_alt, line=line).order #line.get(source_id=prev_src_id).order
-
-            #prev_lines_set = [line.line for line in models.Content.objects.get(id=previous).line_set.all()]
-            #prev_src_id = self.get_content(previous).sources[0].id
-            #chosen_line = models.Line.objects.get(source=prev_src_id).line
-            #print(chosen_line)
-            #index = prev_lines_set.index(chosen_line)
-            #alt_chosen = list(models.Type.objects.filter(content_id=content_id)[1:][index:index+1])[0]
-
+            index = models.GroupLine.objects.get(group=prev_alt, line=line).order
             alt_chosen = models.GroupContainer.objects.get(container=models.Group.objects.get(content_id=content_id, name__exact='alternative_paired_parent'), order=index).group
 
             print(alt_chosen.name)
             print(alt_chosen.id)
-            self.branch(alt_chosen.name, content_id, alt_chosen.group_id)
-
-
-            pass
-        pass
+            print(models.Type.objects.get(group_id=alt_chosen.id).name)
+            self.branch(models.Type.objects.get(group_id=alt_chosen.id).name, content_id, alt_chosen.id)
 
 
     def random(self, number):
@@ -383,17 +367,50 @@ class Writer(object):
             return randrange(0, number-1)
 
 
-    def process_compound(self):
+    def process_compound(self, content_id, alt_id):
+        #compound = models.Group.objects.filter(content_id=content_id)
+        if alt_id is None:
+            compound = models.Group.objects.get(content=content_id)
+        else:
+            compound = models.Type.objects.get(id=alt_id).group
+            default = models.GroupLine.objects.filter(group=compound, order=0).get().line
+            print(default.line)
+            print(default.id)
+
+
+        sources = models.Line.objects.get(id=default.id).source.all()
+        #sources = models.LineSource.objects.filter(line=default).source
+        source = sources[self.random(len(sources))]
+        self.add_content(content_id)
+        self.add_line(default.id)
+        #self.add_line(models.Line.objects.get(content_id=default.id).id)
+        self.scenario.add_source(source.id, source.file)
+
+
+        options = models.GroupLine.objects.filter(group=compound)[1:]
+        option = options[self.random(len(options))]
+        sources = models.Line.objects.get(id=option.id).source.all()
+        source = sources[self.random(len(sources))]
+        self.add_content(content_id)
+        self.add_line(option.line_id)
+        self.scenario.add_source(source.id, source.file)
         pass
+
 
     def get_parts(self):
         pass
 
 
+    def write_scenario(self):
+        for x in self.scenario.line_iter():
+            for line in x[1]:
+                self.html += models.Line.objects.get(pk=line).speaker + ': ' + models.Line.objects.get(pk=line).line + '<br>'#''.join((models.Line.objects.get(pk=line).speaker, ': ', models.Line.objects.get(pk=line).line + '<br>'))
+                print(models.Line.objects.get(pk=line).speaker + ': ' + models.Line.objects.get(pk=line).line)
+
+        return self.html
 
 
 
-
-write_script = Writer('jane',scene="Married too long")
+write_script = Writer('jane',scene="marriedtoolong")
 #write_script = Writer('jane',scene="Old films, new endings")
 #write_script = Writer('jane',scene="Bedtime stories")

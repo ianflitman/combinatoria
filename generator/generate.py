@@ -273,9 +273,9 @@ class ParseXML(object):
 
         if alt_type == 'ALTERNATIVE_PARENT':
             alts = cut.findall('./alternative')
-            parent = models.Group(content_id=content.id)
-            parent.name = 'alternative_parent'
-            parent.save()
+            parent = models.Group.objects.last()#(content_id=content.id)
+            #parent.name = 'alternative_parent'
+            #parent.save()
             counter = 0
             for alt in alts:
                 counter += 1
@@ -287,9 +287,9 @@ class ParseXML(object):
 
         if alt_type == 'ALTERNATIVE_PAIRED_PARENT':
             alts = cut.findall('./alternative')
-            parent = models.Group(content_id=content.id)
-            parent.name = 'alternative_paired_parent'
-            parent.save()
+            parent = models.Group.objects.last() #(content_id=content.id)
+            #parent.name = 'alternative_paired_parent'
+            #parent.save()
             counter = 0
             for alt in alts:
                 counter += 1
@@ -301,6 +301,25 @@ class ParseXML(object):
 
         if alt_type == 'ALTERNATIVE_COMPOUND':
             default = self.write_line(content.id, cut.attrib['speaker'], cut.find('./default/line').text)
+            content.line_set.add(default)
+            # default_type = models.Type()
+            # default_type.name = 'DEFAULT'
+            # default_type.content_id = content.id
+            # default_type.save()
+            # default.type_set.add(default_type)
+
+            shots = cut.findall('./default/shots/angle')
+
+            for shot in shots:
+                source = models.Source()
+                source.file = cut.find('./default/name').text + '_' + shot.attrib['type'] + '.mp4'
+                source.duration = float(shot.attrib['length']) * 1000
+                source.mime = 'video/mp4'
+                source.size = shot.attrib['bytes']
+                source.save()
+                line_source = models.LineSource(source=source, line=default)
+                line_source.save()
+
             alternative.line.add(default)
             self.process_options(content, alternative, cut)
 

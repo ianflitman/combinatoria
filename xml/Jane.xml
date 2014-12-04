@@ -3031,7 +3031,8 @@
           </shots>
         </option>
       </cut>
-      <cut id="11" type="alternative" alt="paired_parent" previous="mtl_n_10" position="2_2" speaker="John">
+    <cut id="11" type="alternative" alt="paired_paren|a
+    K`#t" previous="mtl_n_10" position="2_2" speaker="John">
         <alternative alt="free" id="1">
           <option id="1">
             <line>Please. No need for that sort of thing. We have a functional relationship.</line>
