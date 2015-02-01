@@ -5,7 +5,7 @@ from random import randrange
 from datetime import datetime
 from enum import Enum
 import json
-
+import django
 
 class Cursor(Enum):
     ACT = 0
@@ -63,6 +63,9 @@ class ActBox(object):
             if scene.id == scene_id:
                 return scene
 
+    def __repr__(self):
+        return {id: self.id}
+
 
 class SceneBox(object):
 
@@ -85,6 +88,8 @@ class SceneBox(object):
             if part.id == part_id:
                 return part
 
+    def __repr__(self):
+        return {'id': self.id}
 
 class PartBox(object):
 
@@ -109,6 +114,8 @@ class PartBox(object):
             if content.id == content_id:
                 return content
 
+    def __repr__(self):
+        return str(self.id)
 
 class ContentBox(object):
 
@@ -127,6 +134,8 @@ class ContentBox(object):
     def count(self):
         return len(self.sources)
 
+    def __repr__(self):
+        return str(self.id)
 
 class SourceBox(object):
 
@@ -137,6 +146,9 @@ class SourceBox(object):
     def __iter__(self):
         iter(self)
 
+    def __repr__(self):
+        return str(self.id)
+
 
 class Scenario(object):
 
@@ -145,6 +157,7 @@ class Scenario(object):
         self.id = models.Script.objects.get(title=self.title)
         self.script = ScriptBox()
         self.active_content = None
+        #self.json
 
 
     def add_act(self, act_id):
@@ -179,6 +192,7 @@ class Scenario(object):
     def __iter__(self):
         return iter(self)
 
+
     def line_iter(self):
         for act in self.script.acts:
             for scene in act.scenes:
@@ -186,16 +200,22 @@ class Scenario(object):
                     for content in part.contents:
                         yield (content.id, content.lines, [source.id for source in content.sources])
 
+    def json_scenario(self):
+        return json.dumps(self.script.acts)
+
 
 class Writer(object):
 
     def __init__(self, script, act=None, scene=None, part=None):
+        django.setup()
         self.script = script
         self.act = act
         self.scene = scene
         self.html = ''
+        self.json = ''
         self.scenario = Scenario(script)
         self.add_scenario_structure()
+
         #self.content_ids = []
         #self.init_content_ids()
         self.process()
@@ -203,14 +223,31 @@ class Writer(object):
 
 
     def add_scenario_structure(self):
-        act_id = models.Scene.objects.get(title=self.scene).act_id
-        self.scenario.add_act(act_id)
-        scenes = models.Scene.objects.filter(title=self.scene)
-        for scene in scenes:
-            self.scenario.add_scene(act_id, scene.id)
-            for part in models.Part.objects.filter(scene_id=scene.id):
-                self.scenario.add_part(act_id, scene.id, part.id)
+        self.json = {'script': {'meta':{'name': self.script},
+                                'acts':[]}
+        }
 
+        act_id = models.Scene.objects.get(title=self.scene).act_id
+        #act_id = models.Scene.objects.get(title=self.scene).objects.values('act_id','act_title')
+        #act_id = models.Scene.objects.filter(title=self.scene).values('act_id','act_title')
+
+        self.scenario.add_act(act_id)
+        #self.json['script']['acts'].append({'name': models.Act.objects.get(pk=act_id).title, 'scenes':[]})
+
+        #print(json.dumps(self.json))
+
+        scenes = models.Scene.objects.filter(title=self.scene)
+
+        for scene_counter, scene in enumerate(scenes):
+            print('scene count {0}'.format(scene_counter))
+            self.scenario.add_scene(act_id, scene.id)
+            self.json['script']['acts'][0]['scenes'].append({'title': scene.title, 'parts':[]})
+            print(json.dumps(self.json))
+            for part_counter, part in enumerate(models.Part.objects.filter(scene_id=scene.id)):
+                self.scenario.add_part(act_id, scene.id, part.id)
+                print('part count {0}'.format(part_counter))
+                self.json['script']['acts'][0]['scenes'][scene_counter]['parts'].append({'name': part.name, 'content':[]})
+        print(json.dumps(self.json))
 
     def add_content(self, content_id):
         boxes = self.get_act_scene_part(content_id)
@@ -296,6 +333,7 @@ class Writer(object):
         self.add_line(models.Line.objects.get(content_id=content_id).id)
         self.scenario.add_source(source.id, source.file)
         print(source.file)
+        #print(source.l)
         pass
 
 
@@ -407,7 +445,29 @@ class Writer(object):
                 self.html += models.Line.objects.get(pk=line).speaker + ': ' + models.Line.objects.get(pk=line).line + '<br>'#''.join((models.Line.objects.get(pk=line).speaker, ': ', models.Line.objects.get(pk=line).line + '<br>'))
                 print(models.Line.objects.get(pk=line).speaker + ': ' + models.Line.objects.get(pk=line).line)
 
+        #json_script = self.scenario.json_scenario()#json.dumps(self.scenario.script)
+        self.scenario_ui_json()
+        #print(json.load(json_script))
         return self.html
+
+    def scenario_ui_json(self):
+        scenario_json = json.dumps({'script': {
+                                         'meta': {},
+                                         'acts':[{
+                                             'scenes':[{
+                                                 'parts': [{
+                                                     'name':'',
+                                                     'content:' :[{
+                                                         'type':'',
+                                                         'data':{}
+                                                     }]
+                                                 }]
+                                             }]
+                                         }]
+                                    },
+                                })
+        print(scenario_json)
+
 
 
 
