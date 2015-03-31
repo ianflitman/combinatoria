@@ -43,180 +43,222 @@
         "file": "mtl_f_co2.mp4"
        }
       ], 
-      "sets": {
-       "medium": [
-        [
-         {
-          "duration": 12630, 
-          "file": "mtl_f_ca3.mp4"
-         }
+      "sets": [
+       {
+        "seqs": [
+         [
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 7290, 
-          "file": "mtl_f_2s.mp4"
-         }, 
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }
+        "name": "short"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 7290, 
-          "file": "mtl_f_2s.mp4"
-         }, 
-         {
-          "duration": 4740, 
-          "file": "mtl_f_ca2.mp4"
-         }
+        "name": "medium"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }, 
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }, 
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }, 
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 7290, 
-          "file": "mtl_f_2s.mp4"
-         }, 
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 7760, 
-          "file": "mtl_f_co1.mp4"
-         }, 
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }, 
-         {
-          "duration": 7760, 
-          "file": "mtl_f_co1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 7760, 
-          "file": "mtl_f_co1.mp4"
-         }, 
-         {
-          "duration": 4740, 
-          "file": "mtl_f_ca2.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 4740, 
-          "file": "mtl_f_ca2.mp4"
-         }, 
-         {
-          "duration": 7760, 
-          "file": "mtl_f_co1.mp4"
-         }
-        ]
-       ], 
-       "short": [
-        [
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 4740, 
-          "file": "mtl_f_ca2.mp4"
-         }
-        ]
-       ], 
-       "long": [
-        [
-         {
-          "duration": 7290, 
-          "file": "mtl_f_2s.mp4"
-         }, 
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }, 
-         {
-          "duration": 7760, 
-          "file": "mtl_f_co1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 7290, 
-          "file": "mtl_f_2s.mp4"
-         }, 
-         {
-          "duration": 4740, 
-          "file": "mtl_f_ca2.mp4"
-         }, 
-         {
-          "duration": 15190, 
-          "file": "mtl_f_co2.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 12630, 
-          "file": "mtl_f_ca3.mp4"
-         }, 
-         {
-          "duration": 7760, 
-          "file": "mtl_f_co1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 12630, 
-          "file": "mtl_f_ca3.mp4"
-         }, 
-         {
-          "duration": 15190, 
-          "file": "mtl_f_co2.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 15190, 
-          "file": "mtl_f_co2.mp4"
-         }, 
-         {
-          "duration": 5800, 
-          "file": "mtl_f_ca1.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 15190, 
-          "file": "mtl_f_co2.mp4"
-         }, 
-         {
-          "duration": 4740, 
-          "file": "mtl_f_ca2.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 15190, 
-          "file": "mtl_f_co2.mp4"
-         }, 
-         {
-          "duration": 12630, 
-          "file": "mtl_f_ca3.mp4"
-         }
-        ]
-       ]
-      }
+        "name": "long"
+       }
+      ]
      }, 
      {
       "sources": [
@@ -843,84 +885,107 @@
         "file": "mtl_n_2s.mp4"
        }
       ], 
-      "sets": {
-       "medium": [
-        [
-         {
-          "duration": 3850, 
-          "file": "mtl_n_ce.mp4"
-         }, 
-         {
-          "duration": 4270, 
-          "file": "mtl_n_co.mp4"
-         }
+      "sets": [
+       {
+        "seqs": [
+         [
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 3850, 
-          "file": "mtl_n_ce.mp4"
-         }, 
-         {
-          "duration": 6410, 
-          "file": "mtl_n_2s.mp4"
-         }
+        "name": "short"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 6410, 
-          "file": "mtl_n_2s.mp4"
-         }, 
-         {
-          "duration": 4270, 
-          "file": "mtl_n_co.mp4"
-         }
-        ]
-       ], 
-       "short": [
-        [
-         {
-          "duration": 4270, 
-          "file": "mtl_n_co.mp4"
-         }
+        "name": "medium"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }, 
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 6410, 
-          "file": "mtl_n_2s.mp4"
-         }
-        ]
-       ], 
-       "long": [
-        [
-         {
-          "duration": 6410, 
-          "file": "mtl_n_2s.mp4"
-         }, 
-         {
-          "duration": 3850, 
-          "file": "mtl_n_ce.mp4"
-         }, 
-         {
-          "duration": 4270, 
-          "file": "mtl_n_co.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3850, 
-          "file": "mtl_n_ce.mp4"
-         }, 
-         {
-          "duration": 6410, 
-          "file": "mtl_n_2s.mp4"
-         }, 
-         {
-          "duration": 4270, 
-          "file": "mtl_n_co.mp4"
-         }
-        ]
-       ]
-      }
+        "name": "long"
+       }
+      ]
      }, 
      {
       "sources": [
@@ -1857,216 +1922,266 @@
         "file": "mtl_t_co.mp4"
        }
       ], 
-      "sets": {
-       "medium": [
-        [
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }, 
-         {
-          "duration": 5290, 
-          "file": "mtl_t_2s2.mp4"
-         }
+      "sets": [
+       {
+        "seqs": [
+         [
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 3900, 
-          "file": "mtl_t_2s3.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
+        "name": "short"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }, 
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 8640, 
+           "id": 8696, 
+           "file": "mtl_t_2s1.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 3160, 
-          "file": "mtl_t_2s4.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
+        "name": "medium"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }, 
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 8640, 
+           "id": 8696, 
+           "file": "mtl_t_2s1.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 8640, 
+           "id": 8696, 
+           "file": "mtl_t_2s1.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ]
         ], 
-        [
-         {
-          "duration": 5290, 
-          "file": "mtl_t_2s2.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3900, 
-          "file": "mtl_t_2s3.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3160, 
-          "file": "mtl_t_2s4.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 8640, 
-          "file": "mtl_t_2s1.mp4"
-         }
-        ]
-       ], 
-       "short": [
-        [
-         {
-          "duration": 5290, 
-          "file": "mtl_t_2s2.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3900, 
-          "file": "mtl_t_2s3.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3160, 
-          "file": "mtl_t_2s4.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ]
-       ], 
-       "long": [
-        [
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }, 
-         {
-          "duration": 5290, 
-          "file": "mtl_t_2s2.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 3900, 
-          "file": "mtl_t_2s3.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 3160, 
-          "file": "mtl_t_2s4.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 8640, 
-          "file": "mtl_t_2s1.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 5290, 
-          "file": "mtl_t_2s2.mp4"
-         }, 
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3900, 
-          "file": "mtl_t_2s3.mp4"
-         }, 
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 3160, 
-          "file": "mtl_t_2s4.mp4"
-         }, 
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ], 
-        [
-         {
-          "duration": 8640, 
-          "file": "mtl_t_2s1.mp4"
-         }, 
-         {
-          "duration": 3480, 
-          "file": "mtl_t_co.mp4"
-         }, 
-         {
-          "duration": 6270, 
-          "file": "mtl_t_ca.mp4"
-         }
-        ]
-       ]
-      }
+        "name": "long"
+       }
+      ]
      }, 
      {
       "type": "ALTERNATIVE_FREE", 

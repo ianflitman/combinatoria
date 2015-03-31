@@ -1,9 +1,10 @@
 __author__ = 'ian'
-import xml.etree.ElementTree as etree
+
 from script import models
 from datetime import date
 import re
-from xml.etree.ElementTree import Element
+from xml.etree.ElementTree import Element as etree
+#import Element
 from mysql.connector import connect
 from mysql.connector.connection import MySQLConnection, MySQLCursor
 import json

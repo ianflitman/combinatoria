@@ -68,25 +68,26 @@ class SceneToJson:
         #     json_file.write(json.dumps(self.json, indent=1))
         #     json_file.close()
 
-        seq_content = {'id': content_id, 'type': 'SEQUENCE_SET', 'line': 'Pause', 'library': [], 'sets': {'short': [], 'medium': [], 'long': []}}
+        set_seq_content = {'id': content_id, 'type': 'SEQUENCE_SET', 'line': 'Pause', 'library': [], 'sets': [{'name': 'short', 'seqs':[]}, {'name':'medium', 'seqs': []}, {'name':'long', 'seqs': []}]}
         library_id = models.Group.objects.get(content_id=content_id, name='library').id
         sources = models.Group.objects.get(id=library_id).source.all()
         for source in sources:
-            seq_content['library'].append({'id': source.id, 'duration': source.duration, 'file': source.file})
+            set_seq_content['library'].append({'id': source.id, 'duration': source.duration, 'file': source.file})
 
-        for set_type in ['short', 'medium', 'long']:
+        #var setNames = ['short', 'medium', 'long']
+        for set_counter, set_type in enumerate(['short', 'medium', 'long']):
             set_id = models.Group.objects.get(content_id=content_id, name=set_type).id
-            sets = models.GroupContainer.objects.filter(container_id=set_id)
+            seqs = models.GroupContainer.objects.filter(container_id=set_id)
 
-            for set in sets:
-                sources = models.Group.objects.get(id=set.group_id).source.all()
-                set_content=[]
+            for seq_counter, seq in enumerate(seqs):
+                sources = models.Group.objects.get(id=seq.group_id).source.all()
+                seq_content=[]
                 for source in sources:
-                    set_content.append({'file':source.file, 'duration': source.duration})
+                    seq_content.append({'file':source.file, 'duration': source.duration, 'id': source.id})
 
-                seq_content['sets'][set_type].append(set_content)
+                set_seq_content['sets'][set_counter]['seqs'].append(seq_content)
 
-        self.json['scene']['parts'][self.current_part]['content'].append(seq_content)
+        self.json['scene']['parts'][self.current_part]['content'].append(set_seq_content)
         print(json.dumps(self.json))
 
 
