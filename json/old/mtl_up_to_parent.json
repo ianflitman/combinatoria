@@ -1,0 +1,2452 @@
+{
+ "meta": {
+  "act": "conversations", 
+  "script": "Jane"
+ }, 
+ "scene": {
+  "parts": [
+   {
+    "content": [
+     {
+      "line": "Pause", 
+      "type": "SEQUENCE_SET", 
+      "id": 970, 
+      "library": [
+       {
+        "duration": 7290, 
+        "id": 8528, 
+        "file": "mtl_f_2s.mp4"
+       }, 
+       {
+        "duration": 5800, 
+        "id": 8529, 
+        "file": "mtl_f_ca1.mp4"
+       }, 
+       {
+        "duration": 4740, 
+        "id": 8530, 
+        "file": "mtl_f_ca2.mp4"
+       }, 
+       {
+        "duration": 12630, 
+        "id": 8531, 
+        "file": "mtl_f_ca3.mp4"
+       }, 
+       {
+        "duration": 7760, 
+        "id": 8532, 
+        "file": "mtl_f_co1.mp4"
+       }, 
+       {
+        "duration": 15190, 
+        "id": 8533, 
+        "file": "mtl_f_co2.mp4"
+       }
+      ], 
+      "sets": [
+       {
+        "seqs": [
+         [
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ]
+        ], 
+        "name": "short"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ]
+        ], 
+        "name": "medium"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 7290, 
+           "id": 8528, 
+           "file": "mtl_f_2s.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }, 
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }, 
+          {
+           "duration": 7760, 
+           "id": 8532, 
+           "file": "mtl_f_co1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }, 
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }, 
+          {
+           "duration": 5800, 
+           "id": 8529, 
+           "file": "mtl_f_ca1.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }, 
+          {
+           "duration": 4740, 
+           "id": 8530, 
+           "file": "mtl_f_ca2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 15190, 
+           "id": 8533, 
+           "file": "mtl_f_co2.mp4"
+          }, 
+          {
+           "duration": 12630, 
+           "id": 8531, 
+           "file": "mtl_f_ca3.mp4"
+          }
+         ]
+        ], 
+        "name": "long"
+       }
+      ]
+     }, 
+     {
+      "sources": [
+       {
+        "duration": 11470, 
+        "id": 8534, 
+        "file": "fantasy_mtl_ce.mp4"
+       }, 
+       {
+        "duration": 9380, 
+        "id": 8535, 
+        "file": "fantasy_mtl_2s.mp4"
+       }
+      ], 
+      "line_id": 4317, 
+      "speaker": "Jake", 
+      "line": "What is your fantasy? The thing you dream about when your eyes are wide open?", 
+      "type": "DEFAULT", 
+      "id": 971
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 972, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "That my wife will stop threatening me.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 3900, 
+          "id": 8536, 
+          "file": "threatening me_cn.mp4"
+         }, 
+         {
+          "duration": 4180, 
+          "id": 8537, 
+          "file": "threatening me_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "That my wife will stop controlling me.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 4180, 
+          "id": 8538, 
+          "file": "controlling me_cn.mp4"
+         }, 
+         {
+          "duration": 4180, 
+          "id": 8539, 
+          "file": "controlling me_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "That my wife will stop ordering me about.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5110, 
+          "id": 8540, 
+          "file": "ordering me_cn.mp4"
+         }, 
+         {
+          "duration": 5340, 
+          "id": 8541, 
+          "file": "ordering me_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "That my wife will stop hitting me.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 3810, 
+          "id": 8542, 
+          "file": "hitting me_cn.mp4"
+         }, 
+         {
+          "duration": 5340, 
+          "id": 8543, 
+          "file": "hitting me_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "That my wife will stop complaining.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 4460, 
+          "id": 8544, 
+          "file": "complaining_cn.mp4"
+         }, 
+         {
+          "duration": 5530, 
+          "id": 8545, 
+          "file": "complaining_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 6, 
+        "line": "That my wife will stop disrespecting me in front of others.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6320, 
+          "id": 8546, 
+          "file": "disrespecting me_cn.mp4"
+         }, 
+         {
+          "duration": 6830, 
+          "id": 8547, 
+          "file": "disrespecting me_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 7, 
+        "line": "That my wife will stop having sex with me.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5340, 
+          "id": 8548, 
+          "file": "having sex with me_cn.mp4"
+         }, 
+         {
+          "duration": 5250, 
+          "id": 8549, 
+          "file": "having sex with me_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 973, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "Hardly a productive way to lead your life.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5940, 
+          "id": 8550, 
+          "file": "hardly productive_co.mp4"
+         }, 
+         {
+          "duration": 5760, 
+          "id": 8551, 
+          "file": "hardly productive_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Womankind are womancruel in my opinion.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8410, 
+          "id": 8552, 
+          "file": "womancruel_co.mp4"
+         }, 
+         {
+          "duration": 7690, 
+          "id": 8553, 
+          "file": "womancruel_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "I even like it to a degree. But enough is a fluid concept.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 11380, 
+          "id": 8554, 
+          "file": "fluid concept_co.mp4"
+         }, 
+         {
+          "duration": 9380, 
+          "id": 8555, 
+          "file": "fluid concept_2s.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 974, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "That's not what I asked. It's a call for help.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 9060, 
+          "id": 8556, 
+          "file": "call for help_ce.mp4"
+         }, 
+         {
+          "duration": 9330, 
+          "id": 8557, 
+          "file": "call for help_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "That's not what I asked. It's all domestic frustration.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 9240, 
+          "id": 8558, 
+          "file": "domestic frustration_ce.mp4"
+         }, 
+         {
+          "duration": 8820, 
+          "id": 8559, 
+          "file": "domestic frustration_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "That's not what I asked. It's just you waking up to the smell of your own stagnation.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 13700, 
+          "id": 8560, 
+          "file": "stagnation_ce.mp4"
+         }, 
+         {
+          "duration": 10590, 
+          "id": 8561, 
+          "file": "stagnation_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "That's not what I asked. It's just the knee jerk reaction of someone who's been married for too long.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 10680, 
+          "id": 8562, 
+          "file": "knee jerk reaction_ce.mp4"
+         }, 
+         {
+          "duration": 10960, 
+          "id": 8563, 
+          "file": "knee jerk reaction_2a.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 975, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "Oh. I always wanted to be a poet.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7340, 
+          "id": 8564, 
+          "file": "poet_cn.mp4"
+         }, 
+         {
+          "duration": 7010, 
+          "id": 8565, 
+          "file": "poet_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Oh. I always wanted to be an actor.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6640, 
+          "id": 8566, 
+          "file": "actor_cn.mp4"
+         }, 
+         {
+          "duration": 7110, 
+          "id": 8567, 
+          "file": "actor_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "Oh. I always wanted to be a politician.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7340, 
+          "id": 8568, 
+          "file": "politician_cn.mp4"
+         }, 
+         {
+          "duration": 8540, 
+          "id": 8569, 
+          "file": "politician_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "Oh. I always wanted to be a philosopher.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8590, 
+          "id": 8570, 
+          "file": "philosopher_cn.mp4"
+         }, 
+         {
+          "duration": 7800, 
+          "id": 8571, 
+          "file": "philosopher_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "Oh. I always wanted to be a pop star.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7340, 
+          "id": 8572, 
+          "file": "pop star_cn.mp4"
+         }, 
+         {
+          "duration": 8640, 
+          "id": 8573, 
+          "file": "pop star_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 6, 
+        "line": "Oh. I always wanted to be an artist.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9150, 
+          "id": 8574, 
+          "file": "artist_cn.mp4"
+         }, 
+         {
+          "duration": 8220, 
+          "id": 8575, 
+          "file": "artist_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 7, 
+        "line": "Oh. I always wanted to be a genius.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8730, 
+          "id": 8576, 
+          "file": "genius_cn.mp4"
+         }, 
+         {
+          "duration": 9660, 
+          "id": 8577, 
+          "file": "genius_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 8, 
+        "line": "Oh. I always wanted to be a director.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8220, 
+          "id": 8578, 
+          "file": "director_cn.mp4"
+         }, 
+         {
+          "duration": 8920, 
+          "id": 8579, 
+          "file": "director_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 976, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "That's better.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 5200, 
+          "id": 8580, 
+          "file": "better_ce.mp4"
+         }, 
+         {
+          "duration": 3620, 
+          "id": 8581, 
+          "file": "better_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Aren't they a bit overrated?", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 5760, 
+          "id": 8582, 
+          "file": "overrated_ce.mp4"
+         }, 
+         {
+          "duration": 6220, 
+          "id": 8583, 
+          "file": "overrated_2a.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 977, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "Then I'd have something to say.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 4320, 
+          "id": 8584, 
+          "file": "something to say_cn.mp4"
+         }, 
+         {
+          "duration": 4090, 
+          "id": 8585, 
+          "file": "something to say_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "My wife might fall in love with me again.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5340, 
+          "id": 8586, 
+          "file": "fall in love again_cn.mp4"
+         }, 
+         {
+          "duration": 3950, 
+          "id": 8587, 
+          "file": "fall in love again_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "Jane would not be impressed. She would see right through it.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7760, 
+          "id": 8588, 
+          "file": "not be impressed_cn.mp4"
+         }, 
+         {
+          "duration": 6920, 
+          "id": 8589, 
+          "file": "not be impressed_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "To be a name on other people's lips.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5710, 
+          "id": 8590, 
+          "file": "to be a name_cn.mp4"
+         }, 
+         {
+          "duration": 5390, 
+          "id": 8591, 
+          "file": "to be a name_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "Cheat death and be a part of history.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6320, 
+          "id": 8592, 
+          "file": "cheat death_cn.mp4"
+         }, 
+         {
+          "duration": 6320, 
+          "id": 8593, 
+          "file": "cheat death_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 6, 
+        "line": "I would sleep with so many women, Jane would get jealous.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6780, 
+          "id": 8594, 
+          "file": "jealous Jane_cn.mp4"
+         }, 
+         {
+          "duration": 9150, 
+          "id": 8595, 
+          "file": "jealous Jane_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 7, 
+        "line": "I would sleep with so many women, Jane would dissipate into thin air.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7800, 
+          "id": 8596, 
+          "file": "dissipating Jane_cn.mp4"
+         }, 
+         {
+          "duration": 8029, 
+          "id": 8597, 
+          "file": "dissipating Jane_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 8, 
+        "line": "I would sleep with so many women, my wife will have to book an appointment to see my dick again.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9380, 
+          "id": 8598, 
+          "file": "book an appointment_cn.mp4"
+         }, 
+         {
+          "duration": 9360, 
+          "id": 8599, 
+          "file": "book an appointment_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }
+    ], 
+    "name": "fantasy"
+   }, 
+   {
+    "content": [
+     {
+      "line": "Pause", 
+      "type": "SEQUENCE_SET", 
+      "id": 978, 
+      "library": [
+       {
+        "duration": 3850, 
+        "id": 8600, 
+        "file": "mtl_n_ce.mp4"
+       }, 
+       {
+        "duration": 4270, 
+        "id": 8601, 
+        "file": "mtl_n_co.mp4"
+       }, 
+       {
+        "duration": 6410, 
+        "id": 8602, 
+        "file": "mtl_n_2s.mp4"
+       }
+      ], 
+      "sets": [
+       {
+        "seqs": [
+         [
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }
+         ]
+        ], 
+        "name": "short"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ]
+        ], 
+        "name": "medium"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }, 
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3850, 
+           "id": 8600, 
+           "file": "mtl_n_ce.mp4"
+          }, 
+          {
+           "duration": 6410, 
+           "id": 8602, 
+           "file": "mtl_n_2s.mp4"
+          }, 
+          {
+           "duration": 4270, 
+           "id": 8601, 
+           "file": "mtl_n_co.mp4"
+          }
+         ]
+        ], 
+        "name": "long"
+       }
+      ]
+     }, 
+     {
+      "sources": [
+       {
+        "duration": 8080, 
+        "id": 8603, 
+        "file": "still doing it_ce.mp4"
+       }
+      ], 
+      "line_id": 4351, 
+      "speaker": "Jake", 
+      "line": "Is your wife still doing it?", 
+      "type": "DEFAULT", 
+      "id": 979
+     }, 
+     {
+      "sources": [
+       {
+        "duration": 8640, 
+        "id": 8604, 
+        "file": "happened last night_2s.mp4"
+       }
+      ], 
+      "line_id": 4352, 
+      "speaker": "John", 
+      "line": "It happened last night", 
+      "type": "DEFAULT", 
+      "id": 980
+     }, 
+     {
+      "sources": [
+       {
+        "duration": 5340, 
+        "id": 8605, 
+        "file": "why_ce.mp4"
+       }
+      ], 
+      "line_id": 4353, 
+      "speaker": "Jake", 
+      "line": "Why?", 
+      "type": "DEFAULT", 
+      "id": 981
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 982, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "I forgot to put the toilet seat down. It drives her wild.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7340, 
+          "id": 8606, 
+          "file": "toilet seat_co.mp4"
+         }, 
+         {
+          "duration": 7010, 
+          "id": 8607, 
+          "file": "toilet seat_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Jill thinks I'm having an affair.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 4230, 
+          "id": 8608, 
+          "file": "thinks affair_co.mp4"
+         }, 
+         {
+          "duration": 3900, 
+          "id": 8609, 
+          "file": "thinks affair_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "I told her I didn't want to sleep with her anymore.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 4550, 
+          "id": 8610, 
+          "file": "not sleep with her_co.mp4"
+         }, 
+         {
+          "duration": 5290, 
+          "id": 8611, 
+          "file": "not sleep with her_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "She's a woman and a lunatic, that's why.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5620, 
+          "id": 8612, 
+          "file": "lunatic_co.mp4"
+         }, 
+         {
+          "duration": 6830, 
+          "id": 8613, 
+          "file": "lunatic_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "Jill thought she found one of my pubic hairs in the butter.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6640, 
+          "id": 8614, 
+          "file": "pubic hair_co.mp4"
+         }, 
+         {
+          "duration": 6970, 
+          "id": 8615, 
+          "file": "pubic hair_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 6, 
+        "line": "Jill has low self-esteem. Attacking someone helps.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6500, 
+          "id": 8616, 
+          "file": "low self-esteem_co.mp4"
+         }, 
+         {
+          "duration": 6970, 
+          "id": 8617, 
+          "file": "low self-esteem_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 7, 
+        "line": "She's got to do something to fill the childless vacuum.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5760, 
+          "id": 8618, 
+          "file": "childless vacuum_co.mp4"
+         }, 
+         {
+          "duration": 7570, 
+          "id": 8619, 
+          "file": "childless vacuum_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 8, 
+        "line": "The unconscious Jane detection reflex. In spiteful remission as per usual.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8870, 
+          "id": 8620, 
+          "file": "detection reflex_co.mp4"
+         }, 
+         {
+          "duration": 9610, 
+          "id": 8621, 
+          "file": "detection reflex_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 983, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "It's always the same. Every time Jill watches pornography.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9200, 
+          "id": 8622, 
+          "file": "Jill porno_cn.mp4"
+         }, 
+         {
+          "duration": 10260, 
+          "id": 8623, 
+          "file": "Jill porno_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "It's always the same. Every time I start watching pornography.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8500, 
+          "id": 8624, 
+          "file": "John porno_cn.mp4"
+         }, 
+         {
+          "duration": 9750, 
+          "id": 8625, 
+          "file": "John porno_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "It's always the same. Every time we watch pornography.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9100, 
+          "id": 8626, 
+          "file": "our porno_cn.mp4"
+         }, 
+         {
+          "duration": 10450, 
+          "id": 8627, 
+          "file": "our porno_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "It's always the same. Every time we visit her mother.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8080, 
+          "id": 8628, 
+          "file": "visit mother_cn.mp4"
+         }, 
+         {
+          "duration": 9940, 
+          "id": 8629, 
+          "file": "visit mother_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "It's always the same. Every time we visit my parents.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9330, 
+          "id": 8630, 
+          "file": "visit my parents_cn.mp4"
+         }, 
+         {
+          "duration": 9940, 
+          "id": 8631, 
+          "file": "visit my parents_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 6, 
+        "line": "It's always the same. Every time Jill has her period.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8500, 
+          "id": 8632, 
+          "file": "Jill period_cn.mp4"
+         }, 
+         {
+          "duration": 10220, 
+          "id": 8633, 
+          "file": "Jill period_2s.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 7, 
+        "line": "It's always the same. Every time her niece has a birthday.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8080, 
+          "id": 8634, 
+          "file": "niece birthday_cn.mp4"
+         }, 
+         {
+          "duration": 11700, 
+          "id": 8635, 
+          "file": "niece birthday_2s.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 984, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "I went straight to Jane and cried in her lap.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6360, 
+          "id": 8636, 
+          "file": "lap cry_co.mp4"
+         }, 
+         {
+          "duration": 6320, 
+          "id": 8637, 
+          "file": "lap cry_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Sometimes only the thought of Jane stops me from wringing her neck.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 7060, 
+          "id": 8638, 
+          "file": "wringing her neck_co.mp4"
+         }, 
+         {
+          "duration": 7660, 
+          "id": 8639, 
+          "file": "wringing her neck_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "I gave as good as I got. I love touching the bruises, don't you?", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9010, 
+          "id": 8640, 
+          "file": "touching the bruises_co.mp4"
+         }, 
+         {
+          "duration": 9750, 
+          "id": 8641, 
+          "file": "touching the bruises_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "Deep down I know it's for my own good.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 6730, 
+          "id": 8642, 
+          "file": "for my own good_co.mp4"
+         }, 
+         {
+          "duration": 6920, 
+          "id": 8643, 
+          "file": "for my own good_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "sources": [
+       {
+        "duration": 5710, 
+        "id": 8644, 
+        "file": "say sorry_ce.mp4"
+       }, 
+       {
+        "duration": 5020, 
+        "id": 8645, 
+        "file": "say sorry_2a.mp4"
+       }
+      ], 
+      "line_id": 4373, 
+      "speaker": "Jake", 
+      "line": "Did she say she was sorry?", 
+      "type": "DEFAULT", 
+      "id": 985
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 986, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "That's just the trouble. She was all delicious afterward.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8680, 
+          "id": 8646, 
+          "file": "delicious afterward_cn.mp4"
+         }, 
+         {
+          "duration": 10540, 
+          "id": 8647, 
+          "file": "delicious afterward_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "That's just the trouble. She was. Then I have to console her.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 9980, 
+          "id": 8648, 
+          "file": "console her_cn.mp4"
+         }, 
+         {
+          "duration": 10820, 
+          "id": 8649, 
+          "file": "console her_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "That's just the trouble. She was. Then I have to forgive her.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 10590, 
+          "id": 8650, 
+          "file": "have to forgive_cn.mp4"
+         }, 
+         {
+          "duration": 11380, 
+          "id": 8651, 
+          "file": "have to forgive_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "That's just the trouble. Sorry isn't in her vocabulary.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 8029, 
+          "id": 8652, 
+          "file": "sorry vocabulary_cn.mp4"
+         }, 
+         {
+          "duration": 10310, 
+          "id": 8653, 
+          "file": "sorry vocabulary_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "That's just the trouble. Don't worry. I made sure she was.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 10910, 
+          "id": 8654, 
+          "file": "made sure she was_cn.mp4"
+         }, 
+         {
+          "duration": 11980, 
+          "id": 8655, 
+          "file": "made sure she was_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 6, 
+        "line": "That's just the trouble. She doesn't need to. I enjoy my wife.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 10540, 
+          "id": 8656, 
+          "file": "enjoy my wife_cn.mp4"
+         }, 
+         {
+          "duration": 11380, 
+          "id": 8657, 
+          "file": "enjoy my wife_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 7, 
+        "line": "That's just the trouble. She doesn't need to. I enjoy the strife.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 12260, 
+          "id": 8658, 
+          "file": "enjoy the strife_cn.mp4"
+         }, 
+         {
+          "duration": 13470, 
+          "id": 8659, 
+          "file": "enjoy the strife_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "arguments": {
+       "prev": null, 
+       "total": 2, 
+       "pos": 1, 
+       "next": "988"
+      }, 
+      "type": "ALTERNATIVE_PAIRED", 
+      "id": 987, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "Buy her some flowers for Christ sake.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 6830, 
+          "id": 8660, 
+          "file": "buy flowers_ce.mp4"
+         }, 
+         {
+          "duration": 6130, 
+          "id": 8661, 
+          "file": "buy flowers_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Go and see Jane, she will tell you what to do.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 7200, 
+          "id": 8662, 
+          "file": "see Jane_ce.mp4"
+         }, 
+         {
+          "duration": 7660, 
+          "id": 8663, 
+          "file": "see Jane_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "line": "Jane would never do a thing like that.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 5760, 
+          "id": 8664, 
+          "file": "Jane never do_ce.mp4"
+         }, 
+         {
+          "duration": 5060, 
+          "id": 8665, 
+          "file": "Jane never do_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "line": "Jane is a lot worse in many ways.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 5390, 
+          "id": 8666, 
+          "file": "Jane worse_ce.mp4"
+         }, 
+         {
+          "duration": 6360, 
+          "id": 8667, 
+          "file": "Jane worse_2a.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "line": "I don't like to see you upset.", 
+        "speaker": "Jake", 
+        "sources": [
+         {
+          "duration": 6220, 
+          "id": 8668, 
+          "file": "you upset_ce.mp4"
+         }, 
+         {
+          "duration": 5900, 
+          "id": 8669, 
+          "file": "you upset_2a.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "arguments": {
+       "prev": "987", 
+       "total": 2, 
+       "pos": 2, 
+       "next": null
+      }, 
+      "type": "ALTERNATIVE_PAIRED_PARENT", 
+      "id": 988, 
+      "children": [
+       {
+        "position": 1, 
+        "type": "ALTERNATIVE_FREE", 
+        "id": 988, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "Please. No need for that sort of thing. We have a functional relationship.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7850, 
+            "id": 8670, 
+            "file": "functional relationship_cn.mp4"
+           }, 
+           {
+            "duration": 8450, 
+            "id": 8671, 
+            "file": "functional relationship_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "No need. She's grown allergic to such gestures.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7150, 
+            "id": 8672, 
+            "file": "allergic to gestures_cn.mp4"
+           }, 
+           {
+            "duration": 8130, 
+            "id": 8673, 
+            "file": "allergic to gestures_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "type": "ALTERNATIVE_FREE", 
+        "id": 988, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "Jane doesn't care about my life. Why should she?", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7340, 
+            "id": 8674, 
+            "file": "no care for life_cn.mp4"
+           }, 
+           {
+            "duration": 7340, 
+            "id": 8675, 
+            "file": "no care for life_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "Jane doesn't care about my wife. Why should she?", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7850, 
+            "id": 8676, 
+            "file": "no care for wife_cn.mp4"
+           }, 
+           {
+            "duration": 6690, 
+            "id": 8677, 
+            "file": "no care for wife_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 3, 
+          "line": "And then face her when I haven't done it? No, thank you.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7010, 
+            "id": 8678, 
+            "file": "face her_cn.mp4"
+           }, 
+           {
+            "duration": 7850, 
+            "id": 8679, 
+            "file": "face her_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }, 
+       {
+        "position": 3, 
+        "type": "ALTERNATIVE_FREE", 
+        "id": 988, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "And that's why we love her so. Isn't it, Jake?", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7060, 
+            "id": 8680, 
+            "file": "why we love her_cn.mp4"
+           }, 
+           {
+            "duration": 6920, 
+            "id": 8681, 
+            "file": "why we love her_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "Jane is capable of anything. You should know that.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 8920, 
+            "id": 8682, 
+            "file": "capable of anything_cn.mp4"
+           }, 
+           {
+            "duration": 7240, 
+            "id": 8683, 
+            "file": "capable of anything_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }, 
+       {
+        "position": 4, 
+        "type": "ALTERNATIVE_FREE", 
+        "id": 988, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "And a lot lot better too.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 6780, 
+            "id": 8684, 
+            "file": "lot better_cn.mp4"
+           }, 
+           {
+            "duration": 5900, 
+            "id": 8685, 
+            "file": "lot better_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "That's why she needs the pair of us. To share the load.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7940, 
+            "id": 8686, 
+            "file": "share the load_cn.mp4"
+           }, 
+           {
+            "duration": 8450, 
+            "id": 8687, 
+            "file": "share the load_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }, 
+       {
+        "position": 5, 
+        "type": "ALTERNATIVE_FREE", 
+        "id": 988, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "I know.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 5020, 
+            "id": 8688, 
+            "file": "i know_cn.mp4"
+           }, 
+           {
+            "duration": 5620, 
+            "id": 8689, 
+            "file": "i know_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "Please. No need for that sort of thing. We have a functional relationship.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 9010, 
+            "id": 8690, 
+            "file": "functional Jake_cn.mp4"
+           }, 
+           {
+            "duration": 9100, 
+            "id": 8691, 
+            "file": "functional Jake_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 3, 
+          "line": "Now don't you get all homosexual, Jake.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 7850, 
+            "id": 8692, 
+            "file": "getting homosexual_cn.mp4"
+           }, 
+           {
+            "duration": 6320, 
+            "id": 8693, 
+            "file": "getting homosexual_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "sources": [
+       {
+        "duration": 6500, 
+        "id": 8694, 
+        "file": "immeasurably so_ce.mp4"
+       }, 
+       {
+        "duration": 11560, 
+        "id": 8695, 
+        "file": "immeasurably so_2a.mp4"
+       }
+      ], 
+      "line_id": 4398, 
+      "speaker": "Jake", 
+      "line": "Indeed. Immeasurably so.", 
+      "type": "DEFAULT", 
+      "id": 989
+     }
+    ], 
+    "name": "last night"
+   }, 
+   {
+    "content": [
+     {
+      "line": "Pause", 
+      "type": "SEQUENCE_SET", 
+      "id": 990, 
+      "library": [
+       {
+        "duration": 8640, 
+        "id": 8696, 
+        "file": "mtl_t_2s1.mp4"
+       }, 
+       {
+        "duration": 5290, 
+        "id": 8697, 
+        "file": "mtl_t_2s2.mp4"
+       }, 
+       {
+        "duration": 3900, 
+        "id": 8698, 
+        "file": "mtl_t_2s3.mp4"
+       }, 
+       {
+        "duration": 3160, 
+        "id": 8699, 
+        "file": "mtl_t_2s4.mp4"
+       }, 
+       {
+        "duration": 6270, 
+        "id": 8700, 
+        "file": "mtl_t_ca.mp4"
+       }, 
+       {
+        "duration": 3480, 
+        "id": 8701, 
+        "file": "mtl_t_co.mp4"
+       }
+      ], 
+      "sets": [
+       {
+        "seqs": [
+         [
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ]
+        ], 
+        "name": "short"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }, 
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 8640, 
+           "id": 8696, 
+           "file": "mtl_t_2s1.mp4"
+          }
+         ]
+        ], 
+        "name": "medium"
+       }, 
+       {
+        "seqs": [
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }, 
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 8640, 
+           "id": 8696, 
+           "file": "mtl_t_2s1.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 5290, 
+           "id": 8697, 
+           "file": "mtl_t_2s2.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3900, 
+           "id": 8698, 
+           "file": "mtl_t_2s3.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 3160, 
+           "id": 8699, 
+           "file": "mtl_t_2s4.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ], 
+         [
+          {
+           "duration": 8640, 
+           "id": 8696, 
+           "file": "mtl_t_2s1.mp4"
+          }, 
+          {
+           "duration": 3480, 
+           "id": 8701, 
+           "file": "mtl_t_co.mp4"
+          }, 
+          {
+           "duration": 6270, 
+           "id": 8700, 
+           "file": "mtl_t_ca.mp4"
+          }
+         ]
+        ], 
+        "name": "long"
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_FREE", 
+      "id": 991, 
+      "options": [
+       {
+        "position": 1, 
+        "line": "Tonight I will procure myself a remedy.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 5200, 
+          "id": 8702, 
+          "file": "procure a remedy_co.mp4"
+         }, 
+         {
+          "duration": 5620, 
+          "id": 8703, 
+          "file": "procure a remedy_2o.mp4"
+         }
+        ]
+       }, 
+       {
+        "position": 2, 
+        "line": "Tonight it will end.", 
+        "speaker": "John", 
+        "sources": [
+         {
+          "duration": 4550, 
+          "id": 8704, 
+          "file": "end tonight_co.mp4"
+         }, 
+         {
+          "duration": 5250, 
+          "id": 8705, 
+          "file": "end tonight_2o.mp4"
+         }
+        ]
+       }
+      ]
+     }, 
+     {
+      "type": "ALTERNATIVE_PARENT", 
+      "id": 992, 
+      "children": [
+       {
+        "default": {
+         "sources": [
+          {
+           "duration": 5900, 
+           "id": 8706, 
+           "file": "underpants_cn.mp4"
+          }, 
+          {
+           "duration": 4550, 
+           "id": 8707, 
+           "file": "underpants_2s.mp4"
+          }
+         ], 
+         "line_id": 4402, 
+         "speaker": "John", 
+         "line": "I've dirtied my underpants in self-defence.", 
+         "type": "DEFAULT", 
+         "id": 992
+        }, 
+        "position": 1, 
+        "type": "ALTERNATIVE_COMPOUND", 
+        "id": 992, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "My wife must learn what disgust really means.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 5250, 
+            "id": 8708, 
+            "file": "must learn disgust_co.mp4"
+           }, 
+           {
+            "duration": 4970, 
+            "id": 8709, 
+            "file": "must learn disgust_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "Skid marks from a grown man will make her feel like a mother.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 6360, 
+            "id": 8710, 
+            "file": "skid marks_co.mp4"
+           }, 
+           {
+            "duration": 6220, 
+            "id": 8711, 
+            "file": "skid marks_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }, 
+       {
+        "default": {
+         "sources": [
+          {
+           "duration": 4410, 
+           "id": 8712, 
+           "file": "wedding photos_cn.mp4"
+          }, 
+          {
+           "duration": 3850, 
+           "id": 8713, 
+           "file": "wedding photos_2s.mp4"
+          }
+         ], 
+         "line_id": 4405, 
+         "speaker": "John", 
+         "line": "I'll bring out the wedding photos again.", 
+         "type": "DEFAULT", 
+         "id": 992
+        }, 
+        "position": 2, 
+        "type": "ALTERNATIVE_COMPOUND", 
+        "id": 992, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "And this time her conscience will be the thing that gets pricked.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 5900, 
+            "id": 8714, 
+            "file": "conscience pricked_co.mp4"
+           }, 
+           {
+            "duration": 5340, 
+            "id": 8715, 
+            "file": "conscience pricked_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "Nothing like the glow of past happiness to put things in perspective.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 6410, 
+            "id": 8716, 
+            "file": "past happiness glow_co.mp4"
+           }, 
+           {
+            "duration": 6410, 
+            "id": 8717, 
+            "file": "past happiness glow_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }, 
+       {
+        "default": {
+         "sources": [
+          {
+           "duration": 5850, 
+           "id": 8718, 
+           "file": "flirt without shame_cn.mp4"
+          }, 
+          {
+           "duration": 5530, 
+           "id": 8719, 
+           "file": "flirt without shame_2s.mp4"
+          }
+         ], 
+         "line_id": 4408, 
+         "speaker": "John", 
+         "line": "I'm going to do my best to flirt with her without shame.", 
+         "type": "DEFAULT", 
+         "id": 992
+        }, 
+        "position": 3, 
+        "type": "ALTERNATIVE_COMPOUND", 
+        "id": 992, 
+        "options": [
+         {
+          "position": 1, 
+          "line": "I will massage her foot and christen each toe. Dumpy, Long Horn, Siddartha, Bashful and Miss Twinky.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 14070, 
+            "id": 8720, 
+            "file": "christen each toe_co.mp4"
+           }, 
+           {
+            "duration": 13470, 
+            "id": 8721, 
+            "file": "christen each toe_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 2, 
+          "line": "I will tell her every little lie she wants to hear.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 4920, 
+            "id": 8722, 
+            "file": "tell every lie_co.mp4"
+           }, 
+           {
+            "duration": 5670, 
+            "id": 8723, 
+            "file": "tell every lie_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 3, 
+          "line": "Confound them with kindness that's what I say.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 6040, 
+            "id": 8724, 
+            "file": "confound with kindness_co.mp4"
+           }, 
+           {
+            "duration": 5340, 
+            "id": 8725, 
+            "file": "confound with kindness_2o.mp4"
+           }
+          ]
+         }, 
+         {
+          "position": 4, 
+          "line": "By a miraculous act of will I am willing to make.", 
+          "speaker": "John", 
+          "sources": [
+           {
+            "duration": 6590, 
+            "id": 8726, 
+            "file": "act of will_co.mp4"
+           }, 
+           {
+            "duration": 5480, 
+            "id": 8727, 
+            "file": "act of will_2o.mp4"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ], 
+    "name": "tonight"
+   }
+  ], 
+  "name": "marriedtoolong"
+ }
+}
