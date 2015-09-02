@@ -5,11 +5,6 @@
       <user-name>jane</user-name>
       <user-password>dfc0dfcbdfc4dfcf</user-password>
     </data-source>
-    <data-source name="MySQL - combinatoria@localhost" uuid="7726807e-5eca-45b3-86f4-80e972cdaf2f">
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <schema-pattern>combinatoria.*</schema-pattern>
-      <default-schemas>combinatoria.*</default-schemas>
-    </data-source>
+    <data-source name="MySQL - combinatoria@localhost" uuid="7726807e-5eca-45b3-86f4-80e972cdaf2f" />
   </component>
 </project>

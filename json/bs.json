@@ -1,0 +1,1959 @@
+{
+  "scene": {
+    "parts": [
+      {
+        "content": [
+          {
+            "line": "Pause",
+            "type": "SEQUENCE_SET",
+            "sets": [
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 3.52,
+                      "file": "pause_bs_n_co2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 3.8,
+                      "file": "pause_bs_n_co3"
+                    }
+                  ]
+                ],
+                "name": "short"
+              },
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 8.4,
+                      "file": "pause_bs_n_2s2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 12.24,
+                      "file": "pause_bs_n_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_n_2s1"
+                    },
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_n_2s1"
+                    },
+                    {
+                      "duration": 3.52,
+                      "file": "pause_bs_n_co2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    },
+                    {
+                      "duration": 3.8,
+                      "file": "pause_bs_n_co3"
+                    }
+                  ]
+                ],
+                "name": "medium"
+              },
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 8.4,
+                      "file": "pause_bs_n_2s2"
+                    },
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 3.52,
+                      "file": "pause_bs_n_co2"
+                    },
+                    {
+                      "duration": 12.24,
+                      "file": "pause_bs_n_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_n_2s1"
+                    },
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    },
+                    {
+                      "duration": 3.52,
+                      "file": "pause_bs_n_co2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.64,
+                      "file": "pause_bs_n_co1"
+                    },
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_n_2s1"
+                    },
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_n_2s1"
+                    },
+                    {
+                      "duration": 12.24,
+                      "file": "pause_bs_n_ca1"
+                    },
+                    {
+                      "duration": 3.8,
+                      "file": "pause_bs_n_co3"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.36,
+                      "file": "pause_bs_n_ca2"
+                    },
+                    {
+                      "duration": 4.64,
+                      "file": "pause_bs_n_co1"
+                    },
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_n_2s1"
+                    },
+                    {
+                      "duration": 3.52,
+                      "file": "pause_bs_n_co2"
+                    }
+                  ]
+                ],
+                "name": "long"
+              }
+            ]
+          },
+          {
+            "type": "DEFAULT",
+            "line": "What did you do last night?",
+            "speaker": "John",
+            "sources": [
+              {"file": "do last_cn"},
+              {"file": "do last_2o"}
+            ]
+          },
+          {
+            "type": "DEFAULT",
+            "line": "My wife told me a story.",
+            "speaker": "Jake",
+            "sources": [
+              {"file": "told story_ce"},
+              {"file": "told story_2a"}
+            ]
+          },
+          {
+            "type": "DEFAULT",
+            "line": "Your wife tells you stories?",
+            "speaker": "John",
+            "sources": [
+              {"file": "tells you_cn"},
+              {"file": "tells you_2o"}
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "Bedtime stories. Practice for when we have a child.",
+                "speaker": "Jake",
+                "sources": [{"file": "practice_2s"}]
+              },
+              {
+                "position": 2,
+                "line": "She does that. And I lay my head in her lap.",
+                "speaker": "Jake",
+                "sources": [{"file": "lap_2s"}]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED",
+            "options": [
+              {
+                "position": 1,
+                "line": "Only when it's a full moon.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "full moon_ca"},
+                  {"file": "full moon_2a"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "Only on the first night she bleeds.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "bleeds_ca"},
+                  {"file": "bleeds_2a"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "Only when I'm a good boy.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "boy_ca"},
+                  {"file": "boy_2a"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "Only when she is drunk.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "drunk_ca"},
+                  {"file": "drunk_2a"}
+                ]
+              },
+              {
+                "position": 5,
+                "line": "Only when I can't sleep.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "sleep_ca"},
+                  {"file": "sleep_2a"}
+                ]
+              },
+              {
+                "position": 6,
+                "line": "Only after she comes.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "comes_ca"},
+                  {"file": "comes_2a"}
+                ]
+              },
+              {
+                "position": 7,
+                "line": "Only on the anniversary of her father's death.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "anniversary_ca"},
+                  {"file": "anniversary_2a"}
+                ]
+              }
+            ],
+            "arguments": {
+              "total": 2,
+              "pos": 1,
+              "next": "bs_n_10"
+            }
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED",
+            "options": [
+              {
+                "position": 1,
+                "line": "My wife never tells me stories. Nothing ever happens in her life.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "happens_cn"},
+                  {"file": "happens_2s"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "My wife never tells me stories. We operate through a sign language of sorts.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "sign_cn"},
+                  {"file": "sign_2s"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "My wife never tells me stories. Except where I'm the clumsy villain.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "villain_cn"},
+                  {"file": "villain_2s"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "My wife never tells me stories. Except for the old ones.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "old ones_cn"},
+                  {"file": "old ones_2s"}
+                ]
+              }
+            ],
+            "arguments": {
+              "total": 2,
+              "pos": 1,
+              "next": "bs_n_9"
+            }
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED",
+            "options": [
+              {
+                "position": 1,
+                "line": "Apart from you.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "apart_ce"},
+                  {"file": "apart_2s"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "Jane sometimes never speaks. She just is.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "just is_ce"},
+                  {"file": "just is_2s"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "You always said she had an inventive turn of mind.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "inventive_ce"},
+                  {"file": "inventive_2s"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "And you try to listen as if it's the first time.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "first_ce"},
+                  {"file": "first_2s"}
+                ]
+              }
+            ],
+            "arguments": {
+              "prev": "bs_n_6",
+              "total": 2,
+              "pos": 2
+            }
+          },
+          {
+            "type": "DEFAULT",
+            "line": "Lucky girl.",
+            "speaker": "John",
+            "sources": [
+              {"file": "lucky_cn"},
+              {"file": "lucky_2o"}
+            ]
+          },
+          {
+            "type": "DEFAULT",
+            "line": "Only my wife couldn't finish her story.",
+            "speaker": "Jake",
+            "sources": [
+              {"file": "not finish_ce"},
+              {"file": "not finish_2s"}
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED_PARENT",
+            "children": [
+              {
+                "position": 1,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Because it wasn't a full moon last night. Her mind only swims in moonlight.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "swims_ca"},
+                      {"file": "swims_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Because it wasn't a full moon last night. Her stories are born in the cradle of only the purest lunacy.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "cradle_ca"},
+                      {"file": "cradle_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 2,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Because it was just pink water last night. The sanitary towel rustled between her legs all night.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "rustled_ca"},
+                      {"file": "rustled_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Because it was just pink water last night. I woke up to the smell of blood.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "smell_ca"},
+                      {"file": "smell_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Because it was just pink water last night. Her stories are there only to heal her wound.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "wound_ca"},
+                      {"file": "wound_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 3,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Because I farted in bed last night. The unspoken conjugal right of a husband, I feel.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "conjugal_ca"},
+                      {"file": "conjugal_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Because I farted in bed last night. And she won't touch me all night for it.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "touch_ca"},
+                      {"file": "touch_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Because I farted in bed last night. Its particular aroma reminded her of her father.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "aroma_ca"},
+                      {"file": "aroma_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 4,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Last night she threw up half way through. And guess who cleaned it up.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "clean_ca"},
+                      {"file": "clean_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Last night she threw up half way through. She made up for it in the morning though.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "made up_ca"},
+                      {"file": "made up_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Last night she threw up half way through. Maybe the alcohol or just an ending she wanted to avoid.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "avoid_ca"},
+                      {"file": "avoid_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 5,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Last night she managed she sent herself to sleep. I felt she had abandoned me.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "abandoned_ca"},
+                      {"file": "abandoned_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Last night she managed she sent herself to sleep. I like to hear her sleep. It is my lullaby.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "lullaby_ca"},
+                      {"file": "lullaby_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Last night she managed she sent herself to sleep. When I tried to wake her up, she bit me.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "bit_ca"},
+                      {"file": "bit_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 6,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Last night she had a sexual aftershock. God, aren't women weird.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "weird_ca"},
+                      {"file": "weird_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Last night she had a sexual aftershock. Aren't women incredibly lucky?",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "lucky_ca"},
+                      {"file": "lucky_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Last night she had a sexual aftershock. So she had to start again from scratch.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "scratch_ca"},
+                      {"file": "scratch_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 7,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Last night she suddenly remembered what he was really like. Words and disappointment do not mix.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "mix_ca"},
+                      {"file": "mix_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Last night she suddenly remembered what he was really like. His smile still haunts her.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "haunts_ca"},
+                      {"file": "haunts_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Last night she suddenly remembered what he was really like. Then she looked at me, sighed and went straight to sleep.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "sighed_ca"},
+                      {"file": "sighed_2a"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arguments": {
+              "prev": "bs_n_5",
+              "total": 2,
+              "pos": 2
+            }
+          }
+        ],
+        "keyword": "n",
+        "summary": "Jake's wife tells him bedtime stories under certain circumstances."
+      },
+      {
+        "content": [
+          {
+            "line": "Pause",
+            "type": "SEQUENCE_SET",
+            "sets": [
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 4.2,
+                      "file": "pause_bs_t_co2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 7.8,
+                      "file": "pause_bs_t_co1"
+                    }
+                  ]
+                ],
+                "name": "short"
+              },
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 7.8,
+                      "file": "pause_bs_t_co1"
+                    },
+                    {
+                      "duration": 11.88,
+                      "file": "pause_bs_t_2s2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 9.04,
+                      "file": "pause_bs_t_2s1"
+                    },
+                    {
+                      "duration": 7.8,
+                      "file": "pause_bs_t_co1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 9.04,
+                      "file": "pause_bs_t_2s1"
+                    },
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 11.88,
+                      "file": "pause_bs_t_2s2"
+                    },
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    }
+                  ]
+                ],
+                "name": "medium"
+              },
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 9.04,
+                      "file": "pause_bs_t_2s1"
+                    },
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    },
+                    {
+                      "duration": 7.8,
+                      "file": "pause_bs_t_co1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 9.04,
+                      "file": "pause_bs_t_2s1"
+                    },
+                    {
+                      "duration": 7.8,
+                      "file": "pause_bs_t_co1"
+                    },
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    },
+                    {
+                      "duration": 9.04,
+                      "file": "pause_bs_t_2s1"
+                    },
+                    {
+                      "duration": 4.2,
+                      "file": "pause_bs_t_co2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 11.88,
+                      "file": "pause_bs_t_2s2"
+                    },
+                    {
+                      "duration": 6.08,
+                      "file": "pause_bs_t_ca1"
+                    },
+                    {
+                      "duration": 4.2,
+                      "file": "pause_bs_t_co2"
+                    }
+                  ]
+                ],
+                "name": "long"
+              }
+            ]
+          },
+          {
+            "type": "DEFAULT",
+            "line": "Try again tonight. What kind of stories will your wife tell you?",
+            "speaker": "John",
+            "sources": [
+              {"file": "try again_cn"},
+              {"file": "try again_2s"}
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_PARENT",
+            "children": [
+              {
+                "default": {
+                  "type": "DEFAULT",
+                  "line": "She likes to castrate the prince.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "castrate_ce"},
+                    {"file": "castrate_2o"}
+                  ]
+                },
+                "position": 1,
+                "type": "ALTERNATIVE_COMPOUND",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "The princess does it. With her teeth.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "teeth_ca"},
+                      {"file": "teeth_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "His mother usually ends up doing it while he's asleep.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "when asleep_ca"},
+                      {"file": "when asleep_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "His father does it out of jealousy. He wants the princess for himself.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "jealousy_ca"},
+                      {"file": "jealousy_2a"}
+                    ]
+                  },
+                  {
+                    "position": 4,
+                    "line": "He does it to himself when he hears the princess is with another.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "to himself_ca"},
+                      {"file": "to himself_2a"}
+                    ]
+                  },
+                  {
+                    "position": 5,
+                    "line": "Before she says he changes into the beast.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "beast_ca"},
+                      {"file": "beast_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "default": {
+                  "type": "DEFAULT",
+                  "line": "Fairytales that get rather rude.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "rude_ce"},
+                    {"file": "rude_2o"}
+                  ]
+                },
+                "position": 2,
+                "type": "ALTERNATIVE_COMPOUND",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "The princess doesn't just prick her finger.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "prick_ca"},
+                      {"file": "prick_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "For my wife the world of magic is opened with sex.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "magic_ca"},
+                      {"file": "magic_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "In narrative her sexuality has no limits.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "sexuality_ca"},
+                      {"file": "sexuality_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "default": {
+                  "type": "DEFAULT",
+                  "line": "About betrayal and forgiveness mostly.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "betrayal_cn"},
+                    {"file": "betrayal_2o"}
+                  ]
+                },
+                "position": 3,
+                "type": "ALTERNATIVE_COMPOUND",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "The woman betrays and the man forgives.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "man forgives_ca"},
+                      {"file": "man forgives_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "The man betrays and the woman forgives.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "man betrays_ca"},
+                      {"file": "man betrays_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "Her stories are always about redemption through pain.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "redemption_ca"},
+                      {"file": "redemption_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "default": {
+                  "type": "DEFAULT",
+                  "line": "They always end happily ever after.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "ever after_ce"},
+                    {"file": "ever after_2o"}
+                  ]
+                },
+                "position": 4,
+                "type": "ALTERNATIVE_COMPOUND",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "We both like to believe in happy endings. For ourselves most of all.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "happy_ca"},
+                      {"file": "happy_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "The lovers, that is. They deny their own fears in the presence of the other.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "deny fears_ca"},
+                      {"file": "deny fears_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "The lovers, that is. They affirm their own existence in the presence of the other.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "affirm_ca"},
+                      {"file": "affirm_2a"}
+                    ]
+                  },
+                  {
+                    "position": 4,
+                    "line": "Happy endings are fiction's greatest invention.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "invention_ca"},
+                      {"file": "invention_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "default": {
+                  "type": "DEFAULT",
+                  "line": "They send me sweetly to sleep. Why should I care?",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "sweetly_ce"},
+                    {"file": "sweetly_2o"}
+                  ]
+                },
+                "position": 5,
+                "type": "ALTERNATIVE_COMPOUND",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "They lubricate my dreams with innocence.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "lubricate_ca"},
+                      {"file": "lubricate_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Such stories are for children. What is she trying to tell me?",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "children_ca"},
+                      {"file": "children_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "I just close my eyes and think of mother.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "mother think_ca"},
+                      {"file": "mother think_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "default": {
+                  "type": "DEFAULT",
+                  "line": "It's the prince who gets rescued for her.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "rescued_ce"},
+                    {"file": "rescued_2o"}
+                  ]
+                },
+                "position": 6,
+                "type": "ALTERNATIVE_COMPOUND",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "From a life in which he does not need to acheive.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "acheive_ca"},
+                      {"file": "acheive_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "From the spell his mother put him in.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "spell_ca"},
+                      {"file": "spell_2a"}
+                    ]
+                  },
+                  {
+                    "position": 3,
+                    "line": "By an Amazon queen so she can take his seed.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "seed_ca"},
+                      {"file": "seed_2a"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED",
+            "options": [
+              {
+                "position": 1,
+                "line": "When we briefly became the person we could be for the person we could never have.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "briefly_co"},
+                  {"file": "briefly_2o"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "When love was sweet and Jane most absent.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "absent_co"},
+                  {"file": "absent_2o"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "When your wife was a world of new possibilities.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "world_co"},
+                  {"file": "world_2o"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "I should've done her once or twice and left it at that.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "twice_co"},
+                  {"file": "twice_2o"}
+                ]
+              },
+              {
+                "position": 5,
+                "line": "Before you end up hating the fact that you love her so much.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "hating love_co"},
+                  {"file": "hating love_2o"}
+                ]
+              },
+              {
+                "position": 6,
+                "line": "When we saw ourselves as angels and believed it was really us.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "angels_co"},
+                  {"file": "angels_2o"}
+                ]
+              },
+              {
+                "position": 7,
+                "line": "When what was sweet is now just grotesque.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "grotesque_co"},
+                  {"file": "grotesque_2o"}
+                ]
+              },
+              {
+                "position": 8,
+                "line": "When she had a perfect arse.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "arse_co"},
+                  {"file": "arse_2o"}
+                ]
+              }
+            ],
+            "arguments": {
+              "total": 2,
+              "pos": 1,
+              "next": "bs_t_6"
+            }
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "Tragic, I tell you. Tragic.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "tragic_cn"},
+                  {"file": "tragic_2s"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "Sad or what?",
+                "speaker": "John",
+                "sources": [
+                  {"file": "sad_cn"},
+                  {"file": "sad_2s"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "How completely idiotic.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "idiotic_cn"},
+                  {"file": "idiotic_2s"}
+                ]
+              }
+            ]
+          },
+          {
+            "arguments": {
+              "prev": "bs_t_4",
+              "total": 2,
+              "pos": 2
+            },
+            "type": "ALTERNATIVE_PAIRED_MIXED",
+            "options": [
+              {
+                "position": 1,
+                "line": "We found a solution to that. We became mutual parasites. That way if one of you leaves, you both die.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "parasites_ce"},
+                  {"file": "parasites_2a"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "I remember first thinking about Jane when I was three.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "three_ce"},
+                  {"file": "three_2a"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "Not a prison of old ones.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "prison_ce"},
+                  {"file": "prison_2a"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "Sexual convenience comes at a price.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "convenience_ce"},
+                  {"file": "convenience_2a"}
+                ]
+              },
+              {
+                "position": 5,
+                "line": "Or loving the fact that you hate her so much.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "loving hate_ce"},
+                  {"file": "loving hate_2a"}
+                ]
+              },
+              {
+                "position": 6,
+                "line": "Marriage is an act of faith, the hardest of spirtual disciplines.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "faith_ce"},
+                  {"file": "faith_2a"}
+                ]
+              },
+              {
+                "position": 7,
+                "line": "We can forgive a pretty face almost anything.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "pretty_ce"},
+                  {"file": "pretty_2a"}
+                ]
+              }
+            ],
+            "nested": {
+              "position": 1,
+              "type": "ALTERNATIVE_FREE",
+              "options": [
+                {
+                  "position": 1,
+                  "line": "A decent pair of buttocks are not hard to find, John.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "decent_ce"},
+                    {"file": "decent_2a"}
+                  ]
+                },
+                {
+                  "position": 2,
+                  "line": "Meet the mother. If you can imagine doing it with her, you're made for life.",
+                  "speaker": "Jake",
+                  "sources": [
+                    {"file": "for life_ce"},
+                    {"file": "for life_2a"}
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "keyword": "t",
+        "summary": "Jake describes the kind of bedtime stories his wife tells him."
+      },
+      {
+        "content": [
+          {
+            "line": "Pause",
+            "type": "SEQUENCE_SET",
+            "sets": [
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 4.04,
+                      "file": "pause_bs_f_co4"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 5.08,
+                      "file": "pause_bs_f_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 5.64,
+                      "file": "pause_bs_f_ca2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 6.2,
+                      "file": "pause_bs_f_co3"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.88,
+                      "file": "pause_bs_f_2s3"
+                    }
+                  ]
+                ],
+                "name": "short"
+              },
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 10.12,
+                      "file": "pause_bs_f_ca4"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 10.24,
+                      "file": "pause_bs_f_co2"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 5.08,
+                      "file": "pause_bs_f_ca1"
+                    },
+                    {
+                      "duration": 4.04,
+                      "file": "pause_bs_f_co4"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 6.2,
+                      "file": "pause_bs_f_co3"
+                    },
+                    {
+                      "duration": 5.08,
+                      "file": "pause_bs_f_ca1"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_f_ca3"
+                    },
+                    {
+                      "duration": 6.2,
+                      "file": "pause_bs_f_co3"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 3.68,
+                      "file": "pause_bs_f_2s1"
+                    },
+                    {
+                      "duration": 6.2,
+                      "file": "pause_bs_f_co3"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 7.16,
+                      "file": "pause_bs_f_2s2"
+                    },
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_f_ca3"
+                    }
+                  ]
+                ],
+                "name": "medium"
+              },
+              {
+                "seqs": [
+                  [
+                    {
+                      "duration": 10.24,
+                      "file": "pause_bs_f_co2"
+                    },
+                    {
+                      "duration": 10.12,
+                      "file": "pause_bs_f_ca4"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 7.16,
+                      "file": "pause_bs_f_2s2"
+                    },
+                    {
+                      "duration": 4.04,
+                      "file": "pause_bs_f_co4"
+                    },
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_f_ca3"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 3.68,
+                      "file": "pause_bs_f_2s1"
+                    },
+                    {
+                      "duration": 5.64,
+                      "file": "pause_bs_f_ca2"
+                    },
+                    {
+                      "duration": 6.2,
+                      "file": "pause_bs_f_co3"
+                    },
+                    {
+                      "duration": 4.8,
+                      "file": "pause_bs_f_ca3"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 7.16,
+                      "file": "pause_bs_f_2s2"
+                    },
+                    {
+                      "duration": 5.68,
+                      "file": "pause_bs_f_co1"
+                    },
+                    {
+                      "duration": 5.64,
+                      "file": "pause_bs_f_ca2"
+                    },
+                    {
+                      "duration": 4.04,
+                      "file": "pause_bs_f_co4"
+                    }
+                  ],
+                  [
+                    {
+                      "duration": 6.2,
+                      "file": "pause_bs_f_co3"
+                    },
+                    {
+                      "duration": 5.64,
+                      "file": "pause_bs_f_ca2"
+                    },
+                    {
+                      "duration": 4.88,
+                      "file": "pause_bs_f_2s3"
+                    },
+                    {
+                      "duration": 5.08,
+                      "file": "pause_bs_f_ca1"
+                    }
+                  ]
+                ],
+                "name": "long"
+              }
+            ]
+          },
+          {
+            "type": "DEFAULT",
+            "line": "Jane tells me stories.",
+            "speaker": "John",
+            "sources": [
+              {"file": "stories_cn"},
+              {"file": "stories_2s"}
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "Jane. Her fantasy is quite extraordinary.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "extraordinary_ce"},
+                  {"file": "extraordinary_2a"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "Jane. Her fantasy is hard to duplicate.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "duplicate_ce"},
+                  {"file": "duplicate_2a"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "Jane. Her fantasy begins on the edge of terror.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "terror_ce"},
+                  {"file": "terror_2a"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "There's no one like Jane.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "no one_cn"},
+                  {"file": "no one_2s"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "There's a bit of Jane in all of us.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "in all_cn"},
+                  {"file": "in all_2s"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "Her stories never really end. You know, in a tidy little knot at the end.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "knot_ce"},
+                  {"file": "knot_2a"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "They contradict themselves like dreams.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "dreams_ce"},
+                  {"file": "dreams_2a"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "The most innocent and the most cruel.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "cruel_ce"},
+                  {"file": "cruel_2a"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "They round and round in circles. Like we all do.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "circles_ce"},
+                  {"file": "circles_2a"}
+                ]
+              },
+              {
+                "position": 5,
+                "line": "They splinter like remote controlled TV.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "splinter_ce"},
+                  {"file": "splinter_2a"}
+                ]
+              },
+              {
+                "position": 6,
+                "line": "She has no need of stories herself. She creates them wherever she goes.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "creates_ce"},
+                  {"file": "creates_2a"}
+                ]
+              },
+              {
+                "position": 7,
+                "line": "Greek myths meet science fiction. Men as the heroic and redundant species.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "myths_ce"},
+                  {"file": "myths_2a"}
+                ]
+              },
+              {
+                "position": 8,
+                "line": "Her storybook is her own version of history.",
+                "speaker": "Jake",
+                "sources": [
+                  {"file": "storybook_ce"},
+                  {"file": "storybook_2a"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "Her eyes get glazed over. Their focus not even within but totally elsewhere.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "elsewhere_ca"},
+                  {"file": "elsewhere_2s"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "Her eyes get glazed over. Fixed like a totem. Commanding and indifferent.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "totem_ca"},
+                  {"file": "totem_2s"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "Her eyes get glazed over as she sees all the stories at once.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "at once_ca"},
+                  {"file": "at once_2s"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "Her eyes get glazed over. A self-inflicted blindness she cures with language.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "blindness_ca"},
+                  {"file": "blindness_2s"}
+                ]
+              },
+              {
+                "position": 5,
+                "line": "Her eyes get glazed over and her pupils shrink to a full stop.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "shrink_ca"},
+                  {"file": "shrink_2s"}
+                ]
+              },
+              {
+                "position": 6,
+                "line": "Her eyes get glazed over and you vanish in the impersonal stare.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "stare_ca"},
+                  {"file": "stare_2s"}
+                ]
+              },
+              {
+                "position": 7,
+                "line": "Her eyes get glazed over when the narrative narcotic kicks in.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "narcotic_ca"},
+                  {"file": "narcotic_2s"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_FREE",
+            "options": [
+              {
+                "position": 1,
+                "line": "I get mesmerised by the movement of her lips.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "lips_cn"},
+                  {"file": "lips_2o"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "I get mesmerised by the cadence falling from her lips.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "cadence_cn"},
+                  {"file": "cadence_2o"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED",
+            "options": [
+              {
+                "position": 1,
+                "line": "Her voice is the sound of a litany.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "litany_co"},
+                  {"file": "litany_2s"}
+                ]
+              },
+              {
+                "position": 2,
+                "line": "Her voice is how a woman should really sound.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "sound_co"},
+                  {"file": "sound_2s"}
+                ]
+              },
+              {
+                "position": 3,
+                "line": "But her kiss is cold like Judas.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "Judas_co"},
+                  {"file": "Judas_2s"}
+                ]
+              },
+              {
+                "position": 4,
+                "line": "And her kiss haunts you. Like ecstasy.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "ecstasy_co"},
+                  {"file": "ecstasy_2s"}
+                ]
+              },
+              {
+                "position": 5,
+                "line": "Red waves undulating over vowels. Teeth biting on consonants.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "consonants_co"},
+                  {"file": "consonants_2s"}
+                ]
+              },
+              {
+                "position": 6,
+                "line": "I forget what she is saying and yet I understand.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "understand_co"},
+                  {"file": "understand_2s"}
+                ]
+              },
+              {
+                "position": 7,
+                "line": "The only thing language can do is surrender.",
+                "speaker": "John",
+                "sources": [
+                  {"file": "surrender_co"},
+                  {"file": "surrender_2s"}
+                ]
+              }
+            ],
+            "arguments": {
+              "total": 2,
+              "pos": 1,
+              "next": "bs_f_9"
+            }
+          },
+          {
+            "type": "ALTERNATIVE_PAIRED_PARENT",
+            "children": [
+              {
+                "position": 1,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "And she can scream like a Banshee.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "Banshee_ca"},
+                      {"file": "Banshee_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Amen. And when you respond you respond on behalf of all men.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "amen_ca"},
+                      {"file": "amen_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 2,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "A voice you and close to eyes to and listen.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "voice_ca"},
+                      {"file": "voice_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "A mother talking beautifully to her child.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "talking_ca"},
+                      {"file": "talking_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 3,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "And she sleeps with her eyes wide open.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "wide open_ca"},
+                      {"file": "wide open_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "A delicious kiss that bends you into submission.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "submission_ca"},
+                      {"file": "submission_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 4,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "And you whole life beomes a kind of purgatory towards another moment like that.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "purgatory_ca"},
+                      {"file": "purgatory_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "But her affections are quite the carnivore. They feed on your worship.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "carnivore_ca"},
+                      {"file": "carnivore_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 5,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "No, it's her hands. When she touches me I get so happy inside.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "happy_ca"},
+                      {"file": "happy_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "No, it's her hands. Those graceful ambassadors to her state.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "graceful_ca"},
+                      {"file": "graceful_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 6,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "I remember all that she said and yet I never understand.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "never_ca"},
+                      {"file": "never_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "Sometimes I wish I could forget some of the things she has said.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "forget_ca"},
+                      {"file": "forget_2a"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "position": 7,
+                "type": "ALTERNATIVE_FREE",
+                "options": [
+                  {
+                    "position": 1,
+                    "line": "Sometimes it falls like sweet rain, sometimes like a plague of curses.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "rain_ca"},
+                      {"file": "rain_2a"}
+                    ]
+                  },
+                  {
+                    "position": 2,
+                    "line": "And then take no prisoners.",
+                    "speaker": "Jake",
+                    "sources": [
+                      {"file": "prisoners_ca"},
+                      {"file": "prisoners_2a"}
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arguments": {
+              "prev": "bs_f_7",
+              "total": 2,
+              "pos": 2
+            }
+          }
+        ],
+        "keyword": "f",
+        "summary": "They talk about the kind of stories that Jane tells."
+      }
+    ],
+    "code": "bs",
+    "name": "Bedtime stories"
+  }
+}

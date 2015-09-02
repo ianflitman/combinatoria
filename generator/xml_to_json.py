@@ -22,7 +22,7 @@ class XMLToJson(object):
         self.parts = self.scene.findall('./section')
         self.json['scene']['name'] = self.dict_value(self.scene.attrib['title'])
         self.process()
-        #self.print_to_file()
+        self.print_to_file()
 
     def process(self):
         for part in self.parts:
@@ -57,12 +57,14 @@ class XMLToJson(object):
             self.process_compound(cut)
         elif alt_type == 'paired':
             self.process_paired(cut)
-        elif alt_type == 'paired_parent':
+        elif alt_type == 'paired parent':
             self.process_paired_parent(cut)
         elif alt_type == 'parent':
             self.process_parent(cut)
+        elif alt_type == 'paired mixed':
+            self.process_paired_mixed(cut)
         else:
-            raise Exception('type not found in sort_alternative'.format(alt_type))
+            raise Exception('type {0} not found in sort_alternative'.format(alt_type))
 
 
     def getCurrentId(self):
@@ -82,8 +84,12 @@ class XMLToJson(object):
                 seq = seqlist.split(',')
                 for shot in seq:
                     angle = cut.find('./shots/angle[@type="{0}"]'.format(shot))
-                    duration = float(angle.attrib['length'])
+                    try:
+                        duration = float(angle.attrib['length'])
+                    except:
+                        pass
                     filename = 'pause_' + self.code + '_' + self.parts[self.part_index].attrib['keyword'] + '_' + shot
+                    #seq_content.append({'file': filename})
                     seq_content.append({'file': filename, 'duration': duration})
 
                 set_seq_content['sets'][seq_type_counter]['seqs'].append(seq_content)
@@ -127,7 +133,8 @@ class XMLToJson(object):
         for source in sources:
             duration = source.attrib['length']
             filename = name + '_' + source.attrib['type']
-            source_content.append({'file': filename, 'duration': float(duration)})
+            source_content.append({'file': filename})
+            #source_content.append({'file': filename, 'duration': float(duration)})
             #self.get_duration(filename, duration)
 
         return source_content
@@ -213,6 +220,35 @@ class XMLToJson(object):
         #print(json.dumps(self.json))
         pass
 
+    def process_paired_mixed(self, cut):
+        paired_mixed_content = {'type': 'ALTERNATIVE_PAIRED', 'options': [] , 'nested':{'type':'', 'position': 1}, 'arguments': self.process_paired_args(cut)}
+        paired_mixed_content['options'] = self.process_options(cut)
+
+        nested = cut.find('./nested')
+        child_type = nested.attrib['alt']
+        if child_type == 'free':
+            nested.attrib['speaker'] = cut.attrib['speaker']
+            paired_mixed_content['nested']['options'] = self.process_options(nested)
+            paired_mixed_content['nested']['type'] = 'ALTERNATIVE_FREE'
+            pass
+        elif child_type == 'compound':
+            raise Exception('compound nested type not implemented yet in process_paired_mixed')
+
+        self.json['scene']['parts'][self.part_index]['content'].append(paired_mixed_content)
+        pass
+
+    def process_nested(self, cut):
+        nested = cut.find('./nested')
+        child_type = nested.attrib['alt']
+        if child_type == 'free':
+            nested.attrib['speaker'] = cut.attrib['speaker']
+            nested_json = self.process_options(nested)
+            nested_json['type'] = 'ALTERNATIVE_FREE'
+            return nested_json
+        elif child_type == 'compound':
+            print 'we have a compound nested type'
+        pass
+
     def process_paired_parent(self, cut):
         children = cut.findall('./alternative')
         speaker = cut.attrib['speaker']
@@ -245,5 +281,5 @@ class XMLToJson(object):
 
         print 'xml duration {0} vs. MP4Box duration {1}'.format(duration, file_duration)
 
-test = XMLToJson('/opt/combinatoria/xml/Jane.xml', 'sc')
+test = XMLToJson('/opt/combinatoria/xml/Jane.xml', 'bs')
 

@@ -61,7 +61,7 @@ def concat(file):
     #ioproc = Popen(['sudo','-S', 'iotop'], stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True, universal_newlines=True)
     #print ioproc.communicate('v1all196\n')
     #cpu_percent()
-    proc = Popen(['ffmpeg', '-f', 'concat', '-i', file, '-c', 'copy', '-y', 'testConcat.mp4'])
+    proc = Popen(['ffmpeg', '-f', 'concat', '-i', file, '-c', 'copy', '-y', 'testConcatNew.mp4'])
     #cpu_percent()
     #print proc.pid
 
@@ -138,7 +138,7 @@ if __name__ == "__main__":
     #mem, percent = memory_usage_psutil()
     #print mem
     #print percent
-    concat('/opt/combinatoria/generator/concatFiles/concat_f_n.txt')
+    concat('/opt/combinatoria/generator/concatFiles/concat.txt')
     #concatTimer()
     #concat('/opt/combinatoria/generator/concatFiles/concatDouble.txt')
     #concat('/opt/combinatoria/generator/concatFiles/concatQuad.txt')

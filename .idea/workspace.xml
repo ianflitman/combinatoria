@@ -2,81 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="762f1a58-adb5-43e8-a61d-628fbf96950f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/DejaVuSans.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/DejaVuSansMono.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Garuda.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/LiberationSans-Italic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/LiberationSans-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/PTC55F.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/PTS55F.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/PTS56F.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Padauk-book.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Padauk.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/UbuntuMono-R.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/UbuntuMono-RI.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-all.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-bitstream-filters.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-codecs.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-devices.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-filters.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-formats.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-protocols.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-resampler.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-scaler.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-utils.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/ffmpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffprobe.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/ffprobe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffserver.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/ffserver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/hate her_pc_cn.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/hate her_tv_cn.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/silence.aac" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/concat.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/concatDouble.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/concatQuad.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/concat_f_n.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-all.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-bitstream-filters.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-codecs.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-devices.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-filters.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-formats.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-protocols.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-resampler.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-scaler.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg-utils.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffmpeg.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/ffmpegReadFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/ffmpegTests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffprobe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/manpages/ffserver.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/presets/libvpx-1080p.ffpreset" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/presets/libvpx-1080p50_60.ffpreset" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/presets/libvpx-360p.ffpreset" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/presets/libvpx-720p.ffpreset" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/presets/libvpx-720p50_60.ffpreset" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ffmpeg-git-20150308-64bit-static/subl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/testConcat.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/testConcat2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/concatFiles/testConcat3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/threadConcat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/threadFfmpegTest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/titles" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_complete.json" afterPath="$PROJECT_DIR$/json/old/mtl_complete.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_f" afterPath="$PROJECT_DIR$/json/old/mtl_f" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_f.json" afterPath="$PROJECT_DIR$/json/old/mtl_f.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_f_expanded.json" afterPath="$PROJECT_DIR$/json/old/mtl_f_expanded.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_f_expanded_2.json" afterPath="$PROJECT_DIR$/json/old/mtl_f_expanded_2.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_up_to_paired_parent.json" afterPath="$PROJECT_DIR$/json/old/mtl_up_to_paired_parent.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/json/mtl_up_to_parent.json" afterPath="$PROJECT_DIR$/json/old/mtl_up_to_parent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xml/Jane_old.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/TestConversationFiles.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sine/basic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/copyForRewatch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/findExportFile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/amended/hand amendments" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sine/animate_decay/py.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json/amended/sc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generator/testVideoFiles.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/test.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/testConcat.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/testConcat2.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/testConcat3.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/threadConcat0.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/threadConcat1.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/threadConcat2.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/threadConcat3.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generator/threadConcat4.mp4" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xml/Jane.xml" afterPath="$PROJECT_DIR$/xml/Jane.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py" afterPath="$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/ffmpegTests.py" afterPath="$PROJECT_DIR$/generator/ffmpegTests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/mtl.json" afterPath="$PROJECT_DIR$/json/mtl.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator/xml_to_json.py" afterPath="$PROJECT_DIR$/generator/xml_to_json.py" />
     </list>
@@ -98,16 +48,22 @@
     <splitter proportion="0.5" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/script$profileFfmpeg.coverage" NAME="profileFfmpeg Coverage Results" MODIFIED="1431519144487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
-    <SUITE FILE_PATH="coverage/script$xml_to_scene.coverage" NAME="xml to scene Coverage Results" MODIFIED="1429768606831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$xml_to_scene.coverage" NAME="xml to scene Coverage Results" MODIFIED="1441225182431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
     <SUITE FILE_PATH="coverage/script$writer.coverage" NAME="writer Coverage Results" MODIFIED="1422707697533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
     <SUITE FILE_PATH="coverage/script$JsonizeScene.coverage" NAME="JsonizeScene Coverage Results" MODIFIED="1424019993813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
-    <SUITE FILE_PATH="coverage/script$threadTest.coverage" NAME="threadTest Coverage Results" MODIFIED="1431530828421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
     <SUITE FILE_PATH="coverage/script$yield_test.coverage" NAME="yield_test Coverage Results" MODIFIED="1417352247205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
     <SUITE FILE_PATH="coverage/script$generate.coverage" NAME="generate Coverage Results" MODIFIED="1417419190708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
     <SUITE FILE_PATH="coverage/script$threadConcat.coverage" NAME="threadConcat Coverage Results" MODIFIED="1431705454267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
-    <SUITE FILE_PATH="coverage/script$ffmpegTest.coverage" NAME="ffmpegTest Coverage Results" MODIFIED="1432396646408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
-    <SUITE FILE_PATH="coverage/script$cleanupWatch.coverage" NAME="cleanupWatch Coverage Results" MODIFIED="1432407543861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$cleanupWatch.coverage" NAME="cleanupWatch Coverage Results" MODIFIED="1440267272541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$VideoTest.coverage" NAME="VideoTest Coverage Results" MODIFIED="1433347048058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$animate_decay.coverage" NAME="animate_decay Coverage Results" MODIFIED="1439499626390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sine/animate_decay" />
+    <SUITE FILE_PATH="coverage/script$basic_sine.coverage" NAME="basic sine Coverage Results" MODIFIED="1439500148583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sine" />
+    <SUITE FILE_PATH="coverage/script$TestVideoFiles.coverage" NAME="TestVideoFiles Coverage Results" MODIFIED="1440330828420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$profileFfmpeg.coverage" NAME="profileFfmpeg Coverage Results" MODIFIED="1431519144487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$threadTest.coverage" NAME="threadTest Coverage Results" MODIFIED="1431530828421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$findExportFile.coverage" NAME="findExportFile Coverage Results" MODIFIED="1440099914860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$copyForRewatch.coverage" NAME="copyForRewatch Coverage Results" MODIFIED="1434570331387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
+    <SUITE FILE_PATH="coverage/script$ffmpegTest.coverage" NAME="ffmpegTest Coverage Results" MODIFIED="1432408056645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generator" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -313,108 +269,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ffmpegReadFile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/ffmpegReadFile.py">
+      <file leaf-file-name="TestConversationFiles.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/TestConversationFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1938">
-              <caret line="2" column="12" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="12" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3080" max-vertical-offset="3515">
+              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+              <folding>
+                <element signature="e#20#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="concat.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/concatFiles/concat.txt">
+        <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_23-08-2015/concat.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="741">
-              <caret line="3" column="61" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="concat_f_n.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/concatFiles/concat_f_n.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="494">
-              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ffmpegTests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/ffmpegTests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1931" max-vertical-offset="2869">
-              <caret line="142" column="71" selection-start-line="142" selection-start-column="71" selection-end-line="142" selection-end-column="71" />
-              <folding>
-                <element signature="e#19#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostWatchFolderCleanUp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33272728" vertical-offset="292" max-vertical-offset="969">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="threadConcat.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/threadConcat.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1197">
-              <caret line="23" column="87" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="188" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="285">
-              <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsonize_scene.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/jsonize_scene.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3489" max-vertical-offset="4427">
-              <caret line="212" column="62" selection-start-line="212" selection-start-column="62" selection-end-line="212" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/profile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1007">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threadFfmpegTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator/threadFfmpegTest.py">
+      <file leaf-file-name="xml_to_json.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/xml_to_json.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="646">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="4402" max-vertical-offset="5529">
+              <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bs.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/json/bs.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30213463" vertical-offset="22141" max-vertical-offset="37316">
+              <caret line="1175" column="27" selection-start-line="1175" selection-start-column="23" selection-end-line="1175" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hand amendments" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/amended/hand amendments">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="228">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="concat.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_22-08-2015/concat.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostWatchFolderCleanUp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1368">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -432,7 +357,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="[localhost] CONSOLE - Connection" />
         <option value="db-console:/60b4e45f/7b1f8bb9-84fd-4975-ae6b-b59c647474de/" />
         <option value="$PROJECT_DIR$/generator/yield_test.py" />
         <option value="$PROJECT_DIR$/script/admin.py" />
@@ -445,8 +369,6 @@
         <option value="$PROJECT_DIR$/json/mtl_f.json" />
         <option value="$PROJECT_DIR$/generator/generate.py" />
         <option value="$PROJECT_DIR$/generator/jsonize_scene.py" />
-        <option value="$PROJECT_DIR$/generator/xml_to_json.py" />
-        <option value="$PROJECT_DIR$/xml/Jane.xml" />
         <option value="$PROJECT_DIR$/generator/titles" />
         <option value="$PROJECT_DIR$/generator/concatFiles/testConcat2.txt" />
         <option value="$PROJECT_DIR$/generator/concatFiles/testConcat3.txt" />
@@ -459,7 +381,33 @@
         <option value="$USER_HOME$/profile.txt" />
         <option value="$PROJECT_DIR$/generator/concatFiles/concat_f_n.txt" />
         <option value="$PROJECT_DIR$/generator/ffmpegTests.py" />
+        <option value="$PROJECT_DIR$/generator/TestVideoFiles.py" />
+        <option value="$PROJECT_DIR$/json/sc.json" />
+        <option value="$PROJECT_DIR$/xml/Jane_old.xml" />
+        <option value="$PROJECT_DIR$/json/amended/hand amendments" />
+        <option value="$PROJECT_DIR$/json/amended/sc.json" />
+        <option value="$PROJECT_DIR$/generator/copyForRewatch.py" />
+        <option value="$PROJECT_DIR$/generator/log/mtl_11-08-2015.log" />
+        <option value="$PROJECT_DIR$/generator/log/mtl_13-08-2015.log" />
+        <option value="$PROJECT_DIR$/sine/animate_decay/py.py" />
+        <option value="$PROJECT_DIR$/sine/pendulum.py" />
+        <option value="$PROJECT_DIR$/sine/basic.py" />
+        <option value="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/mtl_tolerance_0.1_15-08-2015.log" />
+        <option value="$PROJECT_DIR$/generator/tests/sc_tolerance_0.1_15-08-2015/sc_tolerance_0.1_15-08-2015.log" />
+        <option value="$PROJECT_DIR$/xml/Jane.xml" />
+        <option value="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/redo/log" />
+        <option value="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/faulty.txt" />
+        <option value="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/concat2.txt" />
+        <option value="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/concat.txt" />
+        <option value="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/serverconcat.txt" />
+        <option value="$PROJECT_DIR$/generator/testVideoFiles.py" />
+        <option value="$PROJECT_DIR$/generator/findExportFile.py" />
         <option value="$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py" />
+        <option value="$PROJECT_DIR$/generator/TestConversationFiles.py" />
+        <option value="$PROJECT_DIR$/json/mtl.json" />
+        <option value="$PROJECT_DIR$/json/ofne.json" />
+        <option value="$PROJECT_DIR$/generator/xml_to_json.py" />
+        <option value="$PROJECT_DIR$/json/bs.json" />
       </list>
     </option>
   </component>
@@ -468,7 +416,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="1985" />
     <option name="y" value="24" />
     <option name="width" value="1855" />
     <option name="height" value="1056" />
@@ -499,7 +447,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -543,20 +490,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="combinatoria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="json" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -575,22 +508,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="combinatoria" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ffmpeg-git-20150308-64bit-static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -602,7 +522,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jane_ng" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -622,17 +542,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015" />
+      <recent name="$PROJECT_DIR$/json/amended" />
+      <recent name="$PROJECT_DIR$/xml" />
       <recent name="$PROJECT_DIR$/generator/concatFiles" />
       <recent name="$PROJECT_DIR$/generator" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/xml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/json/old" />
       <recent name="$PROJECT_DIR$/generator" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cleanupWatch">
+  <component name="RunManager" selected="Python.xml to scene">
     <configuration default="false" name="ffmpegReadFile.py" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -1115,6 +1036,29 @@
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="findExportFile" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="combinatoria" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
+        <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/findExportFile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="ffmpegTest" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <output_file path="profile.txt" is_save="true" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1139,6 +1083,29 @@
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VideoTest" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="combinatoria" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
+        <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/testVideoFiles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="threadConcat" type="PythonConfigurationType" factoryName="Python">
@@ -1243,7 +1210,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="xml to scene" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="xml to scene" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -1294,21 +1261,125 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="14">
+    <configuration default="false" name="TestVideoFiles" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="combinatoria" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
+        <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/TestConversationFiles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="animate_decay" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sine/animate_decay" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="combinatoria" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
+        <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sine/animate_decay/py.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="basic sine" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sine" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="combinatoria" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
+        <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sine/basic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="copyForRewatch" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="combinatoria" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="com.brainwy.pyvmmonitor.PyVmMonitorRunExtension">
+        <option name="PyVmMonitorInitialProfileMode" value="INHERIT_GLOBAL" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator/copyForRewatch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <list size="20">
       <item index="0" class="java.lang.String" itemvalue="Django server.combinatoria" />
       <item index="1" class="java.lang.String" itemvalue="Django server.generator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ffmpegTest" />
-      <item index="3" class="java.lang.String" itemvalue="Python.threadConcat" />
-      <item index="4" class="java.lang.String" itemvalue="Python.threadTest" />
-      <item index="5" class="java.lang.String" itemvalue="Python.profileFfmpeg" />
-      <item index="6" class="java.lang.String" itemvalue="Python.JsonizeScene" />
-      <item index="7" class="java.lang.String" itemvalue="Python.xml to scene" />
-      <item index="8" class="java.lang.String" itemvalue="Python.cleanupWatch" />
-      <item index="9" class="java.lang.String" itemvalue="Bash.ffmpegReadFile.py" />
-      <item index="10" class="java.lang.String" itemvalue="Bash.threadFfmpegTest.py" />
-      <item index="11" class="java.lang.String" itemvalue="Bash.threadConcat.py" />
-      <item index="12" class="java.lang.String" itemvalue="Python.generate" />
-      <item index="13" class="java.lang.String" itemvalue="Python.writer" />
+      <item index="2" class="java.lang.String" itemvalue="Python.findExportFile" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ffmpegTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.VideoTest" />
+      <item index="5" class="java.lang.String" itemvalue="Python.threadConcat" />
+      <item index="6" class="java.lang.String" itemvalue="Python.threadTest" />
+      <item index="7" class="java.lang.String" itemvalue="Python.profileFfmpeg" />
+      <item index="8" class="java.lang.String" itemvalue="Python.JsonizeScene" />
+      <item index="9" class="java.lang.String" itemvalue="Python.xml to scene" />
+      <item index="10" class="java.lang.String" itemvalue="Python.cleanupWatch" />
+      <item index="11" class="java.lang.String" itemvalue="Python.TestVideoFiles" />
+      <item index="12" class="java.lang.String" itemvalue="Python.animate_decay" />
+      <item index="13" class="java.lang.String" itemvalue="Python.basic sine" />
+      <item index="14" class="java.lang.String" itemvalue="Python.copyForRewatch" />
+      <item index="15" class="java.lang.String" itemvalue="Bash.ffmpegReadFile.py" />
+      <item index="16" class="java.lang.String" itemvalue="Bash.threadFfmpegTest.py" />
+      <item index="17" class="java.lang.String" itemvalue="Bash.threadConcat.py" />
+      <item index="18" class="java.lang.String" itemvalue="Python.generate" />
+      <item index="19" class="java.lang.String" itemvalue="Python.writer" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1457,12 +1528,76 @@
       <workItem from="1432210203180" duration="600000" />
       <workItem from="1432229146167" duration="63000" />
       <workItem from="1432394901486" duration="1777000" />
-      <workItem from="1432406862936" duration="690000" />
+      <workItem from="1432406862936" duration="1980000" />
+      <workItem from="1432491664503" duration="1754000" />
+      <workItem from="1433224293404" duration="38000" />
+      <workItem from="1433224351787" duration="2495000" />
+      <workItem from="1433250573942" duration="2275000" />
+      <workItem from="1433310424758" duration="6318000" />
+      <workItem from="1433753794650" duration="24000" />
+      <workItem from="1434024944638" duration="183000" />
+      <workItem from="1434390932608" duration="530000" />
+      <workItem from="1434391680580" duration="4222000" />
+      <workItem from="1434434049306" duration="2935000" />
+      <workItem from="1434467846170" duration="2432000" />
+      <workItem from="1434476412921" duration="148000" />
+      <workItem from="1434570104556" duration="298000" />
+      <workItem from="1436026170365" duration="2221000" />
+      <workItem from="1437396257885" duration="654000" />
+      <workItem from="1437564288158" duration="2373000" />
+      <workItem from="1439318751227" duration="11761000" />
+      <workItem from="1439371456107" duration="1726000" />
+      <workItem from="1439489069953" duration="6348000" />
+      <workItem from="1439628928836" duration="1339000" />
+      <workItem from="1439632298516" duration="2585000" />
+      <workItem from="1439635542060" duration="5074000" />
+      <workItem from="1439644472107" duration="8540000" />
+      <workItem from="1439660820620" duration="1430000" />
+      <workItem from="1439662275682" duration="1871000" />
+      <workItem from="1439737134627" duration="434000" />
+      <workItem from="1439737599236" duration="266000" />
+      <workItem from="1439740769717" duration="1988000" />
+      <workItem from="1439744875547" duration="1606000" />
+      <workItem from="1439748056869" duration="4062000" />
+      <workItem from="1439761492113" duration="1828000" />
+      <workItem from="1439797422307" duration="615000" />
+      <workItem from="1439840293477" duration="4291000" />
+      <workItem from="1439848069722" duration="467000" />
+      <workItem from="1439849818416" duration="277000" />
+      <workItem from="1439915997036" duration="2852000" />
+      <workItem from="1439926620227" duration="1772000" />
+      <workItem from="1439934199690" duration="478000" />
+      <workItem from="1439972108939" duration="23000" />
+      <workItem from="1440016927056" duration="1013000" />
+      <workItem from="1440018787574" duration="136000" />
+      <workItem from="1440080890761" duration="13000" />
+      <workItem from="1440098784023" duration="47000" />
+      <workItem from="1440099172122" duration="963000" />
+      <workItem from="1440102199193" duration="869000" />
+      <workItem from="1440147265790" duration="22000" />
+      <workItem from="1440255044030" duration="3209000" />
+      <workItem from="1440260142469" duration="821000" />
+      <workItem from="1440266466353" duration="2554000" />
+      <workItem from="1440328277499" duration="556000" />
+      <workItem from="1440330124797" duration="388000" />
+      <workItem from="1440330799781" duration="714000" />
+      <workItem from="1440400061345" duration="50000" />
+      <workItem from="1440418817030" duration="19000" />
+      <workItem from="1440440604474" duration="2508000" />
+      <workItem from="1440482037899" duration="612000" />
+      <workItem from="1440488241084" duration="29000" />
+      <workItem from="1440574786709" duration="20000" />
+      <workItem from="1440595107361" duration="18000" />
+      <workItem from="1440661907392" duration="27000" />
+      <workItem from="1441086562787" duration="2207000" />
+      <workItem from="1441092622436" duration="4477000" />
+      <workItem from="1441221592286" duration="1114000" />
+      <workItem from="1441225166944" duration="737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="706594000" />
+    <option name="totallyTimeSpent" value="821540000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1485,33 +1620,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6182796" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25678498" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14056447" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110680684" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3935282" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110680684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6367432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18981738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29385722" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51148224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17542888" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2098121" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27784732" sideWeight="0.4997233" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30996105" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30688936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1519,37 +1654,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29436326" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14056447" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110680684" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27946874" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30996105" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4572025" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30688936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46137786" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29436326" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38308978" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18981738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1646,16 +1750,6 @@
           <option name="timeStamp" value="525" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
-          <line>164</line>
-          <option name="timeStamp" value="626" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
-          <line>229</line>
-          <option name="timeStamp" value="627" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/ffmpegReadFile.py</url>
           <line>94</line>
           <option name="timeStamp" value="630" />
@@ -1686,14 +1780,109 @@
           <option name="timeStamp" value="651" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py</url>
+          <url>file://$PROJECT_DIR$/generator/ffmpegTests.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="681" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/testVideoFiles.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="691" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/testVideoFiles.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="692" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="707" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/findExportFile.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="716" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/findExportFile.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="717" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/TestConversationFiles.py</url>
           <line>39</line>
-          <option name="timeStamp" value="677" />
+          <option name="timeStamp" value="754" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/TestConversationFiles.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="765" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/TestConversationFiles.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="768" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/TestConversationFiles.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="779" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/TestConversationFiles.py</url>
+          <line>173</line>
+          <option name="timeStamp" value="791" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/TestConversationFiles.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="793" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="680" />
+          <line>57</line>
+          <option name="timeStamp" value="797" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="798" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="809" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="812" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="814" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
+          <line>244</line>
+          <option name="timeStamp" value="815" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
+          <line>237</line>
+          <option name="timeStamp" value="826" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
+          <line>235</line>
+          <option name="timeStamp" value="827" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/xml_to_json.py</url>
+          <line>232</line>
+          <option name="timeStamp" value="829" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1706,7 +1895,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="681" />
+      <option name="time" value="830" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1715,372 +1904,321 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/combinatoria/urls.py">
+    <entry file="file://$PROJECT_DIR$/generator/copyForRewatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_scene">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combinatoria/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="1767">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_script">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combinatoria/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_act">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_part">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_source">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2153" max-vertical-offset="3458">
-          <caret line="113" column="79" selection-start-line="113" selection-start-column="79" selection-end-line="113" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_group_source">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_f">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13946" max-vertical-offset="14440">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_f_expanded.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7014613" vertical-offset="3054" max-vertical-offset="15922">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_group_container">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_line">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/60b4e45f/7726807e-5eca-45b3-86f4-80e972cdaf2f/combinatoria..script_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_up_to_paired_parent.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3212765" vertical-offset="33674" max-vertical-offset="34485">
-          <caret line="1805" column="4" selection-start-line="1805" selection-start-column="4" selection-end-line="1805" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_up_to_parent.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.487965" vertical-offset="41739" max-vertical-offset="44441">
-          <caret line="2161" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="2333" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_f_expanded_2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14755" max-vertical-offset="15922">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_f.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.142858" vertical-offset="15067" max-vertical-offset="15922">
-          <caret line="805" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="832" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/mtl with ids.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-75.11609" vertical-offset="45295" max-vertical-offset="50331">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/generator.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="927">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/generate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="9405">
-          <caret line="56" column="66" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="9405">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/old/mtl_complete.json">
+    <entry file="file://$PROJECT_DIR$/generator/threadConcat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12112" max-vertical-offset="58463">
-          <caret line="655" column="22" selection-start-line="655" selection-start-column="22" selection-end-line="655" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/mtl.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="88118" max-vertical-offset="140277">
-          <caret line="3568" column="32" selection-start-line="3568" selection-start-column="23" selection-end-line="3568" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/testConcat2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="152">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6504" max-vertical-offset="9044">
-          <caret line="367" column="47" selection-start-line="367" selection-start-column="47" selection-end-line="367" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="1121">
+          <caret line="23" column="87" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="188" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/subprocess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13539192" vertical-offset="114" max-vertical-offset="1105078">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/testConcat3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="133">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/xml_to_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="4845">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/titles">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034671534" vertical-offset="0" max-vertical-offset="548">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/yield_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="1729">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/concatQuad.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2622">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/concatDouble.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1368">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/testConcat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
-          <caret line="1" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/ffmpegTests.py.lprof">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/memory_profiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24539877" vertical-offset="8164" max-vertical-offset="16473">
-          <caret line="444" column="0" selection-start-line="444" selection-start-column="0" selection-end-line="444" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/threadFfmpegTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="646">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/top.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.920635" vertical-offset="1482" max-vertical-offset="41287">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/logging">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2868430">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/threadConcat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1197">
-          <caret line="23" column="87" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="188" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator/jsonize_scene.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3489" max-vertical-offset="4427">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3375" max-vertical-offset="4427">
           <caret line="212" column="62" selection-start-line="212" selection-start-column="62" selection-end-line="212" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/profile.txt">
+    <entry file="file://$PROJECT_DIR$/generator/log/mtl_11-08-2015.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114">
+        <state vertical-scroll-proportion="0.0" vertical-offset="664" max-vertical-offset="1615">
+          <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/ffmpegTests.py.lprof">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/ffmpegTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="2869">
+          <caret line="63" column="97" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="97" />
+          <folding>
+            <element signature="e#19#52#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/ffmpegReadFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1938">
+          <caret line="79" column="51" selection-start-line="76" selection-start-column="0" selection-end-line="79" selection-end-column="51" />
+          <folding>
+            <element signature="e#1#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sine/basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5329018" vertical-offset="0" max-vertical-offset="927">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sine/animate_decay/py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38942826" vertical-offset="0" max-vertical-offset="927">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sine/pendulum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.012195" vertical-offset="57" max-vertical-offset="1786">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/log/mtl_13-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8702" max-vertical-offset="12046">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/ofne_tolerance_0.1_15-08-2015/concat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="492">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/ofne_tolerance_0.1_15-08-2015/ofne_tolerance_0.1_15-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8721" max-vertical-offset="10735">
+          <caret line="459" column="70" selection-start-line="459" selection-start-column="65" selection-end-line="459" selection-end-column="70" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml/Jane.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="143545" max-vertical-offset="147573">
+          <caret line="7557" column="8" selection-start-line="7557" selection-start-column="8" selection-end-line="7557" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/bs_tolerance_0.1_15-08-2015/bs_tolerance_0.1_15-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11989">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/generator.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/mtl_tolerance_0.1_15-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7923" max-vertical-offset="12274">
+          <caret line="417" column="70" selection-start-line="417" selection-start-column="64" selection-end-line="417" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/redo/log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/concat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="380">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_16-08-2015/mtl_tolerance_0.1_16-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="10830">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/faulty.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+          <caret line="3" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/concat2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="342">
+          <caret line="4" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_15-08-2015/serverconcat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.91935486" vertical-offset="0" max-vertical-offset="418">
+          <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_17-08-2015/mtl_tolerance_0.1_17-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9711" max-vertical-offset="10469">
+          <caret line="348" column="25" selection-start-line="348" selection-start-column="25" selection-end-line="348" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/sc_tolerance_0.1_15-08-2015/sc_tolerance_0.1_15-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6281178" vertical-offset="4788" max-vertical-offset="15067">
+          <caret line="191" column="68" selection-start-line="191" selection-start-column="63" selection-end-line="191" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/sc_tolerance_0.1_15-08-2015/concat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16101696" vertical-offset="0" max-vertical-offset="472">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/sc_tolerance_0.1_17-08-2015/sc_tolerance_0.1_17-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8151" max-vertical-offset="10811">
+          <caret line="429" column="12" selection-start-line="429" selection-start-column="4" selection-end-line="429" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/mtl_tolerance_0.1_18-08-2015/mtl_tolerance_0.1_18-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10336">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/sc_tolerance_0.1_18-08-2015/sc_tolerance_0.1_18-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3078" max-vertical-offset="9842">
+          <caret line="162" column="82" selection-start-line="162" selection-start-column="82" selection-end-line="162" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/ofne_tolerance_0.1_18-08-2015/ofne_tolerance_0.1_18-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9217" max-vertical-offset="9690">
+          <caret line="490" column="77" selection-start-line="490" selection-start-column="77" selection-end-line="490" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/bs_tolerance_0.1_18-08-2015/bs_tolerance_0.1_18-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11096">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/eieo_tolerance_0.1_19-08-2015/concat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/bs_tolerance_0.1_20-08-2015/concat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/bs_tolerance_0.1_20-08-2015/bs_tolerance_0.1_20-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10648" max-vertical-offset="11096">
+          <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/findExportFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/testVideoFiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="1083">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/eieo_tolerance_0.1_22-08-2015/eieo_tolerance_0.1_22-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7904" max-vertical-offset="14402">
+          <caret line="416" column="72" selection-start-line="416" selection-start-column="65" selection-end-line="416" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_15-08-2015/ff_tolerance_0.1_15-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16435">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="1368">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_22-08-2015/concat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="415">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -2089,44 +2227,75 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/ffmpegReadFile.py">
+    <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_22-08-2015/ff_tolerance_0.1_22-08-2015.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1938">
-          <caret line="2" column="12" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="16758" max-vertical-offset="17043">
+          <caret line="882" column="13" selection-start-line="882" selection-start-column="13" selection-end-line="882" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/concat.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
-          <caret line="3" column="61" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="64" />
-          <folding />
-        </state>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/concatFiles/concat_f_n.txt">
+    <entry file="file://$PROJECT_DIR$/generator/TestConversationFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
-          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/ffmpegTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1931" max-vertical-offset="2869">
-          <caret line="142" column="71" selection-start-line="142" selection-start-column="71" selection-end-line="142" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3080" max-vertical-offset="3515">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
-            <element signature="e#19#52#0" expanded="true" />
+            <element signature="e#20#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/PostWatchFolderCleanUp.py">
+    <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_23-08-2015/concat.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272728" vertical-offset="292" max-vertical-offset="969">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/tests/ff_tolerance_0.1_23-08-2015/ff_tolerance_0.1_23-08-2015.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14782">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/ofne.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/mtl.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9452381" vertical-offset="25175" max-vertical-offset="49457">
+          <caret line="1368" column="17" selection-start-line="1368" selection-start-column="17" selection-end-line="1368" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/amended/hand amendments">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/xml_to_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4402" max-vertical-offset="5529">
+          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/bs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30213463" vertical-offset="22141" max-vertical-offset="37316">
+          <caret line="1175" column="27" selection-start-line="1175" selection-start-column="23" selection-end-line="1175" selection-end-column="29" />
           <folding />
         </state>
       </provider>

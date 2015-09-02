@@ -1,0 +1,8 @@
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/n/web/Octo_cn.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/n/web/Octo_2o.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/f/web/sweeter_cn.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/f/web/sweeter_2o.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/t/web/inadequate_cn.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/t/web/inadequate_2o.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/t/web/lightscapes_co.mp4'
+file	/media/ian/TOSHIBA\ EXT1/jane/exports/ofne/t/web/lightscapes_2o.mp4'
